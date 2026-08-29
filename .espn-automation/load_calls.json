@@ -1,0 +1,198 @@
+[
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026?view=kona_game_state&platformVersion=96e7cdc122a61e6c778b4087703c10d123d0565d",
+    "bodyLen": 8860,
+    "bodyPreview": "{\"currentScoringPeriod\":{\"id\":1},\"settings\":{\"allowLeagueCreation\":true,\"clientFlags\":{\"ESPN_PLUS_ENABLED\":\"false\",\"IBM_TRADE_ASSISTANT\":\"false\",\"IBM_TRADE_ASSISTANT_FORK\":\"false\",\"WATSON_PLAYERCARD_ENABLED\":\"false\",\"VETERANS_CONFIG\":\"{\\\"leagueIds\\\":[2066469445,491710450,566346605,51638878,1757414713,1308403235,349589409,798080471,254577662,1496808352,719076953,825380521,509107731,573069055,1883703995,1869115495,1593201733],\\\"matchupPeriods\\\":[15,16,17],\\\"scoringPeriods\\\":[15,16,17]}\",\"MILLER_LITE_DRAFT_PROMOS_ENABLED\":\"true\",\"MILLER_LITE_PROMO_TITLE\":\"Game on! It's Miller Time.\",\"MILLER_LITE_"
+  },
+  {
+    "method": "GET",
+    "status": 204,
+    "url": "https://presence.fantasy.espn.com/apis/v1/heartbeat?platform=espn-fantasy-web&platformVersion=96e7cdc122a61e6c778b4087703c10d123d0565d&location=other&attribute=game%3Affl",
+    "bodyLen": 0,
+    "bodyPreview": ""
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://lm-api-communication.fantasy.espn.com/apis/v3/communication/lastReadByMember?platform=espn-fantasy-web&platformVersion=96e7cdc122a61e6c778b4087703c10d123d0565d&view=chat_unreads",
+    "bodyLen": 672,
+    "bodyPreview": "{\"lastReadByGroup\":{\"341848429.3.2024\":{\"lastMessageDate\":1711983688804,\"lastReadByTopic\":{\"74190147-c6b7-3370-8d07-34607ec54d89\":{\"unread\":true},\"8eb0e3d2-4b62-38cb-b2df-2381cb1bbffd\":{\"unread\":true},\"c7e72ee1-7966-3cb1-9fd4-99e7aa864673\":{\"unread\":true},\"e9537918-a8b2-37b1-91d8-d56b3e6b38df\":{\"unread\":false}},\"unread\":true},\"1886395567.1.2026\":{\"lastMessageDate\":1787883951556,\"lastReadByTopic\":{\"e7884aa3-9c85-3ebb-a934-40448497b3a9\":{\"unread\":false}},\"unread\":false},\"1752048912.2.2026\":{\"lastMessageDate\":1787785429055,\"lastReadByTopic\":{\"82380129-b571-3204-923c-f7e460291212\":{\"unread\":true},"
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/275797?view=mDraftDetail&view=mSettings&view=mTeam&view=modular&view=mNav&platformVersion=96e7cdc122a61e6c778b4087703c10d123d0565d",
+    "bodyLen": 75776,
+    "bodyPreview": "{\"draftDetail\":{\"drafted\":false,\"inProgress\":false,\"picks\":[{\"autoDraftTypeId\":0,\"bidAmount\":0,\"id\":1,\"keeper\":false,\"lineupSlotId\":0,\"nominatingTeamId\":0,\"overallPickNumber\":1,\"playerId\":-1,\"reservedForKeeper\":false,\"roundId\":1,\"roundPickNumber\":1,\"teamId\":14,\"tradeLocked\":false},{\"autoDraftTypeId\":0,\"bidAmount\":0,\"id\":2,\"keeper\":false,\"lineupSlotId\":0,\"nominatingTeamId\":0,\"overallPickNumber\":2,\"playerId\":-1,\"reservedForKeeper\":false,\"roundId\":1,\"roundPickNumber\":2,\"teamId\":4,\"tradeLocked\":false},{\"autoDraftTypeId\":0,\"bidAmount\":0,\"id\":3,\"keeper\":false,\"lineupSlotId\":0,\"nominatingTeamId\":0,\"o"
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026?view=proTeamSchedules_wl&platformVersion=96e7cdc122a61e6c778b4087703c10d123d0565d",
+    "bodyLen": 109163,
+    "bodyPreview": "{\"display\":true,\"settings\":{\"defaultDraftPosition\":170,\"draftLobbyMinimumLeagueCount\":3,\"gameNotificationSettings\":{\"availabilityNotificationsEnabled\":true,\"draftNotificationsEnabled\":true,\"injuryNotificationsEnabled\":true,\"lineupNotificationsEnabled\":false,\"positionEligibilityNotificationsEnabled\":false,\"rosterNewsNotificationsEnabled\":true,\"startBenchNotificationsEnabled\":true,\"tradeNotificationsEnabled\":true},\"gated\":false,\"playerOwnershipSettings\":{\"firstGameDate\":1788937200000,\"lastGameDate\":1799568060000,\"startDate\":1775631600000},\"proTeams\":[{\"abbrev\":\"IND\",\"byeWeek\":13,\"id\":11,\"locatio"
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leagues/275797?view=kona_player_info_edit_draft_strategy&platformVersion=96e7cdc122a61e6c778b4087703c10d123d0565d",
+    "bodyLen": 811928,
+    "bodyPreview": "{\"players\":[{\"draftAuctionValue\":0,\"player\":{\"active\":true,\"defaultPositionId\":2,\"draftRanksByRankType\":{\"STANDARD\":{\"rank\":1},\"PPR\":{\"rank\":1},\"ELIMINATION\":{\"rank\":3},\"SUPERFLEX\":{\"rank\":7}},\"droppable\":false,\"eligibleSlots\":[2,3,23,7,20,21],\"firstName\":\"Jahmyr\",\"id\":4429795,\"injured\":false,\"injuryStatus\":\"ACTIVE\",\"jersey\":\"0\",\"lastName\":\"Gibbs\",\"lastNewsDate\":1786715381000,\"lastVideoDate\":1787614482000,\"laterality\":\"NONE\",\"proTeamId\":8,\"stance\":\"NONE\",\"stats\":[{\"appliedTotal\":364.86283547,\"externalId\":\"2026\",\"id\":\"102026\",\"proTeamId\":0,\"seasonId\":2026,\"statSourceId\":1,\"statSplitTypeId\":0,\"s"
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/players?scoringPeriodId=0&view=players_wl&platformVersion=96e7cdc122a61e6c778b4087703c10d123d0565d",
+    "bodyLen": 649389,
+    "bodyPreview": "[{\"defaultPositionId\":11,\"droppable\":true,\"eligibleSlots\":[10,15,20,21],\"firstName\":\"Jaishawn\",\"fullName\":\"Jaishawn Barham\",\"id\":4685266,\"lastName\":\"Barham\",\"lastNewsDate\":1787013174000,\"ownership\":{\"percentOwned\":1.37},\"proTeamId\":6,\"universeId\":2},{\"defaultPositionId\":3,\"droppable\":true,\"eligibleSlots\":[25,3,4,5,23,7,20,21],\"firstName\":\"Germie\",\"fullName\":\"Germie Bernard\",\"id\":4685261,\"lastName\":\"Bernard\",\"lastNewsDate\":1787898510000,\"lastVideoDate\":1787873529000,\"ownership\":{\"percentOwned\":7.49},\"proTeamId\":23,\"universeId\":1},{\"defaultPositionId\":9,\"droppable\":true,\"eligibleSlots\":[8,11,15,"
+  },
+  {
+    "method": "GET",
+    "status": 204,
+    "url": "https://presence.fantasy.espn.com/apis/v1/heartbeat?platform=espn-fantasy-web&platformVersion=96e7cdc122a61e6c778b4087703c10d123d0565d&location=other&attribute=game%3Affl",
+    "bodyLen": 0,
+    "bodyPreview": ""
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://lm-api-communication.fantasy.espn.com/apis/v3/communication/lastReadByMember?platform=espn-fantasy-web&platformVersion=96e7cdc122a61e6c778b4087703c10d123d0565d&view=chat_unreads",
+    "bodyLen": 672,
+    "bodyPreview": "{\"lastReadByGroup\":{\"341848429.3.2024\":{\"lastMessageDate\":1711983688804,\"lastReadByTopic\":{\"74190147-c6b7-3370-8d07-34607ec54d89\":{\"unread\":true},\"8eb0e3d2-4b62-38cb-b2df-2381cb1bbffd\":{\"unread\":true},\"c7e72ee1-7966-3cb1-9fd4-99e7aa864673\":{\"unread\":true},\"e9537918-a8b2-37b1-91d8-d56b3e6b38df\":{\"unread\":false}},\"unread\":true},\"1886395567.1.2026\":{\"lastMessageDate\":1787883951556,\"lastReadByTopic\":{\"e7884aa3-9c85-3ebb-a934-40448497b3a9\":{\"unread\":false}},\"unread\":false},\"1752048912.2.2026\":{\"lastMessageDate\":1787785429055,\"lastReadByTopic\":{\"82380129-b571-3204-923c-f7e460291212\":{\"unread\":true},"
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://dcf.espn.com/TWDC-DTCI/prod/serverComponent.php?namespace=Bootstrapper&staticJsPath=/TWDC-DTCI/prod/code/&ClientID=2750&PageID=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797%26cds%3Dn%26country%3Dus%26region%3Dccpa%26gpc%3D0%26shouldFire%3Dy%26nAsyncNgeo%3Dn%26portal%3Dsports%26site%3Dfantasy%26siteRegion%3D%26realHost%3Dfantasy.espn.com%26kpTlium%3Dn%26eventStep%3Dnon-ecom&custDomain=dcf.espn.com",
+    "bodyLen": 1460,
+    "bodyPreview": "{\"pageFiles\":[{\"src\":\"https://dcf.espn.com/TWDC-DTCI/prod/code/ee00cbb1c51732236f4cb00852a1104f.js?conditionId0=4871166\"},{\"src\":\"https://dcf.espn.com/TWDC-DTCI/prod/code/eb1c47da59e82af5c816eb3f0db4e4f6.js?conditionId0=4963484\"},{\"src\":\"https://dcf.espn.com/TWDC-DTCI/prod/code/9b1852c4cadfcd087b4a341ceb36650f.js?conditionId0=4958322\"},{\"src\":\"https://dcf.espn.com/TWDC-DTCI/prod/code/180c898d38bbecdb99928e5c3de8f957.js?conditionId0=4956281\"},{\"src\":\"https://dcf.espn.com/TWDC-DTCI/prod/code/da1fe67075f2874a60a40739efc1396b.js?conditionId0=4963485\"},{\"src\":\"https://dcf.espn.com/TWDC-DTCI/prod/co"
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=13042&site_id=92444&zone_id=435334&size_id=15&us_privacy=1YNY&rf=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&tg_i.domain=fantasy.espn.com&tg_i.page=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&tg_i.pbadslot=%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy&tk_flint=pbjs_lite_v8.26.0&l_pb_bid_id=6ec519d89f2757&p_screen_res=1512x982&rp_secure=1&rp_maxbids=1&p_gpid=%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy&m_ch_ua=%22Not%3DA%3FBrand%22%7Cv%3D%2299%22%2C%22Google%20Chrome%22%7Cv%3D%22151%22%2C%22Chromium%22%7Cv%3D%22151%22&m_ch_full_ver=%22Not%3DA%3FBrand%22%7Cv%3D%2299%22%2C%22Google%20Chrome%22%7Cv%3D%22151%22%2C%22Chromium%22%7Cv%3D%22151%22&m_ch_mobile=%3F0&m_ch_platform=macOS&slots=1&rand=0.6618418475282558",
+    "bodyLen": 5434,
+    "bodyPreview": "{\"status\":\"ok\",\"account_id\":13042,\"site_id\":92444,\"zone_id\":435334,\"size_id\":15,\"tracking\":\"\",\"inventory\":{\"pbadslot\":\"%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy\",\"page\":\"https:\\/\\/fantasy.espn.com\\/football\\/editdraftstrategy?leagueId=275797\",\"domain\":\"fantasy.espn.com\"},\"ads\":[{\"status\":\"ok\",\"impression_id\":\"80f116cc-4869-4e3e-a17d-a2d6c1f008a2\",\"size_id\":\"15\",\"ad_id\":\"3191370\",\"advertiser\":7952104,\"network\":2149,\"creative_id\":\"2149:12430914\",\"seat\":15896,\"w\":300,\"h\":250,\"type\":\"script\",\"script\":\"document.write(\\\"<div style=\\\\\\\"width: 0; height: 0; overflow: hidden;\\\\"
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=13042&site_id=92444&zone_id=435334&size_id=2&alt_size_ids=57&us_privacy=1YNY&rf=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&tg_i.domain=fantasy.espn.com&tg_i.page=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&tg_i.pbadslot=%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy&tk_flint=pbjs_lite_v8.26.0&l_pb_bid_id=51715b16dbb462&p_screen_res=1512x982&rp_secure=1&rp_maxbids=1&p_gpid=%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy&m_ch_ua=%22Not%3DA%3FBrand%22%7Cv%3D%2299%22%2C%22Google%20Chrome%22%7Cv%3D%22151%22%2C%22Chromium%22%7Cv%3D%22151%22&m_ch_full_ver=%22Not%3DA%3FBrand%22%7Cv%3D%2299%22%2C%22Google%20Chrome%22%7Cv%3D%22151%22%2C%22Chromium%22%7Cv%3D%22151%22&m_ch_mobile=%3F0&m_ch_platform=macOS&slots=1&rand=0.2094122922681989",
+    "bodyLen": 5422,
+    "bodyPreview": "{\"status\":\"ok\",\"account_id\":13042,\"site_id\":92444,\"zone_id\":435334,\"size_id\":2,\"alt_size_ids\":[57],\"tracking\":\"\",\"inventory\":{\"pbadslot\":\"%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy\",\"page\":\"https:\\/\\/fantasy.espn.com\\/football\\/editdraftstrategy?leagueId=275797\",\"domain\":\"fantasy.espn.com\"},\"ads\":[{\"status\":\"ok\",\"impression_id\":\"8c1f1f5a-f5eb-4637-9e79-8e272010cca7\",\"size_id\":\"57\",\"ad_id\":\"3625980\",\"advertiser\":7952104,\"network\":2149,\"creative_id\":\"2149:12430914\",\"seat\":15896,\"w\":970,\"h\":250,\"type\":\"script\",\"script\":\"document.write(\\\"<div style=\\\\\\\"width: 0; height: 0; "
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=13042&site_id=92444&zone_id=435334&size_id=15&us_privacy=1YNY&rf=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&tg_i.domain=fantasy.espn.com&tg_i.page=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&tg_i.pbadslot=%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy&tk_flint=pbjs_lite_v8.26.0&l_pb_bid_id=4629bf156701c878&p_screen_res=1512x982&rp_secure=1&rp_maxbids=1&p_gpid=%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy&m_ch_ua=%22Not%3DA%3FBrand%22%7Cv%3D%2299%22%2C%22Google%20Chrome%22%7Cv%3D%22151%22%2C%22Chromium%22%7Cv%3D%22151%22&m_ch_full_ver=%22Not%3DA%3FBrand%22%7Cv%3D%2299%22%2C%22Google%20Chrome%22%7Cv%3D%22151%22%2C%22Chromium%22%7Cv%3D%22151%22&m_ch_mobile=%3F0&m_ch_platform=macOS&slots=1&rand=0.2745890008509949",
+    "bodyLen": 5384,
+    "bodyPreview": "{\"status\":\"ok\",\"account_id\":13042,\"site_id\":92444,\"zone_id\":435334,\"size_id\":15,\"tracking\":\"\",\"inventory\":{\"pbadslot\":\"%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy\",\"page\":\"https:\\/\\/fantasy.espn.com\\/football\\/editdraftstrategy?leagueId=275797\",\"domain\":\"fantasy.espn.com\"},\"ads\":[{\"status\":\"ok\",\"impression_id\":\"0151d922-8dee-4d15-a798-85b15ce6cbee\",\"size_id\":\"15\",\"ad_id\":\"3191370\",\"advertiser\":10694127,\"network\":2149,\"creative_id\":\"2149:12429446\",\"seat\":15896,\"w\":300,\"h\":250,\"type\":\"script\",\"script\":\"document.write(\\\"<div style=\\\\\\\"width: 0; height: 0; overflow: hidden;\\"
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=13042&site_id=92444&zone_id=435334&size_id=15&us_privacy=1YNY&rf=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&tg_i.domain=fantasy.espn.com&tg_i.page=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&tg_i.pbadslot=%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy&tk_flint=pbjs_lite_v8.26.0&l_pb_bid_id=44de736930be37b&p_screen_res=1512x982&rp_secure=1&rp_maxbids=1&p_gpid=%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy&m_ch_ua=%22Not%3DA%3FBrand%22%7Cv%3D%2299%22%2C%22Google%20Chrome%22%7Cv%3D%22151%22%2C%22Chromium%22%7Cv%3D%22151%22&m_ch_full_ver=%22Not%3DA%3FBrand%22%7Cv%3D%2299%22%2C%22Google%20Chrome%22%7Cv%3D%22151%22%2C%22Chromium%22%7Cv%3D%22151%22&m_ch_mobile=%3F0&m_ch_platform=macOS&slots=1&rand=0.7365202131106052",
+    "bodyLen": 5366,
+    "bodyPreview": "{\"status\":\"ok\",\"account_id\":13042,\"site_id\":92444,\"zone_id\":435334,\"size_id\":15,\"tracking\":\"\",\"inventory\":{\"pbadslot\":\"%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy\",\"page\":\"https:\\/\\/fantasy.espn.com\\/football\\/editdraftstrategy?leagueId=275797\",\"domain\":\"fantasy.espn.com\"},\"ads\":[{\"status\":\"ok\",\"impression_id\":\"372daad1-c37f-4332-a984-d6df1d8a51fe\",\"size_id\":\"15\",\"ad_id\":\"3191370\",\"advertiser\":10694127,\"network\":2149,\"creative_id\":\"2149:12429446\",\"seat\":15896,\"w\":300,\"h\":250,\"type\":\"script\",\"script\":\"document.write(\\\"<div style=\\\\\\\"width: 0; height: 0; overflow: hidden;\\"
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=13042&site_id=92444&zone_id=435334&size_id=2&alt_size_ids=57&us_privacy=1YNY&rf=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&tg_i.domain=fantasy.espn.com&tg_i.page=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&tg_i.pbadslot=%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy&tk_flint=pbjs_lite_v8.26.0&l_pb_bid_id=43a1340c4bdcbae&p_screen_res=1512x982&rp_secure=1&rp_maxbids=1&p_gpid=%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy&m_ch_ua=%22Not%3DA%3FBrand%22%7Cv%3D%2299%22%2C%22Google%20Chrome%22%7Cv%3D%22151%22%2C%22Chromium%22%7Cv%3D%22151%22&m_ch_full_ver=%22Not%3DA%3FBrand%22%7Cv%3D%2299%22%2C%22Google%20Chrome%22%7Cv%3D%22151%22%2C%22Chromium%22%7Cv%3D%22151%22&m_ch_mobile=%3F0&m_ch_platform=macOS&slots=1&rand=0.8477490436637191",
+    "bodyLen": 5415,
+    "bodyPreview": "{\"status\":\"ok\",\"account_id\":13042,\"site_id\":92444,\"zone_id\":435334,\"size_id\":2,\"alt_size_ids\":[57],\"tracking\":\"\",\"inventory\":{\"pbadslot\":\"%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy\",\"page\":\"https:\\/\\/fantasy.espn.com\\/football\\/editdraftstrategy?leagueId=275797\",\"domain\":\"fantasy.espn.com\"},\"ads\":[{\"status\":\"ok\",\"impression_id\":\"d83550f3-f8e2-4fda-8cd4-d91477152bb7\",\"size_id\":\"57\",\"ad_id\":\"3625980\",\"advertiser\":7952104,\"network\":2149,\"creative_id\":\"2149:12430914\",\"seat\":15896,\"w\":970,\"h\":250,\"type\":\"script\",\"script\":\"document.write(\\\"<div style=\\\\\\\"width: 0; height: 0; "
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=7699436166377234&correlator=1624052793651865&hxva=1&scor=3740587078025395&eid=122880707%2C95400667%2C95400986&output=ldjh&gdfp_req=1&vrg=202608260101&ptt=17&impl=fifs&us_privacy=1YNY&gpp=DBABLA~BVQqAAAAAAJY.QA&gpp_sid=7&iu_parts=21783347309%2Cespn.com%2Cfantasy%2Cfootball%2CeditDraftStrategy&enc_prev_ius=%2F0%2F1%2F2%2F3%2F4%2C%2F0%2F1%2F2%2F3%2F4%2C%2F0%2F1%2F2%2F3%2F4%2C%2F0%2F1%2F2%2F3%2F4&prev_iu_szs=1x2%2C1x1%2C970x66%7C970x250%7C728x90%2C300x250&ifi=1&didk=3592629754~3588638926~258003540~246079513&dids=ad-slot-exclusions-760280~ad-slot-overlay-240852~ad-slot-banner-17924~ad-slot-incontent-395989&sfv=1-0-45&ists=4&eri=1&sc=1&lrm=100&cookie=ID%3D1aa63f488cfc7121%3AT%3D1788016076%3ART%3D1788016076%3AS%3DALNI_MYIuXVTuwYNEntuOGJi4Vn4td9Dtw&gpic=UID%3D000014d158c3de31%3AT%3D1788016076%3ART%3D1788016076%3AS%3DALNI_MZ5AU25sggUzZN_hftxWqClbeGfQA&abxe=1&dt=1788016230900&lmt=1788016230&adxs=-9%2C-9%2C-9%2C-9&adys=-9%2C-9%2C-9%2C-9&biw=1200&bih=681&scr_x=18&scr_y=31&btvi=-1%7C-1%7C-1%7C-1&ucis=1%7C2%7C3%7C4&oid=2&u_his=2&u_h=982&u_w=1512&u_ah=870&u_aw=1512&u_cd=30&u_sd=2&u_tz=-420&dmc=16&bc=31&nvt=7&uach=WyJtYWNPUyIsIjI2LjUuMCIsImFybSIsIiIsIjE1MS4wLjc5MjIuMTc0IixudWxsLDAsbnVsbCwiNjQiLFtbIk5vdD1BP0JyYW5kIiwiOTkuMC4wLjAiXSxbIkdvb2dsZSBDaHJvbWUiLCIxNTEuMC43OTIyLjE3NCJdLFsiQ2hyb21pdW0iLCIxNTEuMC43OTIyLjE3NCJdXSwwXQ..&url=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&vis=1&psz=0x-1%7C0x-1%7C0x-1%7C0x-1&msz=0x-1%7C0x-1%7C0x-1%7C0x-1&fws=2%2C2%2C2%2C2&ohw=0%2C0%2C0%2C0&dlt=1788016225505&idt=5175&ppid=%7B2E369BC9-1764-4D33-B69B-C91764AD33C9%7D&prev_scp=pos%3Dexclusions%7CslotId%3Dad-slot-overlay-240852%26pos%3Doutofpage%7Cpos%3Dbanner%7Cpos%3Dincontent&cust_params=ed%3Dus%26sp%3DFootball%26pgn%3Deditdraftstrategy%26pgtype%3DeditDraftStrategy%26lang%3Den%26gm%3Dffl%26mnr%3Df%26swid%3D%257B2E369BC9-1764-4D33-B69B-C91764AD33C9%257D%26d_us_privacy%3D1YNY%26inskin_yes%3Dno%26prof%3Dl&adks=1397420611%2C944232341%2C3360763134%2C3688500412&frm=20&eo_id_str=ID%3De6fe385849c375f8%3AT%3D1788016076%3ART%3D1788016076%3AS%3DAA-AfjY8vfzAD_i8LVW1rQzSWKHh&pb_szs=~~970x250%7C728x90~300x250&pgls=CAk.",
+    "bodyLen": 60303,
+    "bodyPreview": "{\"/21783347309/espn.com/fantasy/football/editDraftStrategy\":[\"html\",0,null,null,0,0,0,1,0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,0,null,null,null,null,null,null,\"AOrYGskJB3b0txHepKhECTVze-zuhwIGV3-z0haC8udAeJcEjV8PPoKctX6PhlDYoJKPdjhGk9hg\",\"CNacuMKPxpYDFdoqRAgd2wUMhQ\",null,null,null,null,null,null,null,null,null,null,null,null,null,null,\"1\",null,null,null,null,null,null,null,null,null,null,null,\"AA-V4qOU-ZyAPfc3CLXqqMYFgrV012yHVdfVsMPWn_wc54i3S8x4UjX1ILTy6nxsyIc92o6EKpe3sD6-sUcDodVOIDBK9_aP49vqt2H-ZMg3ET_FGZJbKk11mCgLJeMfEzWDI8Gnaz4\",null,null,null,null"
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://fastlane.rubiconproject.com/a/api/fastlane.json?account_id=13042&site_id=92444&zone_id=435334&size_id=2&alt_size_ids=57&us_privacy=1YNY&rf=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&tg_i.domain=fantasy.espn.com&tg_i.page=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&tg_i.pbadslot=%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy&tk_flint=pbjs_lite_v8.26.0&l_pb_bid_id=456051bd8e9a15d8&p_screen_res=1512x982&rp_secure=1&rp_maxbids=1&p_gpid=%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy&m_ch_ua=%22Not%3DA%3FBrand%22%7Cv%3D%2299%22%2C%22Google%20Chrome%22%7Cv%3D%22151%22%2C%22Chromium%22%7Cv%3D%22151%22&m_ch_full_ver=%22Not%3DA%3FBrand%22%7Cv%3D%2299%22%2C%22Google%20Chrome%22%7Cv%3D%22151%22%2C%22Chromium%22%7Cv%3D%22151%22&m_ch_mobile=%3F0&m_ch_platform=macOS&slots=1&rand=0.42442005354310197",
+    "bodyLen": 14561,
+    "bodyPreview": "{\"status\":\"ok\",\"account_id\":13042,\"site_id\":92444,\"zone_id\":435334,\"size_id\":2,\"alt_size_ids\":[57],\"tracking\":\"\",\"inventory\":{\"pbadslot\":\"%2F21783347309%2Fespn.com%2Ffantasy%2Ffootball%2FeditDraftStrategy\",\"page\":\"https:\\/\\/fantasy.espn.com\\/football\\/editdraftstrategy?leagueId=275797\",\"domain\":\"fantasy.espn.com\"},\"ads\":[{\"status\":\"ok\",\"impression_id\":\"d332eede-d4f3-4f7e-b19a-5cc23bc09153\",\"size_id\":\"57\",\"ad_id\":\"3625980\",\"advertiser\":7952104,\"network\":2149,\"creative_id\":\"2149:12430914\",\"seat\":15896,\"w\":970,\"h\":250,\"type\":\"script\",\"script\":\"document.write(\\\"<div style=\\\\\\\"width: 0; height: 0; "
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=7699436166377234&correlator=4265711151243438&hxva=1&scor=3740587078025395&eid=122880707%2C95400667%2C95400986&output=ldjh&gdfp_req=1&vrg=202608260101&ptt=17&impl=fifs&us_privacy=1YNY&gpp=DBABLA~BVQqAAAAAAJY.QA&gpp_sid=7&iu_parts=21783347309%2Cespn.com%2Cfantasy%2Cfootball%2CeditDraftStrategy&enc_prev_ius=%2F0%2F1%2F2%2F3%2F4%2C%2F0%2F1%2F2%2F3%2F4%2C%2F0%2F1%2F2%2F3%2F4%2C%2F0%2F1%2F2%2F3%2F4&prev_iu_szs=1x2%2C1x1%2C970x66%7C970x250%7C728x90%2C300x250&ifi=5&didk=1482204299~4069981814~1569563152~254945870&dids=ad-slot-exclusions-905340~ad-slot-overlay-234513~ad-slot-banner-850429~ad-slot-incontent-424093&adfs=1905410824~3326913325~4181169988~791645197&sfv=1-0-45&ists=4&eri=1&sc=1&lrm=100&cookie=ID%3D1aa63f488cfc7121%3AT%3D1788016076%3ART%3D1788016076%3AS%3DALNI_MYIuXVTuwYNEntuOGJi4Vn4td9Dtw&gpic=UID%3D000014d158c3de31%3AT%3D1788016076%3ART%3D1788016076%3AS%3DALNI_MZ5AU25sggUzZN_hftxWqClbeGfQA&abxe=1&dt=1788016230914&lmt=1788016230&adxs=0%2C0%2C135%2C930&adys=88%2C88%2C148%2C208&biw=1200&bih=681&scr_x=18&scr_y=31&btvi=0%7C0%7C0%7C0&ucis=5%7C6%7C7%7C8&oid=2&u_his=2&u_h=982&u_w=1512&u_ah=870&u_aw=1512&u_cd=30&u_sd=2&u_tz=-420&dmc=16&bc=31&nvt=7&uach=WyJtYWNPUyIsIjI2LjUuMCIsImFybSIsIiIsIjE1MS4wLjc5MjIuMTc0IixudWxsLDAsbnVsbCwiNjQiLFtbIk5vdD1BP0JyYW5kIiwiOTkuMC4wLjAiXSxbIkdvb2dsZSBDaHJvbWUiLCIxNTEuMC43OTIyLjE3NCJdLFsiQ2hyb21pdW0iLCIxNTEuMC43OTIyLjE3NCJdXSwwXQ..&url=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&vis=1&psz=1240x0%7C1240x0%7C1240x100%7C300x263&msz=1240x0%7C1240x0%7C1240x100%7C300x250&fws=0%2C0%2C0%2C0&ohw=0%2C0%2C0%2C0&dlt=1788016225505&idt=5175&ppid=%7B2E369BC9-1764-4D33-B69B-C91764AD33C9%7D&prev_scp=pos%3Dexclusions%7CslotId%3Dad-slot-overlay-234513%26pos%3Doutofpage%7Cpos%3Dbanner%7Cpos%3Dincontent&cust_params=ed%3Dus%26sp%3DFootball%26pgn%3Deditdraftstrategy%26pgtype%3DeditDraftStrategy%26lang%3Den%26gm%3Dffl%26mnr%3Df%26swid%3D%257B2E369BC9-1764-4D33-B69B-C91764AD33C9%257D%26d_us_privacy%3D1YNY%26inskin_yes%3Dno%26prof%3Dl&adks=1412530906%2C947522974%2C1193583393%2C3563420069&frm=20&eo_id_str=ID%3De6fe385849c375f8%3AT%3D1788016076%3ART%3D1788016076%3AS%3DAA-AfjY8vfzAD_i8LVW1rQzSWKHh&pb_szs=~~970x250%7C728x90~300x250&pgls=CAk.",
+    "bodyLen": 174000,
+    "bodyPreview": "{\"/21783347309/espn.com/fantasy/football/editDraftStrategy\":[\"html\",0,null,null,0,0,0,1,0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,0,null,null,null,null,null,null,\"AOrYGsl8FqQ96tNpmX8n_DSihncM-gSGhQU3vTCalnvUr0kDqkFxHFXwybezebZkb1HHU-B8iWc\",\"CNKNucKPxpYDFcZCCAQdQPYFiw\",null,null,null,null,null,null,null,null,null,null,null,null,null,null,\"5\",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\",\"Advertisement\",\"3rd party ad content\",\"Continue reading\"]]}\n\n{\"/21783347309/espn.com/fanta"
+  },
+  {
+    "method": "GET",
+    "status": 204,
+    "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+    "bodyLen": 0,
+    "bodyPreview": "<<response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.>>"
+  },
+  {
+    "method": "GET",
+    "status": 204,
+    "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=1",
+    "bodyLen": 0,
+    "bodyPreview": "<<response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.>>"
+  },
+  {
+    "method": "GET",
+    "status": 204,
+    "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+    "bodyLen": 0,
+    "bodyPreview": "<<response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.>>"
+  },
+  {
+    "method": "POST",
+    "status": 200,
+    "url": "https://www.google.com/ccm/collect?rcb=12&frm=1&apvc=1&auid=1606872887.1788016079&tid=AW-817714641&en=page_view&dl=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&dr=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&scrsrc=www.googletagmanager.com&rnd=1132665837.1788016233&navt=n&npa=0&gtm=45be68q1v9100158892za200zd9100158892xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~118897920~118897930~119259606~120385422&tft=1788016232565&tfd=371&tids=AW-817714641&fmt=8",
+    "bodyLen": 0,
+    "bodyPreview": "<<response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.>>"
+  },
+  {
+    "method": "POST",
+    "status": 200,
+    "url": "https://www.google.com/rmkt/collect/817714641/?random=1788016232555&cv=11&fst=1788016232555&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be68q1v9100158892za200zd9100158892xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~118897920~118897930~119259606~120385422&u_w=1512&u_h=982&url=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&ref=https%3A%2F%2Ffantasy.espn.com%2Ffootball%2Feditdraftstrategy%3FleagueId%3D275797&rcb=12&frm=1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1606872887.1788016079&uaa=arm&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B151.0.7922.174%7CChromium%3B151.0.7922.174&uamb=0&uam=&uap=macOS&uapv=26.5.0&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+    "bodyLen": 0,
+    "bodyPreview": "<<response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.>>"
+  },
+  {
+    "method": "GET",
+    "status": 204,
+    "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=1",
+    "bodyLen": 0,
+    "bodyPreview": "<<response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.>>"
+  },
+  {
+    "method": "GET",
+    "status": 204,
+    "url": "https://presence.fantasy.espn.com/apis/v1/heartbeat?platform=espn-fantasy-web&platformVersion=96e7cdc122a61e6c778b4087703c10d123d0565d&location=other&attribute=game%3Affl",
+    "bodyLen": 0,
+    "bodyPreview": ""
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://lm-api-communication.fantasy.espn.com/apis/v3/communication/lastReadByMember?platform=espn-fantasy-web&platformVersion=96e7cdc122a61e6c778b4087703c10d123d0565d&view=chat_unreads",
+    "bodyLen": 672,
+    "bodyPreview": "{\"lastReadByGroup\":{\"341848429.3.2024\":{\"lastMessageDate\":1711983688804,\"lastReadByTopic\":{\"74190147-c6b7-3370-8d07-34607ec54d89\":{\"unread\":true},\"8eb0e3d2-4b62-38cb-b2df-2381cb1bbffd\":{\"unread\":true},\"c7e72ee1-7966-3cb1-9fd4-99e7aa864673\":{\"unread\":true},\"e9537918-a8b2-37b1-91d8-d56b3e6b38df\":{\"unread\":false}},\"unread\":true},\"1886395567.1.2026\":{\"lastMessageDate\":1787883951556,\"lastReadByTopic\":{\"e7884aa3-9c85-3ebb-a934-40448497b3a9\":{\"unread\":false}},\"unread\":false},\"1752048912.2.2026\":{\"lastMessageDate\":1787785429055,\"lastReadByTopic\":{\"82380129-b571-3204-923c-f7e460291212\":{\"unread\":true},"
+  },
+  {
+    "method": "GET",
+    "status": 204,
+    "url": "https://presence.fantasy.espn.com/apis/v1/heartbeat?platform=espn-fantasy-web&platformVersion=96e7cdc122a61e6c778b4087703c10d123d0565d&location=other&attribute=game%3Affl",
+    "bodyLen": 0,
+    "bodyPreview": ""
+  },
+  {
+    "method": "GET",
+    "status": 200,
+    "url": "https://lm-api-communication.fantasy.espn.com/apis/v3/communication/lastReadByMember?platform=espn-fantasy-web&platformVersion=96e7cdc122a61e6c778b4087703c10d123d0565d&view=chat_unreads",
+    "bodyLen": 672,
+    "bodyPreview": "{\"lastReadByGroup\":{\"341848429.3.2024\":{\"lastMessageDate\":1711983688804,\"lastReadByTopic\":{\"74190147-c6b7-3370-8d07-34607ec54d89\":{\"unread\":true},\"8eb0e3d2-4b62-38cb-b2df-2381cb1bbffd\":{\"unread\":true},\"c7e72ee1-7966-3cb1-9fd4-99e7aa864673\":{\"unread\":true},\"e9537918-a8b2-37b1-91d8-d56b3e6b38df\":{\"unread\":false}},\"unread\":true},\"1886395567.1.2026\":{\"lastMessageDate\":1787883951556,\"lastReadByTopic\":{\"e7884aa3-9c85-3ebb-a934-40448497b3a9\":{\"unread\":false}},\"unread\":false},\"1752048912.2.2026\":{\"lastMessageDate\":1787785429055,\"lastReadByTopic\":{\"82380129-b571-3204-923c-f7e460291212\":{\"unread\":true},"
+  }
+]

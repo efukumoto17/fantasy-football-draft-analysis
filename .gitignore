@@ -1,0 +1,7 @@
+# ESPN / MyDisney login session — NEVER commit (contains auth cookies)
+.espn-automation/profile/
+
+# OS / tooling junk
+.DS_Store
+*.output
+node_modules/

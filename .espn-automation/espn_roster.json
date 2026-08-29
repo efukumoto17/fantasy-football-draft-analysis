@@ -1,0 +1,352 @@
+[
+  {
+    "rank": 1,
+    "name": "Jahmyr Gibbs",
+    "team": "DET",
+    "pos": "RB",
+    "pid": "4429795"
+  },
+  {
+    "rank": 2,
+    "name": "Bijan Robinson",
+    "team": "ATL",
+    "pos": "RB",
+    "pid": "4430807"
+  },
+  {
+    "rank": 3,
+    "name": "Ja'Marr Chase",
+    "team": "CIN",
+    "pos": "WR",
+    "pid": "4362628"
+  },
+  {
+    "rank": 4,
+    "name": "Puka Nacua",
+    "team": "LAR",
+    "pos": "WR",
+    "pid": "4426515"
+  },
+  {
+    "rank": 5,
+    "name": "Jaxon Smith-Njigba",
+    "team": "SEA",
+    "pos": "WR",
+    "pid": "4430878"
+  },
+  {
+    "rank": 6,
+    "name": "Christian McCaffrey",
+    "team": "SF",
+    "pos": "RB",
+    "pid": "3117251"
+  },
+  {
+    "rank": 7,
+    "name": "Jonathan Taylor",
+    "team": "IND",
+    "pos": "RB",
+    "pid": "4242335"
+  },
+  {
+    "rank": 8,
+    "name": "Amon-Ra St. Brown",
+    "team": "DET",
+    "pos": "WR",
+    "pid": "4374302"
+  },
+  {
+    "rank": 9,
+    "name": "CeeDee Lamb",
+    "team": "DAL",
+    "pos": "WR",
+    "pid": "4241389"
+  },
+  {
+    "rank": 10,
+    "name": "Justin Jefferson",
+    "team": "MIN",
+    "pos": "WR",
+    "pid": "4262921"
+  },
+  {
+    "rank": 11,
+    "name": "Derrick Henry",
+    "team": "BAL",
+    "pos": "RB",
+    "pid": "3043078"
+  },
+  {
+    "rank": 12,
+    "name": "James Cook III",
+    "team": "BUF",
+    "pos": "RB",
+    "pid": "4379399"
+  },
+  {
+    "rank": 13,
+    "name": "De'Von Achane",
+    "team": "MIA",
+    "pos": "RB",
+    "pid": "4429160"
+  },
+  {
+    "rank": 14,
+    "name": "Drake London",
+    "team": "ATL",
+    "pos": "WR",
+    "pid": "4426502"
+  },
+  {
+    "rank": 15,
+    "name": "Saquon Barkley",
+    "team": "PHI",
+    "pos": "RB",
+    "pid": "3929630"
+  },
+  {
+    "rank": 16,
+    "name": "Ashton Jeanty",
+    "team": "LV",
+    "pos": "RB",
+    "pid": "4890973"
+  },
+  {
+    "rank": 17,
+    "name": "Jeremiyah Love",
+    "team": "ARI",
+    "pos": "RB",
+    "pid": "4870808"
+  },
+  {
+    "rank": 18,
+    "name": "Kenneth Walker III",
+    "team": "KC",
+    "pos": "RB",
+    "pid": "4567048"
+  },
+  {
+    "rank": 19,
+    "name": "Omarion Hampton",
+    "team": "LAC",
+    "pos": "RB",
+    "pid": "4685382"
+  },
+  {
+    "rank": 20,
+    "name": "Trey McBride",
+    "team": "ARI",
+    "pos": "TE",
+    "pid": "4361307"
+  },
+  {
+    "rank": 21,
+    "name": "Brock Bowers",
+    "team": "LV",
+    "pos": "TE",
+    "pid": "4432665"
+  },
+  {
+    "rank": 22,
+    "name": "Breece Hall",
+    "team": "NYJ",
+    "pos": "RB",
+    "pid": "4427366"
+  },
+  {
+    "rank": 23,
+    "name": "Chase Brown",
+    "team": "CIN",
+    "pos": "RB",
+    "pid": "4362238"
+  },
+  {
+    "rank": 24,
+    "name": "Rashee Rice",
+    "team": "KC",
+    "pos": "WR",
+    "pid": "4428331"
+  },
+  {
+    "rank": 25,
+    "name": "Nico Collins",
+    "team": "HOU",
+    "pos": "WR",
+    "pid": "4258173"
+  },
+  {
+    "rank": 26,
+    "name": "A.J. Brown",
+    "team": "NE",
+    "pos": "WR",
+    "pid": "4047646"
+  },
+  {
+    "rank": 27,
+    "name": "Malik Nabers",
+    "team": "NYG",
+    "pos": "WR",
+    "pid": "4595348"
+  },
+  {
+    "rank": 28,
+    "name": "George Pickens",
+    "team": "DAL",
+    "pos": "WR",
+    "pid": "4426354"
+  },
+  {
+    "rank": 29,
+    "name": "Chris Olave",
+    "team": "NO",
+    "pos": "WR",
+    "pid": "4361370"
+  },
+  {
+    "rank": 30,
+    "name": "Josh Jacobs",
+    "team": "GB",
+    "pos": "RB",
+    "pid": "4047365"
+  },
+  {
+    "rank": 31,
+    "name": "Davante Adams",
+    "team": "LAR",
+    "pos": "WR",
+    "pid": "16800"
+  },
+  {
+    "rank": 32,
+    "name": "Javonte Williams",
+    "team": "DAL",
+    "pos": "RB",
+    "pid": "4361579"
+  },
+  {
+    "rank": 33,
+    "name": "Emeka Egbuka",
+    "team": "TB",
+    "pos": "WR",
+    "pid": "4567750"
+  },
+  {
+    "rank": 34,
+    "name": "Tetairoa McMillan",
+    "team": "CAR",
+    "pos": "WR",
+    "pid": "4685472"
+  },
+  {
+    "rank": 35,
+    "name": "Zay Flowers",
+    "team": "BAL",
+    "pos": "WR",
+    "pid": "4429615"
+  },
+  {
+    "rank": 36,
+    "name": "Josh Allen",
+    "team": "BUF",
+    "pos": "QB",
+    "pid": "3918298"
+  },
+  {
+    "rank": 37,
+    "name": "Travis Etienne Jr.",
+    "team": "NO",
+    "pos": "RB",
+    "pid": "4239996"
+  },
+  {
+    "rank": 38,
+    "name": "Kyren Williams",
+    "team": "LAR",
+    "pos": "RB",
+    "pid": "4430737"
+  },
+  {
+    "rank": 39,
+    "name": "Quinshon Judkins",
+    "team": "CLE",
+    "pos": "RB",
+    "pid": "4685702"
+  },
+  {
+    "rank": 40,
+    "name": "Cam Skattebo",
+    "team": "NYG",
+    "pos": "RB",
+    "pid": "4696981"
+  },
+  {
+    "rank": 41,
+    "name": "Bucky Irving",
+    "team": "TB",
+    "pos": "RB",
+    "pid": "4596448"
+  },
+  {
+    "rank": 42,
+    "name": "Garrett Wilson",
+    "team": "NYJ",
+    "pos": "WR",
+    "pid": "4569618"
+  },
+  {
+    "rank": 43,
+    "name": "DeVonta Smith",
+    "team": "PHI",
+    "pos": "WR",
+    "pid": "4241478"
+  },
+  {
+    "rank": 44,
+    "name": "Rome Odunze",
+    "team": "CHI",
+    "pos": "WR",
+    "pid": "4431299"
+  },
+  {
+    "rank": 45,
+    "name": "Terry McLaurin",
+    "team": "WSH",
+    "pos": "WR",
+    "pid": "3121422"
+  },
+  {
+    "rank": 46,
+    "name": "Tee Higgins",
+    "team": "CIN",
+    "pos": "WR",
+    "pid": "4239993"
+  },
+  {
+    "rank": 47,
+    "name": "Ladd McConkey",
+    "team": "LAC",
+    "pos": "WR",
+    "pid": "4612826"
+  },
+  {
+    "rank": 48,
+    "name": "Jameson Williams",
+    "team": "DET",
+    "pos": "WR",
+    "pid": "4426388"
+  },
+  {
+    "rank": 49,
+    "name": "Colston Loveland",
+    "team": "CHI",
+    "pos": "TE",
+    "pid": "4723086"
+  },
+  {
+    "rank": 50,
+    "name": "Tyler Warren",
+    "team": "IND",
+    "pos": "TE",
+    "pid": "4431459"
+  }
+]

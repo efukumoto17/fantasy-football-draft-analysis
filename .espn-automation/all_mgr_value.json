@@ -1,0 +1,82 @@
+[
+  {
+    "m": "Jeffrey Chan",
+    "early": 257,
+    "r3": -55,
+    "mid": 537,
+    "late": 500,
+    "total": 1238
+  },
+  {
+    "m": "Prashanth Balaraman",
+    "early": 229,
+    "r3": 103,
+    "mid": 213,
+    "late": 609,
+    "total": 1154
+  },
+  {
+    "m": "Darwin Hu",
+    "early": 158,
+    "r3": 173,
+    "mid": 669,
+    "late": 64,
+    "total": 1064
+  },
+  {
+    "m": "Ikaika Stone",
+    "early": 69,
+    "r3": 1,
+    "mid": -1,
+    "late": -89,
+    "total": -19
+  },
+  {
+    "m": "Evan Fukumoto",
+    "early": 363,
+    "r3": -8,
+    "mid": -787,
+    "late": 343,
+    "total": -89
+  },
+  {
+    "m": "Chase Mizoguchi",
+    "early": -273,
+    "r3": -23,
+    "mid": 210,
+    "late": -404,
+    "total": -490
+  },
+  {
+    "m": "Christopher Pascual",
+    "early": 222,
+    "r3": -224,
+    "mid": 263,
+    "late": -790,
+    "total": -529
+  },
+  {
+    "m": "Harvey Wang",
+    "early": -296,
+    "r3": 3,
+    "mid": -274,
+    "late": -83,
+    "total": -651
+  },
+  {
+    "m": "Rollin Odama-Wong",
+    "early": 94,
+    "r3": -201,
+    "mid": -598,
+    "late": -11,
+    "total": -716
+  },
+  {
+    "m": "Justin Ho",
+    "early": -823,
+    "r3": 231,
+    "mid": -232,
+    "late": -139,
+    "total": -962
+  }
+]
