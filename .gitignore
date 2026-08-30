@@ -13,3 +13,4 @@ node_modules/
 .espn-automation/attachment.json
 .espn-automation/bench.json
 .espn-automation/trade_points.json
+.espn-automation/luck.json

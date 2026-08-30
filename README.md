@@ -18,6 +18,8 @@ Every week of the last four seasons: rosters with per-player actual **and** proj
 | `trade-points-detail.csv` | 254 | Per-player trade returns: weeks held on the new roster and points produced |
 | `manager-player-attachment.csv` | 1,597 | Every manager–player pair: weeks, seasons, stints, ownership share, times drafted |
 | `bench-points-by-week.csv` | 680 | Per team-week: actual vs. optimal lineup points, points left on bench, whether it cost the game |
+| `luck-adjusted-standings.csv` | 40 | Per manager-season: record, all-play, expected wins, luck, actual vs. deserved seed |
+| `rivalry-head-to-head.csv` | 45 | Every manager pair: meetings, record, points, average margin |
 
 Weeks are ESPN `scoringPeriodId` (1–17). `Started=1` means the player was in the scoring lineup (bench/IR excluded).
 
@@ -47,6 +49,8 @@ Everything that looks at what already happened.
 | `analysis/trade-points-analysis.md` | Who gained points by trading — net starter points per manager, per year and overall |
 | `analysis/player-attachment-analysis.md` | Which managers keep coming back to the same players — weeks held, ownership share, repeat drafts |
 | `analysis/bench-points-analysis.md` | Points left on the bench — optimal vs. actual lineups, overall, per season, and biggest single weeks |
+| `analysis/luck-adjusted-standings.md` | All-play records and expected wins — who the schedule helped and who it robbed |
+| `analysis/rivalry-matrix.md` | All-time head-to-head between every pair of managers, blowouts, and playoff meetings |
 
 ## 2026 draft prep (repo root)
 Forward-looking, kept out of `analysis/` because it is a projection rather than a record.
@@ -88,6 +92,8 @@ node .espn-automation/build_trade_report.js
 node .espn-automation/analyze_trade_points.js
 node .espn-automation/analyze_attachment.js
 node .espn-automation/analyze_bench.js
+node .espn-automation/analyze_luck.js
+node .espn-automation/analyze_rivalry.js
 ```
 
 ### Running the scripts
