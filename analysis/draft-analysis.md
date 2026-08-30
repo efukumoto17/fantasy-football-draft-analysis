@@ -1,6 +1,6 @@
 # League Draft Behavior Analysis (2022–2025)
 
-League ID 275797 · 10 managers · based on `draft-history-combined.csv` (660 picks over 4 drafts).
+League ID 275797 · 10 managers · based on `../draft-history-combined.csv` (660 picks over 4 drafts).
 
 > **Format note — read this first.** The league changed format partway through:
 > - **2022–2023: IDP** (Individual Defensive Players) — **18 rounds**, defenders (DT/DE/LB/CB/S) drafted in the back half.
@@ -99,7 +99,7 @@ Each round = 10 picks (one per manager). Values are the **average number of play
 
 ## 3. Manager-by-manager draft strategy
 
-Same 10 people every year (they rename teams annually — mapping in `draft-history-team-managers.csv`). Notes cover QB timing, TE approach, RB/WR lean, and how each opens the draft.
+Same 10 people every year (they rename teams annually — mapping in `../draft-history-team-managers.csv`). Notes cover QB timing, TE approach, RB/WR lean, and how each opens the draft.
 
 ### Rollin Odama-Wong — *The QB Anchor*
 - **First-round QB in all 4 years** (Josh Allen ×2, Mahomes, Lamar Jackson). The only manager who consistently pays elite-QB prices.
@@ -156,6 +156,6 @@ Same 10 people every year (they rename teams annually — mapping in `draft-hist
 ---
 
 ## Files
-- `draft-history-combined.csv` — every pick, all 4 years (Year, Round, Round Pick, Overall Pick, Player, NFL Team, Position, Manager, Team Name).
-- `draft-history-2022.csv` … `draft-history-2025.csv` — one file per year.
-- `draft-history-team-managers.csv` — team-name → manager mapping per year.
+- `../draft-history-combined.csv` — every pick, all 4 years (Year, Round, Round Pick, Overall Pick, Player, NFL Team, Position, Manager, Team Name).
+- `../draft-history-2022.csv` … `../draft-history-2025.csv` — one file per year.
+- `../draft-history-team-managers.csv` — team-name → manager mapping per year.

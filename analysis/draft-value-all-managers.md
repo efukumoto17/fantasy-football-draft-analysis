@@ -103,6 +103,6 @@ Last overall, almost entirely due to the **worst early rounds in the league (−
 ---
 
 ### Files
-- `.espn-automation/all_mgr_value.json` — every manager's phase-by-phase value.
-- `.espn-automation/season_points.json` — actual season points, all players, 2022–2025.
-- `draft-history-combined.csv` — full pick history · `draft-pick-performance.md` — Evan deep-dive.
+- `../.espn-automation/all_mgr_value.json` — every manager's phase-by-phase value.
+- `../.espn-automation/season_points.json` — actual season points, all players, 2022–2025.
+- `../draft-history-combined.csv` — full pick history · `draft-pick-performance.md` — Evan deep-dive.

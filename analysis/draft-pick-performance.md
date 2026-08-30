@@ -108,6 +108,6 @@ Notice the steals skew **young/ascending** (Love, Reed, Flowers, Williams, Pittm
 ---
 
 ### Files
-- `.espn-automation/season_points.json` — every player's actual season fantasy total (league scoring), 2022–2025.
-- `.espn-automation/evan_picks_pts.json` — all your picks with points + positional finish.
-- `draft-history-combined.csv` — full pick history.
+- `../.espn-automation/season_points.json` — every player's actual season fantasy total (league scoring), 2022–2025.
+- `../.espn-automation/evan_picks_pts.json` — all your picks with points + positional finish.
+- `../draft-history-combined.csv` — full pick history.

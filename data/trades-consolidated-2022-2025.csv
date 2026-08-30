@@ -1,0 +1,255 @@
+Year,Week,Date,TradeKey,Source,Verification,PlayerId,Player,Position,FromManager,FromTeam,ToManager,ToTeam
+2022,2,between wk1 and wk2,derived:5-6-w2,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4241389,CeeDee Lamb,WR,Justin Ho,Chute Mi,Rollin Odama-Wong,2020+2022 Champion
+2022,2,between wk1 and wk2,derived:5-6-w2,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4360294,Antonio Gibson,RB,Rollin Odama-Wong,2020+2022 Champion,Justin Ho,Chute Mi
+2022,3,2022-09-22,espn:ac5b9a2d,ESPN transaction log,CONFIRMED,4360939,Rashod Bateman,WR,Evan Fukumoto,I hate Rollin,Rollin Odama-Wong,2020+2022 Champion
+2022,3,2022-09-22,espn:ac5b9a2d,ESPN transaction log,CONFIRMED,3046779,Jared Goff,QB,Evan Fukumoto,I hate Rollin,Rollin Odama-Wong,2020+2022 Champion
+2022,3,2022-09-22,espn:ac5b9a2d,ESPN transaction log,CONFIRMED,16760,Jimmy Garoppolo,QB,Rollin Odama-Wong,2020+2022 Champion,Evan Fukumoto,I hate Rollin
+2022,3,2022-09-22,espn:ac5b9a2d,ESPN transaction log,CONFLICT,2573079,Carson Wentz,QB,Rollin Odama-Wong,2020+2022 Champion,Evan Fukumoto,I hate Rollin
+2022,4,2022-09-29,espn:e5583601,ESPN transaction log,CONFIRMED,3128390,Allen Lazard,WR,Evan Fukumoto,I hate Rollin,Ikaika Stone,Vietokwuegbunam Flashback
+2022,4,2022-09-29,espn:e5583601,ESPN transaction log,CONFIRMED,3042519,Aaron Jones,RB,Evan Fukumoto,I hate Rollin,Ikaika Stone,Vietokwuegbunam Flashback
+2022,4,2022-09-29,espn:e5583601,ESPN transaction log,CONFIRMED,2573079,Carson Wentz,QB,Evan Fukumoto,I hate Rollin,Ikaika Stone,Vietokwuegbunam Flashback
+2022,4,2022-09-29,espn:e5583601,ESPN transaction log,CONFIRMED,3917315,Kyler Murray,QB,Ikaika Stone,Vietokwuegbunam Flashback,Evan Fukumoto,I hate Rollin
+2022,4,2022-09-29,espn:e5583601,ESPN transaction log,CONFIRMED,3120348,JuJu Smith-Schuster,WR,Ikaika Stone,Vietokwuegbunam Flashback,Evan Fukumoto,I hate Rollin
+2022,4,2022-09-29,espn:effba552,ESPN transaction log,CONFIRMED,3116365,Mark Andrews,TE,Justin Ho,Chute Mi,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT
+2022,4,2022-09-29,espn:effba552,ESPN transaction log,CONFIRMED,4241985,J.K. Dobbins,RB,Justin Ho,Chute Mi,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT
+2022,4,2022-09-29,espn:effba552,ESPN transaction log,CONFIRMED,4360248,Kyle Pitts,TE,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT,Justin Ho,Chute Mi
+2022,4,2022-09-29,espn:effba552,ESPN transaction log,CONFIRMED,3117251,Christian McCaffrey,RB,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT,Justin Ho,Chute Mi
+2022,4,between wk3 and wk4,derived:1-3-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3115364,Leonard Fournette,RB,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT,Ikaika Stone,Vietokwuegbunam Flashback
+2022,4,between wk3 and wk4,derived:1-3-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3116593,Dalvin Cook,RB,Ikaika Stone,Vietokwuegbunam Flashback,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT
+2022,4,between wk3 and wk4,derived:1-3-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3139925,Rashaad Penny,RB,Ikaika Stone,Vietokwuegbunam Flashback,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT
+2022,4,between wk3 and wk4,derived:3-8-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,11237,Matt Ryan,QB,Ikaika Stone,Vietokwuegbunam Flashback,Prashanth Balaraman,I Chase Young Kids
+2022,4,between wk3 and wk4,derived:3-8-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,16737,Mike Evans,WR,Ikaika Stone,Vietokwuegbunam Flashback,Prashanth Balaraman,I Chase Young Kids
+2022,4,between wk3 and wk4,derived:3-8-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4242214,Clyde Edwards-Helaire,RB,Ikaika Stone,Vietokwuegbunam Flashback,Prashanth Balaraman,I Chase Young Kids
+2022,4,between wk3 and wk4,derived:3-8-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4047646,A.J. Brown,WR,Prashanth Balaraman,I Chase Young Kids,Ikaika Stone,Vietokwuegbunam Flashback
+2022,4,between wk3 and wk4,derived:3-8-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,2573401,Tyler Higbee,TE,Prashanth Balaraman,I Chase Young Kids,Ikaika Stone,Vietokwuegbunam Flashback
+2022,6,between wk5 and wk6,derived:3-5-w6,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,15795,DeAndre Hopkins,WR,Justin Ho,Chute Mi,Ikaika Stone,Vietokwuegbunam Flashback
+2022,6,between wk5 and wk6,derived:3-5-w6,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,2576434,Melvin Gordon III,RB,Ikaika Stone,Vietokwuegbunam Flashback,Justin Ho,Chute Mi
+2022,6,between wk5 and wk6,derived:3-5-w6,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,16728,Teddy Bridgewater,QB,Ikaika Stone,Vietokwuegbunam Flashback,Justin Ho,Chute Mi
+2022,7,between wk6 and wk7,derived:6-7-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4567048,Kenneth Walker III,RB,Rollin Odama-Wong,2020+2022 Champion,Christopher Pascual,Season Is Over
+2022,7,between wk6 and wk7,derived:6-7-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,2330,Tom Brady,QB,Christopher Pascual,Season Is Over,Rollin Odama-Wong,2020+2022 Champion
+2022,7,between wk6 and wk7,derived:6-7-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4239996,Travis Etienne Jr.,RB,Christopher Pascual,Season Is Over,Rollin Odama-Wong,2020+2022 Champion
+2022,7,between wk6 and wk7,derived:6-7-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3046779,Jared Goff,QB,Rollin Odama-Wong,2020+2022 Champion,Christopher Pascual,Season Is Over
+2022,7,between wk6 and wk7,derived:2-3-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,2969939,Jameis Winston,QB,Harvey Wang,Tweedle Dee-bo,Ikaika Stone,Vietokwuegbunam Flashback
+2022,7,between wk6 and wk7,derived:2-3-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4241464,Mac Jones,QB,Ikaika Stone,Vietokwuegbunam Flashback,Harvey Wang,Tweedle Dee-bo
+2022,8,2022-10-25,espn:19582fcb,ESPN transaction log,CONFIRMED,3116593,Dalvin Cook,RB,Justin Ho,Chute Mi,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT
+2022,8,2022-10-25,espn:19582fcb,ESPN transaction log,CONFIRMED,3059915,Kareem Hunt,RB,Justin Ho,Chute Mi,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT
+2022,8,2022-10-25,espn:19582fcb,ESPN transaction log,CONFIRMED,4048244,Alexander Mattison,RB,Justin Ho,Chute Mi,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT
+2022,8,2022-10-25,espn:19582fcb,ESPN transaction log,CONFLICT,2576434,Melvin Gordon III,RB,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT,Justin Ho,Chute Mi
+2022,8,2022-10-25,espn:19582fcb,ESPN transaction log,CONFLICT,2577327,Tyler Lockett,WR,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT,Justin Ho,Chute Mi
+2022,8,2022-10-25,espn:19582fcb,ESPN transaction log,CONFLICT,4360294,Antonio Gibson,RB,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT,Justin Ho,Chute Mi
+2022,8,between wk7 and wk8,derived:13-5-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3051392,Ezekiel Elliott,RB,Justin Ho,Chute Mi,Darwin Hu,. Tweedle Dame
+2022,8,between wk7 and wk8,derived:13-5-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3915511,Joe Burrow,QB,Justin Ho,Chute Mi,Darwin Hu,. Tweedle Dame
+2022,8,between wk7 and wk8,derived:13-5-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4360294,Antonio Gibson,RB,Justin Ho,Chute Mi,Darwin Hu,. Tweedle Dame
+2022,8,between wk7 and wk8,derived:13-5-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4360248,Kyle Pitts Sr.,TE,Justin Ho,Chute Mi,Darwin Hu,. Tweedle Dame
+2022,8,between wk7 and wk8,derived:13-5-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4038941,Justin Herbert,QB,Darwin Hu,. Tweedle Dame,Justin Ho,Chute Mi
+2022,8,between wk7 and wk8,derived:13-5-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3128429,Courtland Sutton,WR,Darwin Hu,. Tweedle Dame,Justin Ho,Chute Mi
+2022,8,between wk7 and wk8,derived:13-5-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4047650,DK Metcalf,WR,Darwin Hu,. Tweedle Dame,Justin Ho,Chute Mi
+2022,8,between wk7 and wk8,derived:13-5-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4360238,Dameon Pierce,RB,Darwin Hu,. Tweedle Dame,Justin Ho,Chute Mi
+2022,8,between wk7 and wk8,derived:13-5-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4361411,Pat Freiermuth,TE,Darwin Hu,. Tweedle Dame,Justin Ho,Chute Mi
+2022,8,between wk7 and wk8,derived:13-3-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,14876,Ryan Tannehill,QB,Darwin Hu,. Tweedle Dame,Ikaika Stone,Vietokwuegbunam Flashback
+2022,8,between wk7 and wk8,derived:13-3-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,2969939,Jameis Winston,QB,Ikaika Stone,Vietokwuegbunam Flashback,Darwin Hu,. Tweedle Dame
+2022,9,2022-11-04,espn:ee85d275,ESPN transaction log,CONFIRMED,16760,Jimmy Garoppolo,QB,Evan Fukumoto,I hate Rollin,Darwin Hu,. Tweedle Dame
+2022,9,2022-11-04,espn:ee85d275,ESPN transaction log,DROPPED_AFTER,2976316,Michael Thomas,WR,Darwin Hu,. Tweedle Dame,Evan Fukumoto,I hate Rollin
+2022,9,between wk8 and wk9,derived:7-8-w9,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4361409,Jahan Dotson,WR,Christopher Pascual,Season Is Over,Prashanth Balaraman,I Chase Young Kids
+2022,9,between wk8 and wk9,derived:7-8-w9,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,14012,Andy Dalton,QB,Christopher Pascual,Season Is Over,Prashanth Balaraman,I Chase Young Kids
+2022,9,between wk8 and wk9,derived:7-8-w9,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4258195,Donovan Peoples-Jones,WR,Prashanth Balaraman,I Chase Young Kids,Christopher Pascual,Season Is Over
+2022,10,2022-11-11,espn:99bd3539,ESPN transaction log,CONFIRMED,4426354,George Pickens,WR,Evan Fukumoto,I hate Rollin,Ikaika Stone,Vietokwuegbunam Flashback
+2022,10,2022-11-11,espn:99bd3539,ESPN transaction log,CONFIRMED,15920,Latavius Murray,RB,Evan Fukumoto,I hate Rollin,Ikaika Stone,Vietokwuegbunam Flashback
+2022,10,2022-11-11,espn:99bd3539,ESPN transaction log,CONFIRMED,2578570,Jacoby Brissett,QB,Evan Fukumoto,I hate Rollin,Ikaika Stone,Vietokwuegbunam Flashback
+2022,10,2022-11-11,espn:99bd3539,ESPN transaction log,CONFIRMED,14876,Ryan Tannehill,QB,Ikaika Stone,Vietokwuegbunam Flashback,Evan Fukumoto,I hate Rollin
+2022,10,2022-11-11,espn:99bd3539,ESPN transaction log,CONFIRMED,3045144,Tyler Boyd,WR,Ikaika Stone,Vietokwuegbunam Flashback,Evan Fukumoto,I hate Rollin
+2022,10,between wk9 and wk10,derived:3-7-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4046692,Chase Claypool,WR,Ikaika Stone,Vietokwuegbunam Flashback,Christopher Pascual,Season Is Over
+2022,10,between wk9 and wk10,derived:3-7-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3043078,Derrick Henry,RB,Christopher Pascual,Season Is Over,Ikaika Stone,Vietokwuegbunam Flashback
+2022,10,between wk9 and wk10,derived:3-7-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4241478,DeVonta Smith,WR,Christopher Pascual,Season Is Over,Ikaika Stone,Vietokwuegbunam Flashback
+2022,10,between wk9 and wk10,derived:3-7-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3042519,Aaron Jones Sr.,RB,Ikaika Stone,Vietokwuegbunam Flashback,Christopher Pascual,Season Is Over
+2022,10,between wk9 and wk10,derived:3-7-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4047646,A.J. Brown,WR,Ikaika Stone,Vietokwuegbunam Flashback,Christopher Pascual,Season Is Over
+2022,10,between wk9 and wk10,derived:3-7-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4697815,Rachaad White,RB,Christopher Pascual,Season Is Over,Ikaika Stone,Vietokwuegbunam Flashback
+2022,10,between wk9 and wk10,derived:14-2-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,16757,Derek Carr,QB,Jeffrey Chan,Kick or die Kick,Harvey Wang,Tweedle Dee-bo
+2022,10,between wk9 and wk10,derived:14-2-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4241457,Najee Harris,RB,Harvey Wang,Tweedle Dee-bo,Jeffrey Chan,Kick or die Kick
+2022,11,between wk10 and wk11,derived:2-7-w11,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3042519,Aaron Jones Sr.,RB,Christopher Pascual,Season Is Over,Harvey Wang,Tweedle Dee-bo
+2022,11,between wk10 and wk11,derived:2-7-w11,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4569173,Rhamondre Stevenson,RB,Harvey Wang,Tweedle Dee-bo,Christopher Pascual,Season Is Over
+2022,11,between wk10 and wk11,derived:2-7-w11,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4258195,Donovan Peoples-Jones,WR,Christopher Pascual,Season Is Over,Harvey Wang,Tweedle Dee-bo
+2022,12,2022-11-23,espn:5c73f7a2,ESPN transaction log,CONFIRMED,14876,Ryan Tannehill,QB,Evan Fukumoto,I hate Rollin,Justin Ho,Chute Mi
+2022,12,2022-11-23,espn:5c73f7a2,ESPN transaction log,CONFIRMED,3054850,Alvin Kamara,RB,Evan Fukumoto,I hate Rollin,Justin Ho,Chute Mi
+2022,12,2022-11-23,espn:5c73f7a2,ESPN transaction log,CONFIRMED,3917315,Kyler Murray,QB,Evan Fukumoto,I hate Rollin,Justin Ho,Chute Mi
+2022,12,2022-11-23,espn:5c73f7a2,ESPN transaction log,CONFIRMED,4047650,DK Metcalf,WR,Justin Ho,Chute Mi,Evan Fukumoto,I hate Rollin
+2022,12,2022-11-23,espn:5c73f7a2,ESPN transaction log,CONFIRMED,4038941,Justin Herbert,QB,Justin Ho,Chute Mi,Evan Fukumoto,I hate Rollin
+2022,14,2022-12-09,espn:16ccd94c,ESPN transaction log,CONFLICT,4241464,Mac Jones,QB,Evan Fukumoto,I hate Rollin,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT
+2022,14,2022-12-09,espn:16ccd94c,ESPN transaction log,CONFLICT,3121427,Curtis Samuel,WR,Evan Fukumoto,I hate Rollin,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT
+2022,14,2022-12-09,espn:16ccd94c,ESPN transaction log,CONFLICT,4242546,Davis Mills,QB,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT,Evan Fukumoto,I hate Rollin
+2022,14,2022-12-09,espn:16ccd94c,ESPN transaction log,CONFLICT,4372485,Rondale Moore,WR,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT,Evan Fukumoto,I hate Rollin
+2022,14,between wk13 and wk14,derived:5-8-w14,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,14876,Ryan Tannehill,QB,Justin Ho,Chute Mi,Prashanth Balaraman,I Chase Young Kids
+2022,14,between wk13 and wk14,derived:5-8-w14,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4361529,Isiah Pacheco,RB,Prashanth Balaraman,I Chase Young Kids,Justin Ho,Chute Mi
+2022,15,2022-12-15,espn:050a8b06,ESPN transaction log,DROPPED_AFTER,4242546,Davis Mills,QB,Evan Fukumoto,I hate Rollin,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT
+2022,15,2022-12-15,espn:050a8b06,ESPN transaction log,DROPPED_AFTER,4372485,Rondale Moore,WR,Evan Fukumoto,I hate Rollin,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT
+2022,15,2022-12-15,espn:050a8b06,ESPN transaction log,CONFIRMED,4241464,Mac Jones,QB,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT,Evan Fukumoto,I hate Rollin
+2022,15,2022-12-15,espn:050a8b06,ESPN transaction log,CONFIRMED,3121427,Curtis Samuel,WR,Chase Mizoguchi,IF I DON'T WIN THEN I QUIT,Evan Fukumoto,I hate Rollin
+2022,15,between wk14 and wk15,derived:5-8-w15,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,14876,Ryan Tannehill,QB,Prashanth Balaraman,I Chase Young Kids,Justin Ho,Chute Mi
+2022,15,between wk14 and wk15,derived:5-8-w15,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4361529,Isiah Pacheco,RB,Justin Ho,Chute Mi,Prashanth Balaraman,I Chase Young Kids
+2023,2,2023-09-14,espn:e74f3af5,ESPN transaction log,CONFIRMED,4036378,Jordan Love,QB,Evan Fukumoto,Little munchkin,Justin Ho,1-800-273-8255 @ 0:37-041
+2023,2,2023-09-14,espn:e74f3af5,ESPN transaction log,CONFIRMED,4241474,Brian Robinson Jr.,RB,Evan Fukumoto,Little munchkin,Justin Ho,1-800-273-8255 @ 0:37-041
+2023,2,2023-09-14,espn:e74f3af5,ESPN transaction log,CONFIRMED,16760,Jimmy Garoppolo,QB,Justin Ho,1-800-273-8255 @ 0:37-041,Evan Fukumoto,Little munchkin
+2023,2,2023-09-14,espn:e74f3af5,ESPN transaction log,CONFIRMED,4048244,Alexander Mattison,RB,Justin Ho,1-800-273-8255 @ 0:37-041,Evan Fukumoto,Little munchkin
+2023,3,between wk2 and wk3,derived:2-5-w3,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4241389,CeeDee Lamb,WR,Justin Ho,1-800-273-8255 @ 0:37-041,Harvey Wang,CeeDeez Nuts In Ur Mout
+2023,3,between wk2 and wk3,derived:2-5-w3,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3116593,Dalvin Cook,RB,Justin Ho,1-800-273-8255 @ 0:37-041,Harvey Wang,CeeDeez Nuts In Ur Mout
+2023,3,between wk2 and wk3,derived:2-5-w3,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4569618,Garrett Wilson,WR,Harvey Wang,CeeDeez Nuts In Ur Mout,Justin Ho,1-800-273-8255 @ 0:37-041
+2023,3,between wk2 and wk3,derived:2-5-w3,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4361579,Javonte Williams,RB,Harvey Wang,CeeDeez Nuts In Ur Mout,Justin Ho,1-800-273-8255 @ 0:37-041
+2023,4,between wk3 and wk4,derived:1-2-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4361741,Brock Purdy,QB,Chase Mizoguchi,I WANT TO KILL MYSELF,Harvey Wang,CeeDeez Nuts In Ur Mout
+2023,4,between wk3 and wk4,derived:1-2-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3917792,Daniel Jones,QB,Harvey Wang,CeeDeez Nuts In Ur Mout,Chase Mizoguchi,I WANT TO KILL MYSELF
+2023,4,between wk3 and wk4,derived:1-2-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3916433,Jakobi Meyers,WR,Harvey Wang,CeeDeez Nuts In Ur Mout,Chase Mizoguchi,I WANT TO KILL MYSELF
+2023,4,between wk3 and wk4,derived:13-8-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3040151,George Kittle,TE,Darwin Hu,1ST TEAM ALL GLAZER,Prashanth Balaraman,Damardiac Arrest
+2023,4,between wk3 and wk4,derived:13-8-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,2576925,Darren Waller,TE,Prashanth Balaraman,Damardiac Arrest,Darwin Hu,1ST TEAM ALL GLAZER
+2023,6,between wk5 and wk6,derived:2-3-w6,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,2577417,Dak Prescott,QB,Ikaika Stone,Vietokwuegbunam Flashback,Harvey Wang,CeeDeez Nuts In Ur Mout
+2023,6,between wk5 and wk6,derived:2-3-w6,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4035676,Zack Moss,RB,Ikaika Stone,Vietokwuegbunam Flashback,Harvey Wang,CeeDeez Nuts In Ur Mout
+2023,6,between wk5 and wk6,derived:2-3-w6,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3915511,Joe Burrow,QB,Harvey Wang,CeeDeez Nuts In Ur Mout,Ikaika Stone,Vietokwuegbunam Flashback
+2023,7,between wk6 and wk7,derived:1-5-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4362628,Ja'Marr Chase,WR,Justin Ho,1-800-273-8255 @ 0:37-041,Chase Mizoguchi,I WANT TO KILL MYSELF
+2023,7,between wk6 and wk7,derived:1-5-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4047365,Josh Jacobs,RB,Chase Mizoguchi,I WANT TO KILL MYSELF,Justin Ho,1-800-273-8255 @ 0:37-041
+2023,7,between wk6 and wk7,derived:1-5-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3925357,Calvin Ridley,WR,Chase Mizoguchi,I WANT TO KILL MYSELF,Justin Ho,1-800-273-8255 @ 0:37-041
+2023,7,between wk6 and wk7,derived:1-5-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,14880,Kirk Cousins,QB,Chase Mizoguchi,I WANT TO KILL MYSELF,Justin Ho,1-800-273-8255 @ 0:37-041
+2023,7,between wk6 and wk7,derived:1-5-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3051876,Evan Engram,TE,Chase Mizoguchi,I WANT TO KILL MYSELF,Justin Ho,1-800-273-8255 @ 0:37-041
+2023,7,between wk6 and wk7,derived:1-5-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4241474,Brian Robinson Jr.,RB,Justin Ho,1-800-273-8255 @ 0:37-041,Chase Mizoguchi,I WANT TO KILL MYSELF
+2023,7,between wk6 and wk7,derived:1-5-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4430027,Sam LaPorta,TE,Justin Ho,1-800-273-8255 @ 0:37-041,Chase Mizoguchi,I WANT TO KILL MYSELF
+2023,7,between wk6 and wk7,derived:13-6-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,15795,DeAndre Hopkins,WR,Rollin Odama-Wong,2020+2022+2023 Champion,Darwin Hu,1ST TEAM ALL GLAZER
+2023,7,between wk6 and wk7,derived:13-6-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,-16021,Eagles D/ST,D/ST,Rollin Odama-Wong,2020+2022+2023 Champion,Darwin Hu,1ST TEAM ALL GLAZER
+2023,7,between wk6 and wk7,derived:13-6-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3124005,Zaire Franklin,LB,Rollin Odama-Wong,2020+2022+2023 Champion,Darwin Hu,1ST TEAM ALL GLAZER
+2023,7,between wk6 and wk7,derived:13-6-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3915416,DJ Moore,WR,Darwin Hu,1ST TEAM ALL GLAZER,Rollin Odama-Wong,2020+2022+2023 Champion
+2023,7,between wk6 and wk7,derived:13-6-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4429205,Jordan Addison,WR,Darwin Hu,1ST TEAM ALL GLAZER,Rollin Odama-Wong,2020+2022+2023 Champion
+2023,7,between wk6 and wk7,derived:13-6-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4426385,Zach Charbonnet,RB,Darwin Hu,1ST TEAM ALL GLAZER,Rollin Odama-Wong,2020+2022+2023 Champion
+2023,7,between wk6 and wk7,derived:13-6-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4430737,Kyren Williams,RB,Rollin Odama-Wong,2020+2022+2023 Champion,Darwin Hu,1ST TEAM ALL GLAZER
+2023,7,between wk6 and wk7,derived:13-6-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,-16008,Lions D/ST,D/ST,Darwin Hu,1ST TEAM ALL GLAZER,Rollin Odama-Wong,2020+2022+2023 Champion
+2023,8,between wk7 and wk8,derived:13-6-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4239993,Tee Higgins,WR,Rollin Odama-Wong,2020+2022+2023 Champion,Darwin Hu,1ST TEAM ALL GLAZER
+2023,8,between wk7 and wk8,derived:13-6-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4039359,Darrell Henderson Jr.,RB,Darwin Hu,1ST TEAM ALL GLAZER,Rollin Odama-Wong,2020+2022+2023 Champion
+2023,9,2023-11-06,espn:942240ed,ESPN transaction log,CONFIRMED,3046779,Jared Goff,QB,Jeffrey Chan,Kick or die Kick,Chase Mizoguchi,I WANT TO KILL MYSELF
+2023,9,2023-11-06,espn:942240ed,ESPN transaction log,CONFIRMED,12483,Matthew Stafford,QB,Chase Mizoguchi,I WANT TO KILL MYSELF,Jeffrey Chan,Kick or die Kick
+2023,10,2023-11-09,espn:20fa0b16,ESPN transaction log,CONFIRMED,3918298,Josh Allen,QB,Rollin Odama-Wong,2020+2022+2023 Champion,Ikaika Stone,Vietokwuegbunam Flashback
+2023,10,2023-11-09,espn:20fa0b16,ESPN transaction log,CONFIRMED,4038524,Gardner Minshew,QB,Rollin Odama-Wong,2020+2022+2023 Champion,Ikaika Stone,Vietokwuegbunam Flashback
+2023,10,2023-11-09,espn:20fa0b16,ESPN transaction log,CONFIRMED,4372016,Jaylen Waddle,WR,Ikaika Stone,Vietokwuegbunam Flashback,Rollin Odama-Wong,2020+2022+2023 Champion
+2023,10,2023-11-09,espn:20fa0b16,ESPN transaction log,CONFLICT,4240703,Kenny Pickett,QB,Ikaika Stone,Vietokwuegbunam Flashback,Rollin Odama-Wong,2020+2022+2023 Champion
+2023,10,2023-11-09,espn:20fa0b16,ESPN transaction log,CONFLICT,3139477,Patrick Mahomes,QB,Ikaika Stone,Vietokwuegbunam Flashback,Rollin Odama-Wong,2020+2022+2023 Champion
+2023,10,2023-11-09,espn:f90f1d51,ESPN transaction log,CONFIRMED,3139477,Patrick Mahomes,QB,Rollin Odama-Wong,2020+2022+2023 Champion,Darwin Hu,1ST TEAM ALL GLAZER
+2023,10,2023-11-09,espn:f90f1d51,ESPN transaction log,CONFIRMED,4240703,Kenny Pickett,QB,Rollin Odama-Wong,2020+2022+2023 Champion,Darwin Hu,1ST TEAM ALL GLAZER
+2023,10,2023-11-09,espn:f90f1d51,ESPN transaction log,CONFIRMED,4360310,Trevor Lawrence,QB,Darwin Hu,1ST TEAM ALL GLAZER,Rollin Odama-Wong,2020+2022+2023 Champion
+2023,10,2023-11-09,espn:f90f1d51,ESPN transaction log,CONFIRMED,4569173,Rhamondre Stevenson,RB,Darwin Hu,1ST TEAM ALL GLAZER,Rollin Odama-Wong,2020+2022+2023 Champion
+2023,10,2023-11-09,espn:78a4ee54,ESPN transaction log,CONFIRMED,4360438,Brandon Aiyuk,WR,Darwin Hu,1ST TEAM ALL GLAZER,Ikaika Stone,Vietokwuegbunam Flashback
+2023,10,2023-11-09,espn:78a4ee54,ESPN transaction log,DROPPED_AFTER,4240024,Stanford Samuels,12,Ikaika Stone,Vietokwuegbunam Flashback,Darwin Hu,1ST TEAM ALL GLAZER
+2023,10,between wk9 and wk10,derived:1-8-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4362628,Ja'Marr Chase,WR,Chase Mizoguchi,I WANT TO KILL MYSELF,Prashanth Balaraman,Damardiac Arrest
+2023,10,between wk9 and wk10,derived:1-8-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,16757,Derek Carr,QB,Prashanth Balaraman,Damardiac Arrest,Chase Mizoguchi,I WANT TO KILL MYSELF
+2023,10,between wk9 and wk10,derived:1-8-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4242335,Jonathan Taylor,RB,Prashanth Balaraman,Damardiac Arrest,Chase Mizoguchi,I WANT TO KILL MYSELF
+2023,12,between wk11 and wk12,derived:2-6-w12,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4569173,Rhamondre Stevenson,RB,Rollin Odama-Wong,2020+2022+2023 Champion,Harvey Wang,CeeDeez Nuts In Ur Mout
+2023,12,between wk11 and wk12,derived:2-6-w12,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3042519,Aaron Jones Sr.,RB,Harvey Wang,CeeDeez Nuts In Ur Mout,Rollin Odama-Wong,2020+2022+2023 Champion
+2023,12,between wk11 and wk12,derived:2-6-w12,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4239934,AJ Dillon,RB,Harvey Wang,CeeDeez Nuts In Ur Mout,Rollin Odama-Wong,2020+2022+2023 Champion
+2023,13,2023-12-02,espn:ce40eb4f,ESPN transaction log,CONFIRMED,4362887,Justin Fields,QB,Evan Fukumoto,Little munchkin,Christopher Pascual,This Is Jahmyr's Team
+2023,13,2023-12-02,espn:ce40eb4f,ESPN transaction log,CONFIRMED,3929630,Saquon Barkley,RB,Evan Fukumoto,Little munchkin,Christopher Pascual,This Is Jahmyr's Team
+2023,13,2023-12-02,espn:ce40eb4f,ESPN transaction log,CONFIRMED,3895856,Christian Kirk,WR,Evan Fukumoto,Little munchkin,Christopher Pascual,This Is Jahmyr's Team
+2023,13,2023-12-02,espn:ce40eb4f,ESPN transaction log,CONFIRMED,4569987,Jaylen Warren,RB,Christopher Pascual,This Is Jahmyr's Team,Evan Fukumoto,Little munchkin
+2023,13,2023-12-02,espn:ce40eb4f,ESPN transaction log,CONFIRMED,3917315,Kyler Murray,QB,Christopher Pascual,This Is Jahmyr's Team,Evan Fukumoto,Little munchkin
+2023,13,2023-12-02,espn:ce40eb4f,ESPN transaction log,CONFIRMED,4426515,Puka Nacua,WR,Christopher Pascual,This Is Jahmyr's Team,Evan Fukumoto,Little munchkin
+2023,13,between wk12 and wk13,derived:5-7-w13,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3043078,Derrick Henry,RB,Christopher Pascual,This Is Jahmyr's Team,Justin Ho,1-800-273-8255 @ 0:37-041
+2023,13,between wk12 and wk13,derived:5-7-w13,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4569618,Garrett Wilson,WR,Justin Ho,1-800-273-8255 @ 0:37-041,Christopher Pascual,This Is Jahmyr's Team
+2023,13,between wk12 and wk13,derived:1-14-w13,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3123076,David Njoku,TE,Chase Mizoguchi,I WANT TO KILL MYSELF,Jeffrey Chan,Kick or die Kick
+2023,13,between wk12 and wk13,derived:1-14-w13,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3117256,Dalton Schultz,TE,Jeffrey Chan,Kick or die Kick,Chase Mizoguchi,I WANT TO KILL MYSELF
+2023,14,2023-12-08,espn:d4b50487,ESPN transaction log,CONFIRMED,3123076,David Njoku,TE,Jeffrey Chan,Kick or die Kick,Chase Mizoguchi,I WANT TO KILL MYSELF
+2023,14,2023-12-08,espn:d4b50487,ESPN transaction log,CONFIRMED,3117256,Dalton Schultz,TE,Chase Mizoguchi,I WANT TO KILL MYSELF,Jeffrey Chan,Kick or die Kick
+2024,4,between wk3 and wk4,derived:13-8-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3046779,Jared Goff,QB,Darwin Hu,GLAZER OF THE YEAR,Prashanth Balaraman,Najee Germany
+2024,4,between wk3 and wk4,derived:13-8-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4431611,Caleb Williams,QB,Prashanth Balaraman,Najee Germany,Darwin Hu,GLAZER OF THE YEAR
+2024,5,between wk4 and wk5,derived:3-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4239993,Tee Higgins,WR,Ikaika Stone,Vietokwuegbunam Flashback,Christopher Pascual,Bishop Sycamore
+2024,5,between wk4 and wk5,derived:3-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4569173,Rhamondre Stevenson,RB,Ikaika Stone,Vietokwuegbunam Flashback,Christopher Pascual,Bishop Sycamore
+2024,5,between wk4 and wk5,derived:3-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3045147,James Conner,RB,Christopher Pascual,Bishop Sycamore,Ikaika Stone,Vietokwuegbunam Flashback
+2024,5,between wk4 and wk5,derived:3-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4242355,Jake Ferguson,TE,Christopher Pascual,Bishop Sycamore,Ikaika Stone,Vietokwuegbunam Flashback
+2024,5,between wk4 and wk5,derived:3-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,15835,Zach Ertz,TE,Ikaika Stone,Vietokwuegbunam Flashback,Christopher Pascual,Bishop Sycamore
+2024,5,between wk4 and wk5,derived:1-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3068267,Austin Ekeler,RB,Chase Mizoguchi,Gamblers Anonymous,Christopher Pascual,Bishop Sycamore
+2024,5,between wk4 and wk5,derived:1-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,12483,Matthew Stafford,QB,Christopher Pascual,Bishop Sycamore,Chase Mizoguchi,Gamblers Anonymous
+2024,5,between wk4 and wk5,derived:1-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4241985,J.K. Dobbins,RB,Christopher Pascual,Bishop Sycamore,Chase Mizoguchi,Gamblers Anonymous
+2024,5,between wk4 and wk5,derived:1-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4035676,Zack Moss,RB,Christopher Pascual,Bishop Sycamore,Chase Mizoguchi,Gamblers Anonymous
+2024,5,between wk4 and wk5,derived:1-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,14012,Andy Dalton,QB,Chase Mizoguchi,Gamblers Anonymous,Christopher Pascual,Bishop Sycamore
+2024,6,between wk5 and wk6,derived:6-8-w6,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4372019,Jerome Ford,RB,Rollin Odama-Wong,2020+2022+2024 Champion,Prashanth Balaraman,Najee Germany
+2024,6,between wk5 and wk6,derived:6-8-w6,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4360310,Trevor Lawrence,QB,Prashanth Balaraman,Najee Germany,Rollin Odama-Wong,2020+2022+2024 Champion
+2024,7,between wk6 and wk7,derived:2-6-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4569618,Garrett Wilson,WR,Rollin Odama-Wong,2020+2022+2024 Champion,Harvey Wang,Kapiolani Medical Center
+2024,7,between wk6 and wk7,derived:2-6-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3116406,Tyreek Hill,WR,Harvey Wang,Kapiolani Medical Center,Rollin Odama-Wong,2020+2022+2024 Champion
+2024,7,between wk6 and wk7,derived:13-3-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3059915,Kareem Hunt,RB,Darwin Hu,GLAZER OF THE YEAR,Ikaika Stone,Vietokwuegbunam Flashback
+2024,7,between wk6 and wk7,derived:13-3-w7,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4431452,Drake Maye,QB,Ikaika Stone,Vietokwuegbunam Flashback,Darwin Hu,GLAZER OF THE YEAR
+2024,10,between wk9 and wk10,derived:1-5-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3117251,Christian McCaffrey,RB,Justin Ho,#freekylepitts,Chase Mizoguchi,Gamblers Anonymous
+2024,10,between wk9 and wk10,derived:1-5-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4432708,Marvin Harrison Jr.,WR,Chase Mizoguchi,Gamblers Anonymous,Justin Ho,#freekylepitts
+2024,10,between wk9 and wk10,derived:1-5-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4426348,Jayden Daniels,QB,Chase Mizoguchi,Gamblers Anonymous,Justin Ho,#freekylepitts
+2024,10,between wk9 and wk10,derived:1-5-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4360569,Jordan Mason,RB,Justin Ho,#freekylepitts,Chase Mizoguchi,Gamblers Anonymous
+2024,10,between wk9 and wk10,derived:5-7-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3915511,Joe Burrow,QB,Justin Ho,#freekylepitts,Christopher Pascual,Bishop Sycamore
+2024,10,between wk9 and wk10,derived:5-7-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4569173,Rhamondre Stevenson,RB,Christopher Pascual,Bishop Sycamore,Justin Ho,#freekylepitts
+2024,10,between wk9 and wk10,derived:13-6-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4047365,Josh Jacobs,RB,Rollin Odama-Wong,2020+2022+2024 Champion,Darwin Hu,GLAZER OF THE YEAR
+2024,10,between wk9 and wk10,derived:13-6-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4430878,Jaxon Smith-Njigba,WR,Darwin Hu,GLAZER OF THE YEAR,Rollin Odama-Wong,2020+2022+2024 Champion
+2024,10,between wk9 and wk10,derived:13-6-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4360516,Tyrone Tracy Jr.,RB,Darwin Hu,GLAZER OF THE YEAR,Rollin Odama-Wong,2020+2022+2024 Champion
+2024,10,between wk9 and wk10,derived:1-8-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3123076,David Njoku,TE,Chase Mizoguchi,Gamblers Anonymous,Prashanth Balaraman,Najee Germany
+2024,10,between wk9 and wk10,derived:1-8-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3040151,George Kittle,TE,Prashanth Balaraman,Najee Germany,Chase Mizoguchi,Gamblers Anonymous
+2024,10,between wk9 and wk10,derived:1-2-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4036378,Jordan Love,QB,Harvey Wang,Kapiolani Medical Center,Chase Mizoguchi,Gamblers Anonymous
+2024,10,between wk9 and wk10,derived:1-2-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4426338,Bo Nix,QB,Chase Mizoguchi,Gamblers Anonymous,Harvey Wang,Kapiolani Medical Center
+2024,10,between wk9 and wk10,derived:3-7-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4047646,A.J. Brown,WR,Christopher Pascual,Bishop Sycamore,Ikaika Stone,Vietokwuegbunam Flashback
+2024,10,between wk9 and wk10,derived:3-7-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3059915,Kareem Hunt,RB,Ikaika Stone,Vietokwuegbunam Flashback,Christopher Pascual,Bishop Sycamore
+2024,10,between wk9 and wk10,derived:3-7-w10,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4429013,Tank Bigsby,RB,Christopher Pascual,Bishop Sycamore,Ikaika Stone,Vietokwuegbunam Flashback
+2024,11,2024-11-12,espn:afb6f783,ESPN transaction log,CONFIRMED,4426338,Bo Nix,QB,Harvey Wang,Kapiolani Medical Center,Chase Mizoguchi,Gamblers Anonymous
+2024,11,2024-11-12,espn:afb6f783,ESPN transaction log,CONFIRMED,4036378,Jordan Love,QB,Chase Mizoguchi,Gamblers Anonymous,Harvey Wang,Kapiolani Medical Center
+2024,11,2024-11-12,espn:bac0027c,ESPN transaction log,CONFIRMED,3123076,David Njoku,TE,Prashanth Balaraman,Najee Germany,Chase Mizoguchi,Gamblers Anonymous
+2024,11,2024-11-12,espn:bac0027c,ESPN transaction log,CONFIRMED,3040151,George Kittle,TE,Chase Mizoguchi,Gamblers Anonymous,Prashanth Balaraman,Najee Germany
+2024,11,between wk10 and wk11,derived:2-6-w11,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4362238,Chase Brown,RB,Harvey Wang,Kapiolani Medical Center,Rollin Odama-Wong,2020+2022+2024 Champion
+2024,11,between wk10 and wk11,derived:2-6-w11,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4360516,Tyrone Tracy Jr.,RB,Rollin Odama-Wong,2020+2022+2024 Champion,Harvey Wang,Kapiolani Medical Center
+2024,12,2024-11-20,espn:ebe60da3,ESPN transaction log,CONFIRMED,-16023,Steelers D/ST,D/ST,Chase Mizoguchi,Gamblers Anonymous,Justin Ho,#freekylepitts
+2024,12,between wk11 and wk12,derived:13-6-w12,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3052587,Baker Mayfield,QB,Rollin Odama-Wong,2020+2022+2024 Champion,Darwin Hu,GLAZER OF THE YEAR
+2024,12,between wk11 and wk12,derived:13-6-w12,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4241474,Brian Robinson Jr.,RB,Darwin Hu,GLAZER OF THE YEAR,Rollin Odama-Wong,2020+2022+2024 Champion
+2024,12,between wk11 and wk12,derived:13-6-w12,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4431452,Drake Maye,QB,Darwin Hu,GLAZER OF THE YEAR,Rollin Odama-Wong,2020+2022+2024 Champion
+2024,13,2024-11-28,espn:319b75a0,ESPN transaction log,CONFIRMED,3046439,Hunter Henry,TE,Rollin Odama-Wong,2020+2022+2024 Champion,Evan Fukumoto,Heem Dawg
+2024,13,2024-11-28,espn:319b75a0,ESPN transaction log,CONFIRMED,4241474,Brian Robinson Jr.,RB,Rollin Odama-Wong,2020+2022+2024 Champion,Evan Fukumoto,Heem Dawg
+2024,13,2024-11-28,espn:319b75a0,ESPN transaction log,CONFIRMED,2976499,Amari Cooper,WR,Evan Fukumoto,Heem Dawg,Rollin Odama-Wong,2020+2022+2024 Champion
+2024,13,2024-11-28,espn:319b75a0,ESPN transaction log,DROPPED_AFTER,2468609,Taysom Hill,TE,Evan Fukumoto,Heem Dawg,Rollin Odama-Wong,2020+2022+2024 Champion
+2024,14,2024-12-05,espn:3d8b9ace,ESPN transaction log,CONFIRMED,3916433,Jakobi Meyers,WR,Jeffrey Chan,Kick or die,Chase Mizoguchi,Gamblers Anonymous
+2024,14,2024-12-05,espn:3d8b9ace,ESPN transaction log,CONFIRMED,3128720,Nick Chubb,RB,Chase Mizoguchi,Gamblers Anonymous,Jeffrey Chan,Kick or die
+2024,14,between wk13 and wk14,derived:1-3-w14,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,15795,DeAndre Hopkins,WR,Chase Mizoguchi,Gamblers Anonymous,Ikaika Stone,Vietokwuegbunam Flashback
+2024,14,between wk13 and wk14,derived:1-3-w14,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3126486,Deebo Samuel,WR,Ikaika Stone,Vietokwuegbunam Flashback,Chase Mizoguchi,Gamblers Anonymous
+2024,15,2024-12-12,espn:d4e1d093,ESPN transaction log,CONFIRMED,3912547,Sam Darnold,QB,Chase Mizoguchi,Gamblers Anonymous,Evan Fukumoto,Heem Dawg
+2024,15,2024-12-12,espn:d4e1d093,ESPN transaction log,CONFIRMED,4426388,Jameson Williams,WR,Evan Fukumoto,Heem Dawg,Chase Mizoguchi,Gamblers Anonymous
+2024,15,2024-12-12,espn:d4e1d093,ESPN transaction log,CONFIRMED,14880,Kirk Cousins,QB,Evan Fukumoto,Heem Dawg,Chase Mizoguchi,Gamblers Anonymous
+2024,15,between wk14 and wk15,derived:14-5-w15,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4047650,DK Metcalf,WR,Justin Ho,#freekylepitts,Jeffrey Chan,Kick or die
+2024,15,between wk14 and wk15,derived:14-5-w15,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4569173,Rhamondre Stevenson,RB,Justin Ho,#freekylepitts,Jeffrey Chan,Kick or die
+2024,15,between wk14 and wk15,derived:14-5-w15,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3054850,Alvin Kamara,RB,Jeffrey Chan,Kick or die,Justin Ho,#freekylepitts
+2024,15,between wk14 and wk15,derived:1-3-w15,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4426338,Bo Nix,QB,Chase Mizoguchi,Gamblers Anonymous,Ikaika Stone,Vietokwuegbunam Flashback
+2024,15,between wk14 and wk15,derived:1-3-w15,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4432577,C.J. Stroud,QB,Ikaika Stone,Vietokwuegbunam Flashback,Chase Mizoguchi,Gamblers Anonymous
+2024,15,between wk14 and wk15,derived:2-8-w15,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4241457,Najee Harris,RB,Prashanth Balaraman,Najee Germany,Harvey Wang,Kapiolani Medical Center
+2024,15,between wk14 and wk15,derived:2-8-w15,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,2969939,Jameis Winston,QB,Harvey Wang,Kapiolani Medical Center,Prashanth Balaraman,Najee Germany
+2025,2,2025-09-12,espn:fcc62b0e,ESPN transaction log,CONFIRMED,4241478,DeVonta Smith,WR,Evan Fukumoto,GIBBY,Chase Mizoguchi,They Hit the Second Bower
+2025,2,2025-09-12,espn:fcc62b0e,ESPN transaction log,CONFIRMED,8439,Aaron Rodgers,QB,Chase Mizoguchi,They Hit the Second Bower,Evan Fukumoto,GIBBY
+2025,4,2025-09-26,espn:d0947c33,ESPN transaction log,CONFLICT,8439,Aaron Rodgers,QB,Evan Fukumoto,GIBBY,Chase Mizoguchi,They Hit the Second Bower
+2025,4,2025-09-26,espn:d0947c33,ESPN transaction log,CONFIRMED,4241478,DeVonta Smith,WR,Chase Mizoguchi,They Hit the Second Bower,Evan Fukumoto,GIBBY
+2025,4,2025-09-28,espn:ac5b366f,ESPN transaction log,CONFIRMED,4569987,Jaylen Warren,RB,Harvey Wang,Rice Fields Got Picken Dry,Evan Fukumoto,GIBBY
+2025,4,2025-09-28,espn:ac5b366f,ESPN transaction log,CONFLICT,4047646,A.J. Brown,WR,Evan Fukumoto,GIBBY,Harvey Wang,Rice Fields Got Picken Dry
+2025,4,between wk3 and wk4,derived:1-14-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4426388,Jameson Williams,WR,Chase Mizoguchi,They Hit the Second Bower,Jeffrey Chan,Kick or die
+2025,4,between wk3 and wk4,derived:1-14-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3128720,Nick Chubb,RB,Chase Mizoguchi,They Hit the Second Bower,Jeffrey Chan,Kick or die
+2025,4,between wk3 and wk4,derived:1-14-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4035538,David Montgomery,RB,Jeffrey Chan,Kick or die,Chase Mizoguchi,They Hit the Second Bower
+2025,4,between wk3 and wk4,derived:1-14-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4361370,Chris Olave,WR,Jeffrey Chan,Kick or die,Chase Mizoguchi,They Hit the Second Bower
+2025,4,between wk3 and wk4,derived:1-8-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4429615,Zay Flowers,WR,Chase Mizoguchi,They Hit the Second Bower,Prashanth Balaraman,Lemme Ra-Dog It
+2025,4,between wk3 and wk4,derived:1-8-w4,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4685702,Quinshon Judkins,RB,Prashanth Balaraman,Lemme Ra-Dog It,Chase Mizoguchi,They Hit the Second Bower
+2025,5,between wk4 and wk5,derived:13-2-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3929630,Saquon Barkley,RB,Harvey Wang,Rice Fields Got Picken Dry,Darwin Hu,Saquonda Forever
+2025,5,between wk4 and wk5,derived:13-2-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4047365,Josh Jacobs,RB,Darwin Hu,Saquonda Forever,Harvey Wang,Rice Fields Got Picken Dry
+2025,5,between wk4 and wk5,derived:13-2-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4428331,Rashee Rice,WR,Darwin Hu,Saquonda Forever,Harvey Wang,Rice Fields Got Picken Dry
+2025,5,between wk4 and wk5,derived:13-2-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4428209,Ricky Pearsall,WR,Darwin Hu,Saquonda Forever,Harvey Wang,Rice Fields Got Picken Dry
+2025,5,between wk4 and wk5,derived:13-2-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4047646,A.J. Brown,WR,Harvey Wang,Rice Fields Got Picken Dry,Darwin Hu,Saquonda Forever
+2025,5,between wk4 and wk5,derived:3-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4612826,Ladd McConkey,WR,Ikaika Stone,Vietokwuegbunam Flashback,Christopher Pascual,Brown Ladd Squad
+2025,5,between wk4 and wk5,derived:3-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4360569,Jordan Mason,RB,Ikaika Stone,Vietokwuegbunam Flashback,Christopher Pascual,Brown Ladd Squad
+2025,5,between wk4 and wk5,derived:3-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4426354,George Pickens,WR,Christopher Pascual,Brown Ladd Squad,Ikaika Stone,Vietokwuegbunam Flashback
+2025,5,between wk4 and wk5,derived:5-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4890973,Ashton Jeanty,RB,Justin Ho,The Big Beautiful Bill,Christopher Pascual,Brown Ladd Squad
+2025,5,between wk4 and wk5,derived:5-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4569618,Garrett Wilson,WR,Justin Ho,The Big Beautiful Bill,Christopher Pascual,Brown Ladd Squad
+2025,5,between wk4 and wk5,derived:5-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3917315,Kyler Murray,QB,Justin Ho,The Big Beautiful Bill,Christopher Pascual,Brown Ladd Squad
+2025,5,between wk4 and wk5,derived:5-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4430807,Bijan Robinson,RB,Christopher Pascual,Brown Ladd Squad,Justin Ho,The Big Beautiful Bill
+2025,5,between wk4 and wk5,derived:5-7-w5,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4685472,Tetairoa McMillan,WR,Christopher Pascual,Brown Ladd Squad,Justin Ho,The Big Beautiful Bill
+2025,6,between wk5 and wk6,derived:1-6-w6,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4259545,D'Andre Swift,RB,Rollin Odama-Wong,2020+2022+2025 Champion,Chase Mizoguchi,They Hit the Second Bower
+2025,6,between wk5 and wk6,derived:1-6-w6,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4372016,Jaylen Waddle,WR,Rollin Odama-Wong,2020+2022+2025 Champion,Chase Mizoguchi,They Hit the Second Bower
+2025,6,between wk5 and wk6,derived:1-6-w6,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,15864,Geno Smith,QB,Rollin Odama-Wong,2020+2022+2025 Champion,Chase Mizoguchi,They Hit the Second Bower
+2025,6,between wk5 and wk6,derived:1-6-w6,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4431459,Tyler Warren,TE,Rollin Odama-Wong,2020+2022+2025 Champion,Chase Mizoguchi,They Hit the Second Bower
+2025,6,between wk5 and wk6,derived:1-6-w6,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4432665,Brock Bowers,TE,Chase Mizoguchi,They Hit the Second Bower,Rollin Odama-Wong,2020+2022+2025 Champion
+2025,6,between wk5 and wk6,derived:1-6-w6,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4596448,Bucky Irving,RB,Chase Mizoguchi,They Hit the Second Bower,Rollin Odama-Wong,2020+2022+2025 Champion
+2025,6,between wk5 and wk6,derived:1-6-w6,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4431611,Caleb Williams,QB,Chase Mizoguchi,They Hit the Second Bower,Rollin Odama-Wong,2020+2022+2025 Champion
+2025,8,between wk7 and wk8,derived:6-8-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4432773,Brian Thomas Jr.,WR,Rollin Odama-Wong,2020+2022+2025 Champion,Prashanth Balaraman,Lemme Ra-Dog It
+2025,8,between wk7 and wk8,derived:6-8-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,3046779,Jared Goff,QB,Rollin Odama-Wong,2020+2022+2025 Champion,Prashanth Balaraman,Lemme Ra-Dog It
+2025,8,between wk7 and wk8,derived:6-8-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4429615,Zay Flowers,WR,Prashanth Balaraman,Lemme Ra-Dog It,Rollin Odama-Wong,2020+2022+2025 Champion
+2025,8,between wk7 and wk8,derived:6-8-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,11252,Joe Flacco,QB,Prashanth Balaraman,Lemme Ra-Dog It,Rollin Odama-Wong,2020+2022+2025 Champion
+2025,8,between wk7 and wk8,derived:2-3-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4428331,Rashee Rice,WR,Harvey Wang,Rice Fields Got Picken Dry,Ikaika Stone,Vietokwuegbunam Flashback
+2025,8,between wk7 and wk8,derived:2-3-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4426354,George Pickens,WR,Ikaika Stone,Vietokwuegbunam Flashback,Harvey Wang,Rice Fields Got Picken Dry
+2025,8,between wk7 and wk8,derived:2-3-w8,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,8439,Aaron Rodgers,QB,Ikaika Stone,Vietokwuegbunam Flashback,Harvey Wang,Rice Fields Got Picken Dry
+2025,9,between wk8 and wk9,derived:2-3-w9,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,4360310,Trevor Lawrence,QB,Ikaika Stone,Vietokwuegbunam Flashback,Harvey Wang,Rice Fields Got Picken Dry
+2025,9,between wk8 and wk9,derived:2-3-w9,Roster snapshots (missing from ESPN log),ROSTER_DERIVED,8439,Aaron Rodgers,QB,Harvey Wang,Rice Fields Got Picken Dry,Ikaika Stone,Vietokwuegbunam Flashback

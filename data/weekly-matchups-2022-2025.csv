@@ -1,0 +1,337 @@
+Year,Week,MatchupPeriod,PlayoffTier,MatchupId,HomeTeamId,HomeTeam,HomeManager,HomeActual,HomeProjected,AwayTeamId,AwayTeam,AwayManager,AwayActual,AwayProjected,Winner,Margin
+2022,1,1,NONE,1,5,Chute Mi,Justin Ho,100.5,133.75,7,Season Is Over,Christopher Pascual,113.5,140.4,AWAY,13
+2022,1,1,NONE,2,6,2020+2022 Champion,Rollin Odama-Wong,156.5,140.42,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,125,135.52,HOME,31.5
+2022,1,1,NONE,3,4,I hate Rollin,Evan Fukumoto,114,136.53,3,Vietokwuegbunam Flashback,Ikaika Stone,148,144.73,AWAY,34
+2022,1,1,NONE,4,14,Kick or die Kick,Jeffrey Chan,134.5,131.93,13,. Tweedle Dame,Darwin Hu,148.5,135.61,AWAY,14
+2022,1,1,NONE,5,2,Tweedle Dee-bo,Harvey Wang,140,135.98,8,I Chase Young Kids,Prashanth Balaraman,155.5,132.37,AWAY,15.5
+2022,2,2,NONE,6,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,153.5,140.56,3,Vietokwuegbunam Flashback,Ikaika Stone,135.5,141.16,HOME,18
+2022,2,2,NONE,7,13,. Tweedle Dame,Darwin Hu,130,137.51,5,Chute Mi,Justin Ho,156,135.37,AWAY,26
+2022,2,2,NONE,8,8,I Chase Young Kids,Prashanth Balaraman,110,128.27,7,Season Is Over,Christopher Pascual,152,134.62,AWAY,42
+2022,2,2,NONE,9,14,Kick or die Kick,Jeffrey Chan,121,138.15,6,2020+2022 Champion,Rollin Odama-Wong,125.5,136,AWAY,4.5
+2022,2,2,NONE,10,2,Tweedle Dee-bo,Harvey Wang,146.5,133.61,4,I hate Rollin,Evan Fukumoto,132.5,130.45,HOME,14
+2022,3,3,NONE,11,13,. Tweedle Dame,Darwin Hu,118.5,139.06,8,I Chase Young Kids,Prashanth Balaraman,96.5,130.81,HOME,22
+2022,3,3,NONE,12,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,122,143.24,14,Kick or die Kick,Jeffrey Chan,121.5,144.76,HOME,0.5
+2022,3,3,NONE,13,3,Vietokwuegbunam Flashback,Ikaika Stone,120.5,136.18,2,Tweedle Dee-bo,Harvey Wang,142,139.87,AWAY,21.5
+2022,3,3,NONE,14,5,Chute Mi,Justin Ho,152,135.29,6,2020+2022 Champion,Rollin Odama-Wong,132.5,135.8,HOME,19.5
+2022,3,3,NONE,15,7,Season Is Over,Christopher Pascual,158,139.06,4,I hate Rollin,Evan Fukumoto,106,139.8,HOME,52
+2022,4,4,NONE,16,14,Kick or die Kick,Jeffrey Chan,176,138.65,2,Tweedle Dee-bo,Harvey Wang,148,141.58,HOME,28
+2022,4,4,NONE,17,6,2020+2022 Champion,Rollin Odama-Wong,159,138.27,13,. Tweedle Dame,Darwin Hu,104.5,142.75,HOME,54.5
+2022,4,4,NONE,18,4,I hate Rollin,Evan Fukumoto,118.5,119.37,8,I Chase Young Kids,Prashanth Balaraman,169.5,126.15,AWAY,51
+2022,4,4,NONE,19,5,Chute Mi,Justin Ho,111,145.43,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,136.5,141.8,AWAY,25.5
+2022,4,4,NONE,20,7,Season Is Over,Christopher Pascual,133.5,132.25,3,Vietokwuegbunam Flashback,Ikaika Stone,129.5,143.77,HOME,4
+2022,5,5,NONE,21,6,2020+2022 Champion,Rollin Odama-Wong,113.5,143.72,4,I hate Rollin,Evan Fukumoto,138.5,133.47,AWAY,25
+2022,5,5,NONE,22,14,Kick or die Kick,Jeffrey Chan,141.5,143.15,5,Chute Mi,Justin Ho,155.5,133.47,AWAY,14
+2022,5,5,NONE,23,2,Tweedle Dee-bo,Harvey Wang,131,139.75,7,Season Is Over,Christopher Pascual,145,146.14,AWAY,14
+2022,5,5,NONE,24,13,. Tweedle Dame,Darwin Hu,112.5,136.9,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,186,143.23,AWAY,73.5
+2022,5,5,NONE,25,8,I Chase Young Kids,Prashanth Balaraman,138,129.64,3,Vietokwuegbunam Flashback,Ikaika Stone,173,144.76,AWAY,35
+2022,6,6,NONE,26,7,Season Is Over,Christopher Pascual,139.5,126.33,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,165.5,136.2,AWAY,26
+2022,6,6,NONE,27,3,Vietokwuegbunam Flashback,Ikaika Stone,135,143.14,13,. Tweedle Dame,Darwin Hu,97,131.64,HOME,38
+2022,6,6,NONE,28,8,I Chase Young Kids,Prashanth Balaraman,123,131.78,14,Kick or die Kick,Jeffrey Chan,112,127.43,HOME,11
+2022,6,6,NONE,29,2,Tweedle Dee-bo,Harvey Wang,109,127.61,6,2020+2022 Champion,Rollin Odama-Wong,134.5,136.31,AWAY,25.5
+2022,6,6,NONE,30,4,I hate Rollin,Evan Fukumoto,120.5,133.01,5,Chute Mi,Justin Ho,117,133.07,HOME,3.5
+2022,7,7,NONE,31,13,. Tweedle Dame,Darwin Hu,114.5,146.51,7,Season Is Over,Christopher Pascual,85.5,141.18,HOME,29
+2022,7,7,NONE,32,14,Kick or die Kick,Jeffrey Chan,122.5,118.5,3,Vietokwuegbunam Flashback,Ikaika Stone,155,125,AWAY,32.5
+2022,7,7,NONE,33,6,2020+2022 Champion,Rollin Odama-Wong,109,128.16,8,I Chase Young Kids,Prashanth Balaraman,131,125.3,AWAY,22
+2022,7,7,NONE,34,5,Chute Mi,Justin Ho,125.5,121.01,2,Tweedle Dee-bo,Harvey Wang,106.5,124.84,HOME,19
+2022,7,7,NONE,35,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,111,132.04,4,I hate Rollin,Evan Fukumoto,161,136.24,AWAY,50
+2022,8,8,NONE,36,7,Season Is Over,Christopher Pascual,113.5,126.81,14,Kick or die Kick,Jeffrey Chan,115,140.13,AWAY,1.5
+2022,8,8,NONE,37,3,Vietokwuegbunam Flashback,Ikaika Stone,176,127.69,6,2020+2022 Champion,Rollin Odama-Wong,167,142.97,HOME,9
+2022,8,8,NONE,38,8,I Chase Young Kids,Prashanth Balaraman,159.5,117.35,5,Chute Mi,Justin Ho,154.5,138.12,HOME,5
+2022,8,8,NONE,39,2,Tweedle Dee-bo,Harvey Wang,170.5,134.86,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,158.5,134.37,HOME,12
+2022,8,8,NONE,40,4,I hate Rollin,Evan Fukumoto,145.5,119.36,13,. Tweedle Dame,Darwin Hu,93,134.84,HOME,52.5
+2022,9,9,NONE,41,6,2020+2022 Champion,Rollin Odama-Wong,195,140.63,7,Season Is Over,Christopher Pascual,133,137.95,HOME,62
+2022,9,9,NONE,42,5,Chute Mi,Justin Ho,162,131.77,14,Kick or die Kick,Jeffrey Chan,167,132.97,AWAY,5
+2022,9,9,NONE,43,3,Vietokwuegbunam Flashback,Ikaika Stone,113.5,131.24,4,I hate Rollin,Evan Fukumoto,131,141.2,AWAY,17.5
+2022,9,9,NONE,44,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,128.5,138.69,13,. Tweedle Dame,Darwin Hu,106.5,125.28,HOME,22
+2022,9,9,NONE,45,8,I Chase Young Kids,Prashanth Balaraman,142.5,116.02,2,Tweedle Dee-bo,Harvey Wang,100.5,127.06,HOME,42
+2022,10,10,NONE,46,5,Chute Mi,Justin Ho,138.5,148.45,3,Vietokwuegbunam Flashback,Ikaika Stone,138,142.87,HOME,0.5
+2022,10,10,NONE,47,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,151.5,131.75,6,2020+2022 Champion,Rollin Odama-Wong,171,137.67,AWAY,19.5
+2022,10,10,NONE,48,7,Season Is Over,Christopher Pascual,130,130.35,8,I Chase Young Kids,Prashanth Balaraman,105.5,124.9,HOME,24.5
+2022,10,10,NONE,49,13,. Tweedle Dame,Darwin Hu,125,130.9,14,Kick or die Kick,Jeffrey Chan,114.5,134.19,HOME,10.5
+2022,10,10,NONE,50,4,I hate Rollin,Evan Fukumoto,96.5,134.1,2,Tweedle Dee-bo,Harvey Wang,96.5,136.38,TIE,0
+2022,11,11,NONE,51,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,89,128.32,8,I Chase Young Kids,Prashanth Balaraman,154.5,116.17,AWAY,65.5
+2022,11,11,NONE,52,5,Chute Mi,Justin Ho,130.5,139.29,13,. Tweedle Dame,Darwin Hu,144.5,139.16,AWAY,14
+2022,11,11,NONE,53,2,Tweedle Dee-bo,Harvey Wang,148,132.59,3,Vietokwuegbunam Flashback,Ikaika Stone,179.5,136.46,AWAY,31.5
+2022,11,11,NONE,54,6,2020+2022 Champion,Rollin Odama-Wong,112,131.58,14,Kick or die Kick,Jeffrey Chan,159.5,123.32,AWAY,47.5
+2022,11,11,NONE,55,4,I hate Rollin,Evan Fukumoto,114.5,127.25,7,Season Is Over,Christopher Pascual,111.5,130.62,HOME,3
+2022,12,12,NONE,56,13,. Tweedle Dame,Darwin Hu,134,138.57,2,Tweedle Dee-bo,Harvey Wang,156,137.59,AWAY,22
+2022,12,12,NONE,57,14,Kick or die Kick,Jeffrey Chan,140.5,135.96,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,180,134.76,AWAY,39.5
+2022,12,12,NONE,58,8,I Chase Young Kids,Prashanth Balaraman,113,112.39,4,I hate Rollin,Evan Fukumoto,178,139.39,AWAY,65
+2022,12,12,NONE,59,6,2020+2022 Champion,Rollin Odama-Wong,139,139.58,5,Chute Mi,Justin Ho,125,144.82,HOME,14
+2022,12,12,NONE,60,3,Vietokwuegbunam Flashback,Ikaika Stone,141,147.98,7,Season Is Over,Christopher Pascual,156.5,147.15,AWAY,15.5
+2022,13,13,NONE,61,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,147.5,140.49,13,. Tweedle Dame,Darwin Hu,140.5,135.58,HOME,7
+2022,13,13,NONE,62,6,2020+2022 Champion,Rollin Odama-Wong,129.5,134.7,8,I Chase Young Kids,Prashanth Balaraman,156,130.46,AWAY,26.5
+2022,13,13,NONE,63,5,Chute Mi,Justin Ho,122.5,141.18,3,Vietokwuegbunam Flashback,Ikaika Stone,122,134.56,HOME,0.5
+2022,13,13,NONE,64,14,Kick or die Kick,Jeffrey Chan,151.5,126.81,7,Season Is Over,Christopher Pascual,157,148.44,AWAY,5.5
+2022,13,13,NONE,65,4,I hate Rollin,Evan Fukumoto,106,129.16,2,Tweedle Dee-bo,Harvey Wang,123,139.91,AWAY,17
+2022,14,14,NONE,66,5,Chute Mi,Justin Ho,140,140.37,7,Season Is Over,Christopher Pascual,121.5,134.07,HOME,18.5
+2022,14,14,NONE,67,4,I hate Rollin,Evan Fukumoto,142,124.6,14,Kick or die Kick,Jeffrey Chan,126,123.44,HOME,16
+2022,14,14,NONE,68,2,Tweedle Dee-bo,Harvey Wang,115,125.58,6,2020+2022 Champion,Rollin Odama-Wong,100.5,134.46,HOME,14.5
+2022,14,14,NONE,69,3,Vietokwuegbunam Flashback,Ikaika Stone,136,135.34,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,135.5,141.33,HOME,0.5
+2022,14,14,NONE,70,13,. Tweedle Dame,Darwin Hu,121.5,125.08,8,I Chase Young Kids,Prashanth Balaraman,147,126.63,AWAY,25.5
+2022,15,15,WINNERS_BRACKET,72,7,Season Is Over,Christopher Pascual,159.5,139.45,3,Vietokwuegbunam Flashback,Ikaika Stone,147.5,139.51,HOME,12
+2022,15,15,WINNERS_BRACKET,73,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,131.5,139.1,6,2020+2022 Champion,Rollin Odama-Wong,161.5,135.9,AWAY,30
+2022,15,15,LOSERS_CONSOLATION_LADDER,75,5,Chute Mi,Justin Ho,137,137.22,2,Tweedle Dee-bo,Harvey Wang,147,131.66,AWAY,10
+2022,15,15,LOSERS_CONSOLATION_LADDER,76,13,. Tweedle Dame,Darwin Hu,117,130.91,14,Kick or die Kick,Jeffrey Chan,109.5,127.7,HOME,7.5
+2022,16,16,WINNERS_BRACKET,77,8,I Chase Young Kids,Prashanth Balaraman,89.5,131.02,7,Season Is Over,Christopher Pascual,139,144.23,AWAY,49.5
+2022,16,16,WINNERS_BRACKET,78,4,I hate Rollin,Evan Fukumoto,113.5,140.66,6,2020+2022 Champion,Rollin Odama-Wong,140,131.9,AWAY,26.5
+2022,16,16,WINNERS_CONSOLATION_LADDER,79,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,98.5,138.18,3,Vietokwuegbunam Flashback,Ikaika Stone,125,138.5,AWAY,26.5
+2022,16,16,LOSERS_CONSOLATION_LADDER,80,2,Tweedle Dee-bo,Harvey Wang,122,123.07,13,. Tweedle Dame,Darwin Hu,173,129.57,AWAY,51
+2022,16,16,LOSERS_CONSOLATION_LADDER,81,5,Chute Mi,Justin Ho,144,135.29,14,Kick or die Kick,Jeffrey Chan,125.5,122.21,HOME,18.5
+2022,17,17,WINNERS_BRACKET,82,7,Season Is Over,Christopher Pascual,136,142.91,6,2020+2022 Champion,Rollin Odama-Wong,126.5,135.05,HOME,9.5
+2022,17,17,WINNERS_CONSOLATION_LADDER,83,8,I Chase Young Kids,Prashanth Balaraman,111.5,136.16,4,I hate Rollin,Evan Fukumoto,125.5,137.76,AWAY,14
+2022,17,17,WINNERS_CONSOLATION_LADDER,84,1,IF I DON'T WIN THEN I QUIT,Chase Mizoguchi,132.5,130.26,3,Vietokwuegbunam Flashback,Ikaika Stone,130.5,114.38,HOME,2
+2022,17,17,LOSERS_CONSOLATION_LADDER,85,5,Chute Mi,Justin Ho,122,129.56,13,. Tweedle Dame,Darwin Hu,60.5,136.86,HOME,61.5
+2022,17,17,LOSERS_CONSOLATION_LADDER,86,2,Tweedle Dee-bo,Harvey Wang,112.5,118.68,14,Kick or die Kick,Jeffrey Chan,138,121.13,AWAY,25.5
+2023,1,1,NONE,1,5,1-800-273-8255 @ 0:37-041,Justin Ho,122.28,7.9,7,This Is Jahmyr's Team,Christopher Pascual,109.14,8.49,HOME,13.14
+2023,1,1,NONE,2,6,2020+2022+2023 Champion,Rollin Odama-Wong,125.26,12.7,1,I WANT TO KILL MYSELF,Chase Mizoguchi,163.18,8.16,AWAY,37.92
+2023,1,1,NONE,3,4,Little munchkin,Evan Fukumoto,143.88,33.51,3,Vietokwuegbunam Flashback,Ikaika Stone,138.66,20.39,HOME,5.22
+2023,1,1,NONE,4,14,Kick or die Kick,Jeffrey Chan,86.84,8.73,13,1ST TEAM ALL GLAZER,Darwin Hu,118.64,8.21,AWAY,31.8
+2023,1,1,NONE,5,2,CeeDeez Nuts In Ur Mout,Harvey Wang,113.44,8.05,8,Damardiac Arrest,Prashanth Balaraman,121.06,7.88,AWAY,7.62
+2023,2,2,NONE,6,1,I WANT TO KILL MYSELF,Chase Mizoguchi,133.28,139.98,3,Vietokwuegbunam Flashback,Ikaika Stone,162.4,149.89,AWAY,29.12
+2023,2,2,NONE,7,13,1ST TEAM ALL GLAZER,Darwin Hu,113.86,150.57,5,1-800-273-8255 @ 0:37-041,Justin Ho,147.42,141.32,AWAY,33.56
+2023,2,2,NONE,8,8,Damardiac Arrest,Prashanth Balaraman,112.52,139.02,7,This Is Jahmyr's Team,Christopher Pascual,138.82,136.31,AWAY,26.3
+2023,2,2,NONE,9,14,Kick or die Kick,Jeffrey Chan,207.4,153.83,6,2020+2022+2023 Champion,Rollin Odama-Wong,164.2,141.76,HOME,43.2
+2023,2,2,NONE,10,2,CeeDeez Nuts In Ur Mout,Harvey Wang,155.42,152.14,4,Little munchkin,Evan Fukumoto,149.7,146.63,HOME,5.72
+2023,3,3,NONE,11,13,1ST TEAM ALL GLAZER,Darwin Hu,146.24,145.26,8,Damardiac Arrest,Prashanth Balaraman,169.32,135.94,AWAY,23.08
+2023,3,3,NONE,12,1,I WANT TO KILL MYSELF,Chase Mizoguchi,149,142.35,14,Kick or die Kick,Jeffrey Chan,222.98,156.3,AWAY,73.98
+2023,3,3,NONE,13,3,Vietokwuegbunam Flashback,Ikaika Stone,168.84,151.81,2,CeeDeez Nuts In Ur Mout,Harvey Wang,123.12,140.9,HOME,45.72
+2023,3,3,NONE,14,5,1-800-273-8255 @ 0:37-041,Justin Ho,122.34,137.8,6,2020+2022+2023 Champion,Rollin Odama-Wong,128.72,147.67,AWAY,6.38
+2023,3,3,NONE,15,7,This Is Jahmyr's Team,Christopher Pascual,145.9,149.14,4,Little munchkin,Evan Fukumoto,131.22,141.23,HOME,14.68
+2023,4,4,NONE,16,14,Kick or die Kick,Jeffrey Chan,146.54,151.79,2,CeeDeez Nuts In Ur Mout,Harvey Wang,99.92,145.8,HOME,46.62
+2023,4,4,NONE,17,6,2020+2022+2023 Champion,Rollin Odama-Wong,151.7,153.66,13,1ST TEAM ALL GLAZER,Darwin Hu,174.94,142.91,AWAY,23.24
+2023,4,4,NONE,18,4,Little munchkin,Evan Fukumoto,131.08,145.5,8,Damardiac Arrest,Prashanth Balaraman,136.42,137.85,AWAY,5.34
+2023,4,4,NONE,19,5,1-800-273-8255 @ 0:37-041,Justin Ho,114,137.62,1,I WANT TO KILL MYSELF,Chase Mizoguchi,145.26,137.87,AWAY,31.26
+2023,4,4,NONE,20,7,This Is Jahmyr's Team,Christopher Pascual,151.56,140.36,3,Vietokwuegbunam Flashback,Ikaika Stone,148.86,150.68,HOME,2.7
+2023,5,5,NONE,21,6,2020+2022+2023 Champion,Rollin Odama-Wong,125.18,146.29,4,Little munchkin,Evan Fukumoto,169.7,141.5,AWAY,44.52
+2023,5,5,NONE,22,14,Kick or die Kick,Jeffrey Chan,111.02,149.82,5,1-800-273-8255 @ 0:37-041,Justin Ho,153.74,138.59,AWAY,42.72
+2023,5,5,NONE,23,2,CeeDeez Nuts In Ur Mout,Harvey Wang,133.62,138.02,7,This Is Jahmyr's Team,Christopher Pascual,153.22,135.56,AWAY,19.6
+2023,5,5,NONE,24,13,1ST TEAM ALL GLAZER,Darwin Hu,178.52,150.84,1,I WANT TO KILL MYSELF,Chase Mizoguchi,169.6,136.16,HOME,8.92
+2023,5,5,NONE,25,8,Damardiac Arrest,Prashanth Balaraman,154.62,147.74,3,Vietokwuegbunam Flashback,Ikaika Stone,120.26,144.13,HOME,34.36
+2023,6,6,NONE,26,7,This Is Jahmyr's Team,Christopher Pascual,143.78,137.61,1,I WANT TO KILL MYSELF,Chase Mizoguchi,131.56,152.2,HOME,12.22
+2023,6,6,NONE,27,3,Vietokwuegbunam Flashback,Ikaika Stone,144.14,158.71,13,1ST TEAM ALL GLAZER,Darwin Hu,153.74,149.89,AWAY,9.6
+2023,6,6,NONE,28,8,Damardiac Arrest,Prashanth Balaraman,123.64,154.15,14,Kick or die Kick,Jeffrey Chan,152.86,160.2,AWAY,29.22
+2023,6,6,NONE,29,2,CeeDeez Nuts In Ur Mout,Harvey Wang,132.88,125.17,6,2020+2022+2023 Champion,Rollin Odama-Wong,124.22,151.14,HOME,8.66
+2023,6,6,NONE,30,4,Little munchkin,Evan Fukumoto,137.8,150.39,5,1-800-273-8255 @ 0:37-041,Justin Ho,106.58,131.84,HOME,31.22
+2023,7,7,NONE,31,13,1ST TEAM ALL GLAZER,Darwin Hu,151.82,138.97,7,This Is Jahmyr's Team,Christopher Pascual,142.46,137,HOME,9.36
+2023,7,7,NONE,32,14,Kick or die Kick,Jeffrey Chan,172.02,151.97,3,Vietokwuegbunam Flashback,Ikaika Stone,147.76,157.49,HOME,24.26
+2023,7,7,NONE,33,6,2020+2022+2023 Champion,Rollin Odama-Wong,117.86,133.35,8,Damardiac Arrest,Prashanth Balaraman,129.5,140.92,AWAY,11.64
+2023,7,7,NONE,34,5,1-800-273-8255 @ 0:37-041,Justin Ho,100.8,132.12,2,CeeDeez Nuts In Ur Mout,Harvey Wang,164.42,124.72,AWAY,63.62
+2023,7,7,NONE,35,1,I WANT TO KILL MYSELF,Chase Mizoguchi,110.56,142.14,4,Little munchkin,Evan Fukumoto,135,151.12,AWAY,24.44
+2023,8,8,NONE,36,7,This Is Jahmyr's Team,Christopher Pascual,163.36,150.07,14,Kick or die Kick,Jeffrey Chan,126.96,155.92,HOME,36.4
+2023,8,8,NONE,37,3,Vietokwuegbunam Flashback,Ikaika Stone,167.02,158.27,6,2020+2022+2023 Champion,Rollin Odama-Wong,172.84,145.48,AWAY,5.82
+2023,8,8,NONE,38,8,Damardiac Arrest,Prashanth Balaraman,132.62,154.65,5,1-800-273-8255 @ 0:37-041,Justin Ho,150.84,137.84,AWAY,18.22
+2023,8,8,NONE,39,2,CeeDeez Nuts In Ur Mout,Harvey Wang,153.86,126.44,1,I WANT TO KILL MYSELF,Chase Mizoguchi,130.22,153.7,HOME,23.64
+2023,8,8,NONE,40,4,Little munchkin,Evan Fukumoto,145.8,141.02,13,1ST TEAM ALL GLAZER,Darwin Hu,132.74,156.69,HOME,13.06
+2023,9,9,NONE,41,6,2020+2022+2023 Champion,Rollin Odama-Wong,148.82,141.52,7,This Is Jahmyr's Team,Christopher Pascual,148.98,145.58,AWAY,0.16
+2023,9,9,NONE,42,5,1-800-273-8255 @ 0:37-041,Justin Ho,122.52,129.68,14,Kick or die Kick,Jeffrey Chan,141.56,139.43,AWAY,19.04
+2023,9,9,NONE,43,3,Vietokwuegbunam Flashback,Ikaika Stone,125.42,157.43,4,Little munchkin,Evan Fukumoto,109.34,149.64,HOME,16.08
+2023,9,9,NONE,44,1,I WANT TO KILL MYSELF,Chase Mizoguchi,101.02,139.87,13,1ST TEAM ALL GLAZER,Darwin Hu,149.9,137.58,AWAY,48.88
+2023,9,9,NONE,45,8,Damardiac Arrest,Prashanth Balaraman,103.08,133.07,2,CeeDeez Nuts In Ur Mout,Harvey Wang,136.58,136.76,AWAY,33.5
+2023,10,10,NONE,46,5,1-800-273-8255 @ 0:37-041,Justin Ho,140.98,136.04,3,Vietokwuegbunam Flashback,Ikaika Stone,144.96,157.1,AWAY,3.98
+2023,10,10,NONE,47,1,I WANT TO KILL MYSELF,Chase Mizoguchi,142.22,144.08,6,2020+2022+2023 Champion,Rollin Odama-Wong,140.04,136.12,HOME,2.18
+2023,10,10,NONE,48,7,This Is Jahmyr's Team,Christopher Pascual,118.28,126.87,8,Damardiac Arrest,Prashanth Balaraman,174.66,147.74,AWAY,56.38
+2023,10,10,NONE,49,13,1ST TEAM ALL GLAZER,Darwin Hu,104.04,118.26,14,Kick or die Kick,Jeffrey Chan,167.88,150.5,AWAY,63.84
+2023,10,10,NONE,50,4,Little munchkin,Evan Fukumoto,101.78,131.2,2,CeeDeez Nuts In Ur Mout,Harvey Wang,179.6,137.05,AWAY,77.82
+2023,11,11,NONE,51,1,I WANT TO KILL MYSELF,Chase Mizoguchi,128.08,142.52,8,Damardiac Arrest,Prashanth Balaraman,157.14,156.41,AWAY,29.06
+2023,11,11,NONE,52,5,1-800-273-8255 @ 0:37-041,Justin Ho,104.32,132.14,13,1ST TEAM ALL GLAZER,Darwin Hu,125.28,146.81,AWAY,20.96
+2023,11,11,NONE,53,2,CeeDeez Nuts In Ur Mout,Harvey Wang,135.58,142.77,3,Vietokwuegbunam Flashback,Ikaika Stone,141.34,147.74,AWAY,5.76
+2023,11,11,NONE,54,6,2020+2022+2023 Champion,Rollin Odama-Wong,157.72,132.84,14,Kick or die Kick,Jeffrey Chan,158.58,155.81,AWAY,0.86
+2023,11,11,NONE,55,4,Little munchkin,Evan Fukumoto,152.76,142.19,7,This Is Jahmyr's Team,Christopher Pascual,143.82,140.91,HOME,8.94
+2023,12,12,NONE,56,13,1ST TEAM ALL GLAZER,Darwin Hu,175.02,151.25,2,CeeDeez Nuts In Ur Mout,Harvey Wang,140.1,153.2,HOME,34.92
+2023,12,12,NONE,57,14,Kick or die Kick,Jeffrey Chan,171.28,159.71,1,I WANT TO KILL MYSELF,Chase Mizoguchi,165.44,144.18,HOME,5.84
+2023,12,12,NONE,58,8,Damardiac Arrest,Prashanth Balaraman,117.54,146.41,4,Little munchkin,Evan Fukumoto,131.4,147.23,AWAY,13.86
+2023,12,12,NONE,59,6,2020+2022+2023 Champion,Rollin Odama-Wong,143.16,128.66,5,1-800-273-8255 @ 0:37-041,Justin Ho,166.78,139.99,AWAY,23.62
+2023,12,12,NONE,60,3,Vietokwuegbunam Flashback,Ikaika Stone,149.8,146.87,7,This Is Jahmyr's Team,Christopher Pascual,112.3,138,HOME,37.5
+2023,13,13,NONE,61,1,I WANT TO KILL MYSELF,Chase Mizoguchi,125.96,143.07,13,1ST TEAM ALL GLAZER,Darwin Hu,146.02,151.22,AWAY,20.06
+2023,13,13,NONE,62,6,2020+2022+2023 Champion,Rollin Odama-Wong,131.2,133.64,8,Damardiac Arrest,Prashanth Balaraman,156.16,145.12,AWAY,24.96
+2023,13,13,NONE,63,5,1-800-273-8255 @ 0:37-041,Justin Ho,162.16,132.89,3,Vietokwuegbunam Flashback,Ikaika Stone,179.54,129.99,AWAY,17.38
+2023,13,13,NONE,64,14,Kick or die Kick,Jeffrey Chan,181.72,147.24,7,This Is Jahmyr's Team,Christopher Pascual,80.26,136.74,HOME,101.46
+2023,13,13,NONE,65,4,Little munchkin,Evan Fukumoto,176.04,133.92,2,CeeDeez Nuts In Ur Mout,Harvey Wang,146.92,151.13,HOME,29.12
+2023,14,14,NONE,66,5,1-800-273-8255 @ 0:37-041,Justin Ho,135.68,133.7,7,This Is Jahmyr's Team,Christopher Pascual,167.18,136.24,AWAY,31.5
+2023,14,14,NONE,67,4,Little munchkin,Evan Fukumoto,118.08,144.48,14,Kick or die Kick,Jeffrey Chan,169.34,138.75,AWAY,51.26
+2023,14,14,NONE,68,2,CeeDeez Nuts In Ur Mout,Harvey Wang,142.76,164.48,6,2020+2022+2023 Champion,Rollin Odama-Wong,134.46,126.83,HOME,8.3
+2023,14,14,NONE,69,3,Vietokwuegbunam Flashback,Ikaika Stone,148.12,144.1,1,I WANT TO KILL MYSELF,Chase Mizoguchi,86.2,130.5,HOME,61.92
+2023,14,14,NONE,70,13,1ST TEAM ALL GLAZER,Darwin Hu,157.12,157.98,8,Damardiac Arrest,Prashanth Balaraman,94.78,146.68,HOME,62.34
+2023,15,15,WINNERS_BRACKET,72,4,Little munchkin,Evan Fukumoto,97.3,118.31,7,This Is Jahmyr's Team,Christopher Pascual,107.06,146.16,AWAY,9.76
+2023,15,15,WINNERS_BRACKET,73,3,Vietokwuegbunam Flashback,Ikaika Stone,117.12,148.54,8,Damardiac Arrest,Prashanth Balaraman,130.08,135.83,AWAY,12.96
+2023,15,15,LOSERS_CONSOLATION_LADDER,75,2,CeeDeez Nuts In Ur Mout,Harvey Wang,132.74,161.09,5,1-800-273-8255 @ 0:37-041,Justin Ho,122.9,123.41,HOME,9.84
+2023,15,15,LOSERS_CONSOLATION_LADDER,76,1,I WANT TO KILL MYSELF,Chase Mizoguchi,188.54,126.92,6,2020+2022+2023 Champion,Rollin Odama-Wong,98.34,122.19,HOME,90.2
+2023,16,16,WINNERS_BRACKET,77,14,Kick or die Kick,Jeffrey Chan,148,152.81,7,This Is Jahmyr's Team,Christopher Pascual,244.22,144.87,AWAY,96.22
+2023,16,16,WINNERS_BRACKET,78,13,1ST TEAM ALL GLAZER,Darwin Hu,122.64,153.87,8,Damardiac Arrest,Prashanth Balaraman,107.5,137.38,HOME,15.14
+2023,16,16,WINNERS_CONSOLATION_LADDER,79,3,Vietokwuegbunam Flashback,Ikaika Stone,127.68,144.46,4,Little munchkin,Evan Fukumoto,151.42,142.5,AWAY,23.74
+2023,16,16,LOSERS_CONSOLATION_LADDER,80,2,CeeDeez Nuts In Ur Mout,Harvey Wang,164.82,151.73,1,I WANT TO KILL MYSELF,Chase Mizoguchi,139.24,132.36,HOME,25.58
+2023,16,16,LOSERS_CONSOLATION_LADDER,81,5,1-800-273-8255 @ 0:37-041,Justin Ho,145.06,125.22,6,2020+2022+2023 Champion,Rollin Odama-Wong,81.28,137.16,HOME,63.78
+2023,17,17,WINNERS_BRACKET,82,13,1ST TEAM ALL GLAZER,Darwin Hu,161.58,159.23,7,This Is Jahmyr's Team,Christopher Pascual,120.28,140.16,HOME,41.3
+2023,17,17,WINNERS_CONSOLATION_LADDER,83,14,Kick or die Kick,Jeffrey Chan,117.72,150.16,8,Damardiac Arrest,Prashanth Balaraman,175.08,143.63,AWAY,57.36
+2023,17,17,WINNERS_CONSOLATION_LADDER,84,3,Vietokwuegbunam Flashback,Ikaika Stone,135.84,132.63,4,Little munchkin,Evan Fukumoto,108.96,146.85,HOME,26.88
+2023,17,17,LOSERS_CONSOLATION_LADDER,85,2,CeeDeez Nuts In Ur Mout,Harvey Wang,143.9,159.7,5,1-800-273-8255 @ 0:37-041,Justin Ho,120.2,123.87,HOME,23.7
+2023,17,17,LOSERS_CONSOLATION_LADDER,86,1,I WANT TO KILL MYSELF,Chase Mizoguchi,154.52,142.62,6,2020+2022+2023 Champion,Rollin Odama-Wong,86.62,132.48,HOME,67.9
+2024,1,1,NONE,1,5,#freekylepitts,Justin Ho,92.54,117.29,4,Heem Dawg,Evan Fukumoto,132.08,135.26,AWAY,39.54
+2024,1,1,NONE,2,6,2020+2022+2024 Champion,Rollin Odama-Wong,108.96,134.98,1,Gamblers Anonymous,Chase Mizoguchi,124.58,140.62,AWAY,15.62
+2024,1,1,NONE,3,2,Kapiolani Medical Center,Harvey Wang,133.68,143.7,3,Vietokwuegbunam Flashback,Ikaika Stone,128.48,148.43,HOME,5.2
+2024,1,1,NONE,4,14,Kick or die,Jeffrey Chan,132.58,140.7,7,Bishop Sycamore,Christopher Pascual,133.54,140.01,AWAY,0.96
+2024,1,1,NONE,5,13,GLAZER OF THE YEAR,Darwin Hu,163.96,141.41,8,Najee Germany,Prashanth Balaraman,141.6,142.09,HOME,22.36
+2024,2,2,NONE,6,1,Gamblers Anonymous,Chase Mizoguchi,126.82,137.16,14,Kick or die,Jeffrey Chan,173.44,133.96,AWAY,46.62
+2024,2,2,NONE,7,7,Bishop Sycamore,Christopher Pascual,115.2,139.76,5,#freekylepitts,Justin Ho,140.76,139.56,AWAY,25.56
+2024,2,2,NONE,8,8,Najee Germany,Prashanth Balaraman,97.16,141.03,6,2020+2022+2024 Champion,Rollin Odama-Wong,138.44,144.1,AWAY,41.28
+2024,2,2,NONE,9,3,Vietokwuegbunam Flashback,Ikaika Stone,167.12,148.21,13,GLAZER OF THE YEAR,Darwin Hu,146.84,142.24,HOME,20.28
+2024,2,2,NONE,10,2,Kapiolani Medical Center,Harvey Wang,91.78,136.13,4,Heem Dawg,Evan Fukumoto,142.4,147.97,AWAY,50.62
+2024,3,3,NONE,11,14,Kick or die,Jeffrey Chan,112.54,143.83,8,Najee Germany,Prashanth Balaraman,134.84,137.9,AWAY,22.3
+2024,3,3,NONE,12,4,Heem Dawg,Evan Fukumoto,139.44,141.79,13,GLAZER OF THE YEAR,Darwin Hu,156.28,142.32,AWAY,16.84
+2024,3,3,NONE,13,5,#freekylepitts,Justin Ho,166.32,133.6,2,Kapiolani Medical Center,Harvey Wang,127.84,125.43,HOME,38.48
+2024,3,3,NONE,14,3,Vietokwuegbunam Flashback,Ikaika Stone,136.94,137.42,6,2020+2022+2024 Champion,Rollin Odama-Wong,137,144.13,AWAY,0.06
+2024,3,3,NONE,15,7,Bishop Sycamore,Christopher Pascual,82.42,129.75,1,Gamblers Anonymous,Chase Mizoguchi,126.7,136.08,AWAY,44.28
+2024,4,4,NONE,16,1,Gamblers Anonymous,Chase Mizoguchi,135.12,131.42,2,Kapiolani Medical Center,Harvey Wang,126.24,132.07,HOME,8.88
+2024,4,4,NONE,17,5,#freekylepitts,Justin Ho,137.68,135.09,13,GLAZER OF THE YEAR,Darwin Hu,134.48,148.38,HOME,3.2
+2024,4,4,NONE,18,7,Bishop Sycamore,Christopher Pascual,112.7,129.24,8,Najee Germany,Prashanth Balaraman,151.62,133.29,AWAY,38.92
+2024,4,4,NONE,19,6,2020+2022+2024 Champion,Rollin Odama-Wong,132.98,135.26,14,Kick or die,Jeffrey Chan,134.26,135.38,AWAY,1.28
+2024,4,4,NONE,20,4,Heem Dawg,Evan Fukumoto,171.38,137.37,3,Vietokwuegbunam Flashback,Ikaika Stone,127.1,130.02,HOME,44.28
+2024,5,5,NONE,21,14,Kick or die,Jeffrey Chan,119.02,124.99,4,Heem Dawg,Evan Fukumoto,144.6,135.38,AWAY,25.58
+2024,5,5,NONE,22,6,2020+2022+2024 Champion,Rollin Odama-Wong,159.46,124.91,7,Bishop Sycamore,Christopher Pascual,136.64,101.11,HOME,22.82
+2024,5,5,NONE,23,3,Vietokwuegbunam Flashback,Ikaika Stone,120.94,127.28,5,#freekylepitts,Justin Ho,144.44,134.59,AWAY,23.5
+2024,5,5,NONE,24,8,Najee Germany,Prashanth Balaraman,160.22,131.63,1,Gamblers Anonymous,Chase Mizoguchi,107.88,138.53,HOME,52.34
+2024,5,5,NONE,25,13,GLAZER OF THE YEAR,Darwin Hu,188.28,133.26,2,Kapiolani Medical Center,Harvey Wang,138.86,139.32,HOME,49.42
+2024,6,6,NONE,26,13,GLAZER OF THE YEAR,Darwin Hu,138.34,138.04,1,Gamblers Anonymous,Chase Mizoguchi,107.8,138.1,HOME,30.54
+2024,6,6,NONE,27,2,Kapiolani Medical Center,Harvey Wang,123.88,129,7,Bishop Sycamore,Christopher Pascual,154.7,124.73,AWAY,30.82
+2024,6,6,NONE,28,5,#freekylepitts,Justin Ho,157.28,137.36,14,Kick or die,Jeffrey Chan,124.28,119.98,HOME,33
+2024,6,6,NONE,29,4,Heem Dawg,Evan Fukumoto,147.12,139.55,6,2020+2022+2024 Champion,Rollin Odama-Wong,178.8,134.63,AWAY,31.68
+2024,6,6,NONE,30,3,Vietokwuegbunam Flashback,Ikaika Stone,160.34,139.73,8,Najee Germany,Prashanth Balaraman,157.7,139.08,HOME,2.64
+2024,7,7,NONE,31,13,GLAZER OF THE YEAR,Darwin Hu,165.36,152.51,7,Bishop Sycamore,Christopher Pascual,119.28,134.7,HOME,46.08
+2024,7,7,NONE,32,1,Gamblers Anonymous,Chase Mizoguchi,89.2,127.19,3,Vietokwuegbunam Flashback,Ikaika Stone,133.8,132.69,AWAY,44.6
+2024,7,7,NONE,33,4,Heem Dawg,Evan Fukumoto,112.52,134.88,8,Najee Germany,Prashanth Balaraman,182.12,137.82,AWAY,69.6
+2024,7,7,NONE,34,5,#freekylepitts,Justin Ho,141.58,136.17,6,2020+2022+2024 Champion,Rollin Odama-Wong,106.26,130.04,HOME,35.32
+2024,7,7,NONE,35,14,Kick or die,Jeffrey Chan,106.66,140.25,2,Kapiolani Medical Center,Harvey Wang,144.3,146.15,AWAY,37.64
+2024,8,8,NONE,36,13,GLAZER OF THE YEAR,Darwin Hu,118.76,156.29,14,Kick or die,Jeffrey Chan,154.08,143.29,AWAY,35.32
+2024,8,8,NONE,37,2,Kapiolani Medical Center,Harvey Wang,147.82,143.04,6,2020+2022+2024 Champion,Rollin Odama-Wong,141.74,134.18,HOME,6.08
+2024,8,8,NONE,38,8,Najee Germany,Prashanth Balaraman,167.12,149.85,5,#freekylepitts,Justin Ho,144.98,138.92,HOME,22.14
+2024,8,8,NONE,39,4,Heem Dawg,Evan Fukumoto,137.7,144.92,1,Gamblers Anonymous,Chase Mizoguchi,147.04,144.22,AWAY,9.34
+2024,8,8,NONE,40,3,Vietokwuegbunam Flashback,Ikaika Stone,155.64,145.18,7,Bishop Sycamore,Christopher Pascual,129.26,118.89,HOME,26.38
+2024,9,9,NONE,41,4,Heem Dawg,Evan Fukumoto,136.48,140.61,7,Bishop Sycamore,Christopher Pascual,120.74,135.26,HOME,15.74
+2024,9,9,NONE,42,3,Vietokwuegbunam Flashback,Ikaika Stone,128.64,145.8,14,Kick or die,Jeffrey Chan,169.94,146.5,AWAY,41.3
+2024,9,9,NONE,43,13,GLAZER OF THE YEAR,Darwin Hu,165.68,154.55,6,2020+2022+2024 Champion,Rollin Odama-Wong,137.84,142.33,HOME,27.84
+2024,9,9,NONE,44,1,Gamblers Anonymous,Chase Mizoguchi,128.56,144.53,5,#freekylepitts,Justin Ho,129.38,127.6,AWAY,0.82
+2024,9,9,NONE,45,8,Najee Germany,Prashanth Balaraman,133.96,144.49,2,Kapiolani Medical Center,Harvey Wang,125.68,146.98,HOME,8.28
+2024,10,10,NONE,46,2,Kapiolani Medical Center,Harvey Wang,150.34,143.49,3,Vietokwuegbunam Flashback,Ikaika Stone,153.36,139.55,AWAY,3.02
+2024,10,10,NONE,47,1,Gamblers Anonymous,Chase Mizoguchi,100.06,133.94,6,2020+2022+2024 Champion,Rollin Odama-Wong,122.28,135.25,AWAY,22.22
+2024,10,10,NONE,48,13,GLAZER OF THE YEAR,Darwin Hu,113.1,150.77,8,Najee Germany,Prashanth Balaraman,164.8,149.13,AWAY,51.7
+2024,10,10,NONE,49,7,Bishop Sycamore,Christopher Pascual,161.98,136.26,14,Kick or die,Jeffrey Chan,116.48,146.53,HOME,45.5
+2024,10,10,NONE,50,4,Heem Dawg,Evan Fukumoto,113.04,132.23,5,#freekylepitts,Justin Ho,134.48,146.49,AWAY,21.44
+2024,11,11,NONE,51,6,2020+2022+2024 Champion,Rollin Odama-Wong,165.76,125.49,8,Najee Germany,Prashanth Balaraman,166.08,147,AWAY,0.32
+2024,11,11,NONE,52,3,Vietokwuegbunam Flashback,Ikaika Stone,152.32,142.1,13,GLAZER OF THE YEAR,Darwin Hu,197.26,143.57,AWAY,44.94
+2024,11,11,NONE,53,7,Bishop Sycamore,Christopher Pascual,157.02,135.93,5,#freekylepitts,Justin Ho,95.74,134.78,HOME,61.28
+2024,11,11,NONE,54,1,Gamblers Anonymous,Chase Mizoguchi,141.22,140.54,14,Kick or die,Jeffrey Chan,111.7,144.77,HOME,29.52
+2024,11,11,NONE,55,4,Heem Dawg,Evan Fukumoto,163.12,135.12,2,Kapiolani Medical Center,Harvey Wang,134.34,133.81,HOME,28.78
+2024,12,12,NONE,56,5,#freekylepitts,Justin Ho,146.4,141.04,2,Kapiolani Medical Center,Harvey Wang,106.02,135.87,HOME,40.38
+2024,12,12,NONE,57,7,Bishop Sycamore,Christopher Pascual,100.08,114.49,1,Gamblers Anonymous,Chase Mizoguchi,124.52,132.87,AWAY,24.44
+2024,12,12,NONE,58,13,GLAZER OF THE YEAR,Darwin Hu,192.14,142.03,4,Heem Dawg,Evan Fukumoto,158.06,123.52,HOME,34.08
+2024,12,12,NONE,59,14,Kick or die,Jeffrey Chan,96.18,120.17,8,Najee Germany,Prashanth Balaraman,148.18,128.94,AWAY,52
+2024,12,12,NONE,60,3,Vietokwuegbunam Flashback,Ikaika Stone,112.94,133.27,6,2020+2022+2024 Champion,Rollin Odama-Wong,176.24,134.57,AWAY,63.3
+2024,13,13,NONE,61,14,Kick or die,Jeffrey Chan,130.1,146.14,6,2020+2022+2024 Champion,Rollin Odama-Wong,146.54,141.25,AWAY,16.44
+2024,13,13,NONE,62,7,Bishop Sycamore,Christopher Pascual,115.24,135.2,8,Najee Germany,Prashanth Balaraman,107.18,148.87,HOME,8.06
+2024,13,13,NONE,63,4,Heem Dawg,Evan Fukumoto,113.38,145.17,3,Vietokwuegbunam Flashback,Ikaika Stone,150.5,147.61,AWAY,37.12
+2024,13,13,NONE,64,1,Gamblers Anonymous,Chase Mizoguchi,110.86,138.03,2,Kapiolani Medical Center,Harvey Wang,152.76,144.21,AWAY,41.9
+2024,13,13,NONE,65,5,#freekylepitts,Justin Ho,173.1,131.94,13,GLAZER OF THE YEAR,Darwin Hu,180.82,157.9,AWAY,7.72
+2024,14,14,NONE,66,6,2020+2022+2024 Champion,Rollin Odama-Wong,140.44,132.36,7,Bishop Sycamore,Christopher Pascual,143.08,130.87,AWAY,2.64
+2024,14,14,NONE,67,4,Heem Dawg,Evan Fukumoto,125.68,127.73,14,Kick or die,Jeffrey Chan,122.72,137.11,HOME,2.96
+2024,14,14,NONE,68,1,Gamblers Anonymous,Chase Mizoguchi,166.08,128.72,8,Najee Germany,Prashanth Balaraman,230.04,142.05,AWAY,63.96
+2024,14,14,NONE,69,2,Kapiolani Medical Center,Harvey Wang,181.9,130.98,13,GLAZER OF THE YEAR,Darwin Hu,173.88,159,HOME,8.02
+2024,14,14,NONE,70,3,Vietokwuegbunam Flashback,Ikaika Stone,116.38,139.43,5,#freekylepitts,Justin Ho,132.88,126.27,AWAY,16.5
+2024,15,15,WINNERS_BRACKET,72,6,2020+2022+2024 Champion,Rollin Odama-Wong,125.2,131.73,4,Heem Dawg,Evan Fukumoto,134.54,156.69,AWAY,9.34
+2024,15,15,WINNERS_BRACKET,73,13,GLAZER OF THE YEAR,Darwin Hu,159.62,155.82,3,Vietokwuegbunam Flashback,Ikaika Stone,178.7,141.32,AWAY,19.08
+2024,15,15,LOSERS_CONSOLATION_LADDER,75,7,Bishop Sycamore,Christopher Pascual,96.04,134.33,1,Gamblers Anonymous,Chase Mizoguchi,95.58,112.94,HOME,0.46
+2024,15,15,LOSERS_CONSOLATION_LADDER,76,2,Kapiolani Medical Center,Harvey Wang,144.22,140.88,14,Kick or die,Jeffrey Chan,109.54,126.27,HOME,34.68
+2024,16,16,WINNERS_BRACKET,77,8,Najee Germany,Prashanth Balaraman,160.82,157.84,4,Heem Dawg,Evan Fukumoto,110.92,145.48,HOME,49.9
+2024,16,16,WINNERS_BRACKET,78,5,#freekylepitts,Justin Ho,172.86,144.6,3,Vietokwuegbunam Flashback,Ikaika Stone,143.06,141.93,HOME,29.8
+2024,16,16,WINNERS_CONSOLATION_LADDER,79,13,GLAZER OF THE YEAR,Darwin Hu,170.28,168.89,6,2020+2022+2024 Champion,Rollin Odama-Wong,148.4,131.7,HOME,21.88
+2024,16,16,LOSERS_CONSOLATION_LADDER,80,7,Bishop Sycamore,Christopher Pascual,142.44,123.57,2,Kapiolani Medical Center,Harvey Wang,129.86,140.73,HOME,12.58
+2024,16,16,LOSERS_CONSOLATION_LADDER,81,1,Gamblers Anonymous,Chase Mizoguchi,136.06,123.35,14,Kick or die,Jeffrey Chan,178.58,123.81,AWAY,42.52
+2024,17,17,WINNERS_BRACKET,82,8,Najee Germany,Prashanth Balaraman,162.98,160.27,5,#freekylepitts,Justin Ho,126.16,150.31,HOME,36.82
+2024,17,17,WINNERS_CONSOLATION_LADDER,83,4,Heem Dawg,Evan Fukumoto,130.6,142.99,3,Vietokwuegbunam Flashback,Ikaika Stone,161.04,134.77,AWAY,30.44
+2024,17,17,WINNERS_CONSOLATION_LADDER,84,13,GLAZER OF THE YEAR,Darwin Hu,189.44,160.97,6,2020+2022+2024 Champion,Rollin Odama-Wong,95.8,97.93,HOME,93.64
+2024,17,17,LOSERS_CONSOLATION_LADDER,85,7,Bishop Sycamore,Christopher Pascual,187.12,125.76,14,Kick or die,Jeffrey Chan,134.38,133.39,HOME,52.74
+2024,17,17,LOSERS_CONSOLATION_LADDER,86,1,Gamblers Anonymous,Chase Mizoguchi,104.46,116.07,2,Kapiolani Medical Center,Harvey Wang,137.74,138.09,AWAY,33.28
+2025,1,1,NONE,1,2,Rice Fields Got Picken Dry,Harvey Wang,137.88,141.49,6,2020+2022+2025 Champion,Rollin Odama-Wong,119.56,142.1,HOME,18.32
+2025,1,1,NONE,2,13,Saquonda Forever,Darwin Hu,140.54,138.45,3,Vietokwuegbunam Flashback,Ikaika Stone,144,138.79,AWAY,3.46
+2025,1,1,NONE,3,5,The Big Beautiful Bill,Justin Ho,162,144.51,4,GIBBY,Evan Fukumoto,102.86,142.18,HOME,59.14
+2025,1,1,NONE,4,1,They Hit the Second Bower,Chase Mizoguchi,118.84,143.63,7,Brown Ladd Squad,Christopher Pascual,134.44,141.52,AWAY,15.6
+2025,1,1,NONE,5,14,Kick or die,Jeffrey Chan,133.14,140.59,8,Lemme Ra-Dog It,Prashanth Balaraman,98.24,144.65,HOME,34.9
+2025,2,2,NONE,6,3,Vietokwuegbunam Flashback,Ikaika Stone,107.44,142.55,7,Brown Ladd Squad,Christopher Pascual,121.72,137.1,AWAY,14.28
+2025,2,2,NONE,7,4,GIBBY,Evan Fukumoto,112.06,138.82,13,Saquonda Forever,Darwin Hu,135.12,138.32,AWAY,23.06
+2025,2,2,NONE,8,2,Rice Fields Got Picken Dry,Harvey Wang,139,145.24,5,The Big Beautiful Bill,Justin Ho,132.04,139.58,HOME,6.96
+2025,2,2,NONE,9,8,Lemme Ra-Dog It,Prashanth Balaraman,158.52,130.75,1,They Hit the Second Bower,Chase Mizoguchi,159.82,138.9,AWAY,1.3
+2025,2,2,NONE,10,6,2020+2022+2025 Champion,Rollin Odama-Wong,177.96,144.52,14,Kick or die,Jeffrey Chan,138.66,146.68,HOME,39.3
+2025,3,3,NONE,11,2,Rice Fields Got Picken Dry,Harvey Wang,126.48,139.98,8,Lemme Ra-Dog It,Prashanth Balaraman,122.86,148.83,HOME,3.62
+2025,3,3,NONE,12,3,Vietokwuegbunam Flashback,Ikaika Stone,103.76,149.09,14,Kick or die,Jeffrey Chan,117.28,139.88,AWAY,13.52
+2025,3,3,NONE,13,13,Saquonda Forever,Darwin Hu,128.84,141.33,7,Brown Ladd Squad,Christopher Pascual,134.06,133.58,AWAY,5.22
+2025,3,3,NONE,14,5,The Big Beautiful Bill,Justin Ho,104.38,135.55,6,2020+2022+2025 Champion,Rollin Odama-Wong,141.58,144.14,AWAY,37.2
+2025,3,3,NONE,15,4,GIBBY,Evan Fukumoto,176.14,139.79,1,They Hit the Second Bower,Chase Mizoguchi,129.84,143.76,HOME,46.3
+2025,4,4,NONE,16,3,Vietokwuegbunam Flashback,Ikaika Stone,114.02,127.89,2,Rice Fields Got Picken Dry,Harvey Wang,152.04,143.6,AWAY,38.02
+2025,4,4,NONE,17,4,GIBBY,Evan Fukumoto,165.86,145.33,8,Lemme Ra-Dog It,Prashanth Balaraman,159.94,150.32,HOME,5.92
+2025,4,4,NONE,18,5,The Big Beautiful Bill,Justin Ho,152.48,136.57,13,Saquonda Forever,Darwin Hu,149.18,139.18,HOME,3.3
+2025,4,4,NONE,19,7,Brown Ladd Squad,Christopher Pascual,148.74,117.52,6,2020+2022+2025 Champion,Rollin Odama-Wong,129.46,144.06,HOME,19.28
+2025,4,4,NONE,20,14,Kick or die,Jeffrey Chan,181.28,146.71,1,They Hit the Second Bower,Chase Mizoguchi,138.12,146.61,HOME,43.16
+2025,5,5,NONE,21,4,GIBBY,Evan Fukumoto,139.84,140.65,3,Vietokwuegbunam Flashback,Ikaika Stone,191.24,134.24,AWAY,51.4
+2025,5,5,NONE,22,5,The Big Beautiful Bill,Justin Ho,134.26,128.21,14,Kick or die,Jeffrey Chan,171.72,130.77,AWAY,37.46
+2025,5,5,NONE,23,13,Saquonda Forever,Darwin Hu,130.04,140.61,2,Rice Fields Got Picken Dry,Harvey Wang,113.68,130.42,HOME,16.36
+2025,5,5,NONE,24,8,Lemme Ra-Dog It,Prashanth Balaraman,162.4,159.58,7,Brown Ladd Squad,Christopher Pascual,149.04,141.89,HOME,13.36
+2025,5,5,NONE,25,1,They Hit the Second Bower,Chase Mizoguchi,121.68,119.37,6,2020+2022+2025 Champion,Rollin Odama-Wong,156.34,137.05,AWAY,34.66
+2025,6,6,NONE,26,14,Kick or die,Jeffrey Chan,117.64,145.08,2,Rice Fields Got Picken Dry,Harvey Wang,150.84,140.44,AWAY,33.2
+2025,6,6,NONE,27,1,They Hit the Second Bower,Chase Mizoguchi,156.74,137.02,3,Vietokwuegbunam Flashback,Ikaika Stone,149.18,146.11,HOME,7.56
+2025,6,6,NONE,28,6,2020+2022+2025 Champion,Rollin Odama-Wong,161.2,138.99,4,GIBBY,Evan Fukumoto,103.82,146.42,HOME,57.38
+2025,6,6,NONE,29,7,Brown Ladd Squad,Christopher Pascual,134.94,143.19,5,The Big Beautiful Bill,Justin Ho,161.38,134.32,AWAY,26.44
+2025,6,6,NONE,30,8,Lemme Ra-Dog It,Prashanth Balaraman,124.42,153.62,13,Saquonda Forever,Darwin Hu,151.24,136.9,AWAY,26.82
+2025,7,7,NONE,31,2,Rice Fields Got Picken Dry,Harvey Wang,141.22,140.28,4,GIBBY,Evan Fukumoto,173.26,142.1,AWAY,32.04
+2025,7,7,NONE,32,5,The Big Beautiful Bill,Justin Ho,111.74,142.3,3,Vietokwuegbunam Flashback,Ikaika Stone,131.78,151.26,AWAY,20.04
+2025,7,7,NONE,33,13,Saquonda Forever,Darwin Hu,128.22,143.76,1,They Hit the Second Bower,Chase Mizoguchi,201.98,138.45,AWAY,73.76
+2025,7,7,NONE,34,14,Kick or die,Jeffrey Chan,133.9,131.92,7,Brown Ladd Squad,Christopher Pascual,150,147,AWAY,16.1
+2025,7,7,NONE,35,6,2020+2022+2025 Champion,Rollin Odama-Wong,105.62,136.09,8,Lemme Ra-Dog It,Prashanth Balaraman,176.06,152.89,AWAY,70.44
+2025,8,8,NONE,36,7,Brown Ladd Squad,Christopher Pascual,108.34,119.26,2,Rice Fields Got Picken Dry,Harvey Wang,143.42,137.27,AWAY,35.08
+2025,8,8,NONE,37,3,Vietokwuegbunam Flashback,Ikaika Stone,128.5,141.86,13,Saquonda Forever,Darwin Hu,143.7,119.56,AWAY,15.2
+2025,8,8,NONE,38,4,GIBBY,Evan Fukumoto,135.92,134.84,5,The Big Beautiful Bill,Justin Ho,125.5,143.82,HOME,10.42
+2025,8,8,NONE,39,1,They Hit the Second Bower,Chase Mizoguchi,146.2,143.05,8,Lemme Ra-Dog It,Prashanth Balaraman,139.36,142.58,HOME,6.84
+2025,8,8,NONE,40,14,Kick or die,Jeffrey Chan,153.26,137.76,6,2020+2022+2025 Champion,Rollin Odama-Wong,124.72,130.08,HOME,28.54
+2025,9,9,NONE,41,1,They Hit the Second Bower,Chase Mizoguchi,101.3,133.36,2,Rice Fields Got Picken Dry,Harvey Wang,156.24,142.43,AWAY,54.94
+2025,9,9,NONE,42,6,2020+2022+2025 Champion,Rollin Odama-Wong,186.36,153.4,3,Vietokwuegbunam Flashback,Ikaika Stone,138.12,148.64,HOME,48.24
+2025,9,9,NONE,43,7,Brown Ladd Squad,Christopher Pascual,124.86,143.01,4,GIBBY,Evan Fukumoto,124.3,142.93,HOME,0.56
+2025,9,9,NONE,44,8,Lemme Ra-Dog It,Prashanth Balaraman,160.16,159.54,5,The Big Beautiful Bill,Justin Ho,128.12,137.31,HOME,32.04
+2025,9,9,NONE,45,14,Kick or die,Jeffrey Chan,112.72,125.08,13,Saquonda Forever,Darwin Hu,183.26,149.42,AWAY,70.54
+2025,10,10,NONE,46,8,Lemme Ra-Dog It,Prashanth Balaraman,154.1,152.86,3,Vietokwuegbunam Flashback,Ikaika Stone,120.66,127.79,HOME,33.44
+2025,10,10,NONE,47,13,Saquonda Forever,Darwin Hu,132.94,155.9,4,GIBBY,Evan Fukumoto,146.94,141.49,AWAY,14
+2025,10,10,NONE,48,6,2020+2022+2025 Champion,Rollin Odama-Wong,127.54,159.13,7,Brown Ladd Squad,Christopher Pascual,151.84,130.48,AWAY,24.3
+2025,10,10,NONE,49,1,They Hit the Second Bower,Chase Mizoguchi,121.06,132.3,14,Kick or die,Jeffrey Chan,104.42,132.34,HOME,16.64
+2025,10,10,NONE,50,5,The Big Beautiful Bill,Justin Ho,158.48,143.98,2,Rice Fields Got Picken Dry,Harvey Wang,165.36,135.39,AWAY,6.88
+2025,11,11,NONE,51,2,Rice Fields Got Picken Dry,Harvey Wang,126.12,150.61,3,Vietokwuegbunam Flashback,Ikaika Stone,134.66,144.91,AWAY,8.54
+2025,11,11,NONE,52,14,Kick or die,Jeffrey Chan,121.1,132.22,4,GIBBY,Evan Fukumoto,113.7,147.96,HOME,7.4
+2025,11,11,NONE,53,13,Saquonda Forever,Darwin Hu,161.92,156.15,5,The Big Beautiful Bill,Justin Ho,143.16,109.88,HOME,18.76
+2025,11,11,NONE,54,7,Brown Ladd Squad,Christopher Pascual,111.18,134.39,8,Lemme Ra-Dog It,Prashanth Balaraman,128.74,154.4,AWAY,17.56
+2025,11,11,NONE,55,6,2020+2022+2025 Champion,Rollin Odama-Wong,118.68,148.01,1,They Hit the Second Bower,Chase Mizoguchi,85.66,140.8,HOME,33.02
+2025,12,12,NONE,56,2,Rice Fields Got Picken Dry,Harvey Wang,138.36,127.68,8,Lemme Ra-Dog It,Prashanth Balaraman,158,152.07,AWAY,19.64
+2025,12,12,NONE,57,3,Vietokwuegbunam Flashback,Ikaika Stone,128.8,143.96,14,Kick or die,Jeffrey Chan,93.24,133.87,HOME,35.56
+2025,12,12,NONE,58,4,GIBBY,Evan Fukumoto,188.88,148.22,1,They Hit the Second Bower,Chase Mizoguchi,113.58,134.84,HOME,75.3
+2025,12,12,NONE,59,13,Saquonda Forever,Darwin Hu,155.08,152.49,7,Brown Ladd Squad,Christopher Pascual,130.96,131.49,HOME,24.12
+2025,12,12,NONE,60,5,The Big Beautiful Bill,Justin Ho,127.88,139.48,6,2020+2022+2025 Champion,Rollin Odama-Wong,134.58,146.85,AWAY,6.7
+2025,13,13,NONE,61,3,Vietokwuegbunam Flashback,Ikaika Stone,147.56,149.22,4,GIBBY,Evan Fukumoto,120.92,143.49,HOME,26.64
+2025,13,13,NONE,62,1,They Hit the Second Bower,Chase Mizoguchi,123.9,138.67,5,The Big Beautiful Bill,Justin Ho,129.9,133.8,AWAY,6
+2025,13,13,NONE,63,7,Brown Ladd Squad,Christopher Pascual,133.8,138.65,14,Kick or die,Jeffrey Chan,122.5,124.95,HOME,11.3
+2025,13,13,NONE,64,8,Lemme Ra-Dog It,Prashanth Balaraman,122.68,153.78,6,2020+2022+2025 Champion,Rollin Odama-Wong,130.4,141.31,AWAY,7.72
+2025,13,13,NONE,65,2,Rice Fields Got Picken Dry,Harvey Wang,157.98,153.17,13,Saquonda Forever,Darwin Hu,113.1,152.08,HOME,44.88
+2025,14,14,NONE,66,4,GIBBY,Evan Fukumoto,126.36,136.47,2,Rice Fields Got Picken Dry,Harvey Wang,153.9,148.19,AWAY,27.54
+2025,14,14,NONE,67,3,Vietokwuegbunam Flashback,Ikaika Stone,126.22,140.02,5,The Big Beautiful Bill,Justin Ho,87.08,118.42,HOME,39.14
+2025,14,14,NONE,68,6,2020+2022+2025 Champion,Rollin Odama-Wong,173,142.02,13,Saquonda Forever,Darwin Hu,168.16,140.62,HOME,4.84
+2025,14,14,NONE,69,7,Brown Ladd Squad,Christopher Pascual,125.96,133.53,1,They Hit the Second Bower,Chase Mizoguchi,122.84,134.09,HOME,3.12
+2025,14,14,NONE,70,8,Lemme Ra-Dog It,Prashanth Balaraman,115.02,134.98,14,Kick or die,Jeffrey Chan,124.96,124.29,AWAY,9.94
+2025,15,15,WINNERS_BRACKET,72,13,Saquonda Forever,Darwin Hu,172.52,147.33,3,Vietokwuegbunam Flashback,Ikaika Stone,136.24,139.01,HOME,36.28
+2025,15,15,WINNERS_BRACKET,73,7,Brown Ladd Squad,Christopher Pascual,149.4,133.6,14,Kick or die,Jeffrey Chan,138.3,129.65,HOME,11.1
+2025,15,15,LOSERS_CONSOLATION_LADDER,75,8,Lemme Ra-Dog It,Prashanth Balaraman,190.5,154.86,4,GIBBY,Evan Fukumoto,141.9,139.56,HOME,48.6
+2025,15,15,LOSERS_CONSOLATION_LADDER,76,1,They Hit the Second Bower,Chase Mizoguchi,84.84,96.71,5,The Big Beautiful Bill,Justin Ho,110.28,99.39,AWAY,25.44
+2025,16,16,WINNERS_BRACKET,77,2,Rice Fields Got Picken Dry,Harvey Wang,176.1,144.01,13,Saquonda Forever,Darwin Hu,157.2,154.88,HOME,18.9
+2025,16,16,WINNERS_BRACKET,78,6,2020+2022+2025 Champion,Rollin Odama-Wong,117.74,139.46,7,Brown Ladd Squad,Christopher Pascual,101.44,139.41,HOME,16.3
+2025,16,16,WINNERS_CONSOLATION_LADDER,79,3,Vietokwuegbunam Flashback,Ikaika Stone,117.76,117.41,14,Kick or die,Jeffrey Chan,125.48,134.08,AWAY,7.72
+2025,16,16,LOSERS_CONSOLATION_LADDER,80,8,Lemme Ra-Dog It,Prashanth Balaraman,136.52,149.09,5,The Big Beautiful Bill,Justin Ho,101.4,74.35,HOME,35.12
+2025,16,16,LOSERS_CONSOLATION_LADDER,81,4,GIBBY,Evan Fukumoto,133.2,139.78,1,They Hit the Second Bower,Chase Mizoguchi,151.12,134.23,AWAY,17.92
+2025,17,17,WINNERS_BRACKET,82,2,Rice Fields Got Picken Dry,Harvey Wang,142.28,147.45,6,2020+2022+2025 Champion,Rollin Odama-Wong,129.72,132.18,HOME,12.56
+2025,17,17,WINNERS_CONSOLATION_LADDER,83,7,Brown Ladd Squad,Christopher Pascual,106.6,130.09,13,Saquonda Forever,Darwin Hu,125.02,155.28,AWAY,18.42
+2025,17,17,WINNERS_CONSOLATION_LADDER,84,3,Vietokwuegbunam Flashback,Ikaika Stone,135.52,119.54,14,Kick or die,Jeffrey Chan,66.7,96.16,HOME,68.82
+2025,17,17,LOSERS_CONSOLATION_LADDER,85,8,Lemme Ra-Dog It,Prashanth Balaraman,144.58,153.37,1,They Hit the Second Bower,Chase Mizoguchi,129.94,139.31,HOME,14.64
+2025,17,17,LOSERS_CONSOLATION_LADDER,86,4,GIBBY,Evan Fukumoto,118.22,133.23,5,The Big Beautiful Bill,Justin Ho,86.14,60.03,HOME,32.08

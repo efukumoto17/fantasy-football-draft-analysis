@@ -117,5 +117,5 @@ A full per-manager breakdown of where each drafter makes and loses value, in the
 - **The universal lesson:** the managers who win draft **young, ascending pass-catchers late** (Chan's Olave, Prashanth's Nico Collins, Darwin's JSN, Justin Ho's Brian Thomas) and **avoid reaching on QBs and aging names in the middle** (everyone's bust list). Value lives in Rounds 7–15, not Rounds 1–2.
 
 ### Files
-- `.espn-automation/season_points.json` — every player's actual season points, 2022–2025.
-- `draft-history-combined.csv` — full pick history · `draft-value-all-managers.md` — league summary · `draft-pick-performance.md` — Evan-only.
+- `../.espn-automation/season_points.json` — every player's actual season points, 2022–2025.
+- `../draft-history-combined.csv` — full pick history · `draft-value-all-managers.md` — league summary · `draft-pick-performance.md` — Evan-only.

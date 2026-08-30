@@ -1,6 +1,6 @@
 # League Draft Analysis — Full History (2018–2025)
 
-League 275797 · 8 completed drafts · 1,400 total picks · based on `draft-history-combined.csv`.
+League 275797 · 8 completed drafts · 1,400 total picks · based on `../draft-history-combined.csv`.
 
 > **Format & roster history**
 > - **2018–2023: IDP** (defenders drafted) — **18 rounds**.
@@ -201,6 +201,6 @@ Daniel Ota held the seat 2019–2020 (RB-anchor, liked an early TE). Jeff Chan h
 ---
 
 ### Files
-- `draft-history-combined.csv` — all 1,400 picks, 2018–2025 (Year, Round, Round Pick, Overall Pick, Player, NFL Team, Position, Manager, Team Name).
-- `draft-history-<year>.csv` — per-year files (2022–2025).
-- `draft-history-team-managers.csv` — team-name → manager per year.
+- `../draft-history-combined.csv` — all 1,400 picks, 2018–2025 (Year, Round, Round Pick, Overall Pick, Player, NFL Team, Position, Manager, Team Name).
+- `../draft-history-<year>.csv` — per-year files (2022–2025).
+- `../draft-history-team-managers.csv` — team-name → manager per year.

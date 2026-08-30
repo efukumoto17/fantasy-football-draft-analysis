@@ -5,3 +5,11 @@
 .DS_Store
 *.output
 node_modules/
+
+# Raw API dumps (regenerable via fetch_league_history.js)
+.espn-automation/raw/
+
+# Analysis intermediates (regenerable, not consumed by any script)
+.espn-automation/attachment.json
+.espn-automation/bench.json
+.espn-automation/trade_points.json
