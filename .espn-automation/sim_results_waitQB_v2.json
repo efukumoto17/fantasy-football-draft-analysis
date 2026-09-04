@@ -1,6 +1,6 @@
 {
   "mode": "waitQB",
-  "board": "bdge-draft-rankings-ppr-2026.csv",
+  "board": "bdge-draft-rankings-ppr-2026-v2.csv",
   "seed": 12345,
   "evanSlot": 2,
   "slotMgr": [

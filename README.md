@@ -59,7 +59,8 @@ Forward-looking, kept out of `analysis/` because it is a projection rather than 
 |---|---|
 | `draft-simulation-2026.md` | Simulated 2026 draft outcomes from slot 2 using the BDGE board vs. ESPN ADP (full) |
 | `draft-simulation-summary.md` | Condensed version of the 2026 simulation |
-| `bdge-draft-rankings-ppr-2026.csv` | BDGE PPR draft board used as the internal strategy in the sim |
+| `bdge-draft-rankings-ppr-2026.csv` | Current BDGE PPR draft board (Sep 3) used as the internal strategy in the sim |
+| `bdge-draft-rankings-ppr-2026-v1.csv` | Previous board (Aug 29), kept so sim runs stay comparable |
 
 ## Draft data
 | File | What it is |
@@ -74,7 +75,7 @@ Node scripts (Playwright over CDP) that pull the data from ESPN's API and build 
 - `generate_draft_history.js` — builds the per-year draft CSVs
 - `compute_stats.js` — builds `draft-history-combined.csv` + position-by-round stats
 - `fetch_points.js` / `analyze_picks.js` / `analyze_all.js` / `analyze_extended.js` — actual-points value analysis
-- `fetch_sim_inputs.js` / `draft_sim.js` — 2026 draft simulation
+- `fetch_sim_inputs.js` / `draft_sim.js` — 2026 draft simulation. `draft_sim.js` takes `BOARD=<csv>`, `MODE=strict|waitQB`, `SEED=<n>`
 - `fetch_league_history.js` — pulls weekly rosters, matchups and transactions for 2022–2025 into `data/`
 - `build_movements.js` — resolves player names, verifies trades against roster snapshots, derives the movement log
 - `build_trade_ledger.js` — merges logged + roster-derived trades into the consolidated ledger

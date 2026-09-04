@@ -1,5 +1,14 @@
 const fs = require('fs');
-const ROOT = '/Users/evanfukumoto/Documents/VSCodeRepos/ridetrainingscheduling';
+const ROOT = '/Users/evanfukumoto/Documents/VSCodeRepos/fantasy-football';
+
+// Seeded RNG: comparing two boards needs identical noise, otherwise the
+// difference between runs is partly just randomness.
+const SEED = +(process.env.SEED || 12345);
+let _s = SEED >>> 0;
+function rnd(){ _s |= 0; _s = (_s + 0x6D2B79F5) | 0;
+  let t = Math.imul(_s ^ (_s >>> 15), 1 | _s);
+  t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+  return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }
 
 const posMap = {1:'QB',2:'RB',3:'WR',4:'TE',5:'K',16:'D/ST'};
 const teamMap = {0:'FA',1:'ATL',2:'BUF',3:'CHI',4:'CIN',5:'CLE',6:'DAL',7:'DEN',8:'DET',9:'GB',10:'TEN',11:'IND',12:'KC',13:'LV',14:'LAR',15:'MIA',16:'MIN',17:'NE',18:'NO',19:'NYG',20:'NYJ',21:'PHI',22:'ARI',23:'PIT',24:'LAC',25:'SF',26:'SEA',27:'TB',28:'WSH',29:'CAR',30:'JAX',33:'BAL',34:'HOU'};
@@ -18,7 +27,8 @@ const uni = universe.map(p=>({ id:p.id, name:p.fullName||[p.firstName,p.lastName
   n: stripSuffix(norm((p.firstName||'')+' '+(p.lastName||''))) }));
 const byName = new Map(); for(const p of uni){ if(!byName.has(p.n))byName.set(p.n,[]); byName.get(p.n).push(p); }
 const teamAlias={JAC:'JAX',WAS:'WSH',LVR:'LV',OAK:'LV',SD:'LAC',STL:'LAR'};
-const csv = fs.readFileSync(`${ROOT}/bdge-draft-rankings-ppr-2026.csv`,'utf8').trim().split(/\r?\n/).slice(1)
+const BOARD = process.env.BOARD || 'bdge-draft-rankings-ppr-2026.csv';
+const csv = fs.readFileSync(`${ROOT}/${BOARD}`,'utf8').trim().split(/\r?\n/).slice(1)
   .map(l=>{const c=l.split(','); return { rank:+c[0], name:c[1], team:(teamAlias[c[2]]||c[2]), pos:c[3] };});
 const bdgeRankById = new Map(); const used=new Set();
 for(const row of csv){
@@ -101,7 +111,7 @@ function pickOpponent(mgr, r, avail, roundNum, pickNum){
     if(roundNum<=5 && lean[mgr] && lean[mgr][p.pos]) eff += lean[mgr][p.pos];
     // small need bonus to fill starters
     if(count(r,p.pos)<STARTERS[p.pos]) eff -= 3;
-    eff += (Math.random()-0.5)*8; // ADP noise
+    eff += (rnd()-0.5)*8; // ADP noise
     if(eff<bestVal){bestVal=eff;best=p;}
   }
   if(!best){ // fallback: any allowed
@@ -165,7 +175,8 @@ const RUNS=300;
 const MODE = process.env.MODE || 'strict';
 const evanRosters=[];
 for(let k=0;k<RUNS;k++){ const rs=runDraft(MODE); evanRosters.push(rs[EVAN_SLOT]); }
-fs.writeFileSync(`${ROOT}/.espn-automation/sim_results_${MODE}.json`, JSON.stringify({ mode:MODE, evanSlot:EVAN_SLOT+1, slotMgr, evanRosters }, null, 2));
+const TAG = process.env.TAG || '';
+fs.writeFileSync(`${ROOT}/.espn-automation/sim_results_${MODE}${TAG}.json`, JSON.stringify({ mode:MODE, board:BOARD, seed:SEED, evanSlot:EVAN_SLOT+1, slotMgr, evanRosters }, null, 2));
 console.log('STRATEGY MODE:', MODE, '\n');
 
 // aggregate
