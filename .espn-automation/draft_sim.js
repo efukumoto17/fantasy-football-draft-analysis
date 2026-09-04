@@ -29,14 +29,15 @@ const byName = new Map(); for(const p of uni){ if(!byName.has(p.n))byName.set(p.
 const teamAlias={JAC:'JAX',WAS:'WSH',LVR:'LV',OAK:'LV',SD:'LAC',STL:'LAR'};
 const BOARD = process.env.BOARD || 'bdge-draft-rankings-ppr-2026.csv';
 const csv = fs.readFileSync(`${ROOT}/${BOARD}`,'utf8').trim().split(/\r?\n/).slice(1)
-  .map(l=>{const c=l.split(','); return { rank:+c[0], name:c[1], team:(teamAlias[c[2]]||c[2]), pos:c[3] };});
-const bdgeRankById = new Map(); const used=new Set();
+  .map(l=>{const c=l.split(','); return { rank:+c[0], name:c[1], team:(teamAlias[c[2]]||c[2]), pos:c[3],
+    tags:(c[9]||'').split(';').map(t=>t.trim()).filter(Boolean) };});
+const bdgeRankById = new Map(); const tagsById = new Map(); const used=new Set();
 for(const row of csv){
   let key=stripSuffix(norm(row.name)); if(nameAlias[key])key=nameAlias[key];
   let cands=(byName.get(key)||[]).filter(p=>!used.has(p.id));
   if(cands.length>1){const bp=cands.filter(p=>p.pos===row.pos); if(bp.length)cands=bp;}
   if(cands.length>1){const bt=cands.filter(p=>p.team===row.team); if(bt.length)cands=bt;}
-  if(cands.length>=1){ used.add(cands[0].id); bdgeRankById.set(cands[0].id, row.rank); }
+  if(cands.length>=1){ used.add(cands[0].id); bdgeRankById.set(cands[0].id, row.rank); tagsById.set(cands[0].id, row.tags); }
 }
 
 // ---------- draft pool ----------
@@ -45,7 +46,8 @@ const pool = new Map();
 for(const p of inputs.players){
   const meta = uniById.get(p.id) || { name:p.name, pos:posMap[p.pos]||('P'+p.pos), team:teamMap[p.proTeam]||'FA' };
   pool.set(p.id, { id:p.id, name:meta.name, pos:meta.pos, team:meta.team,
-    adp: (p.adp&&p.adp>0&&p.adp<400)?p.adp:(p.pprRank||260), bdge: bdgeRankById.get(p.id)||Infinity });
+    adp: (p.adp&&p.adp>0&&p.adp<400)?p.adp:(p.pprRank||260), bdge: bdgeRankById.get(p.id)||Infinity,
+      tags: tagsById.get(p.id)||[] });
 }
 // ensure all BDGE players present
 for(const [id,rank] of bdgeRankById){ if(!pool.has(id)){ const m=uniById.get(id); if(m) pool.set(id,{ id, name:m.name, pos:m.pos, team:m.team, adp:250+rank/5, bdge:rank }); } }
@@ -90,6 +92,16 @@ if (!process.env.NO_MODELS && fs.existsSync(MODELS_FILE)) {
   if (m.qbHabitStrength) QB_HABIT = m.qbHabitStrength;
   MODEL_SOURCE = `fitted (${m.fittedAt || 'unknown date'})`;
 }
+
+// Tag policy for Evan's picks. Queasy players are skipped outright; the
+// upside tags act as a tie-breaker between players of similar board value
+// rather than a wholesale reorder.
+const PRIORITY_TAGS = { 'Favorite':4, 'Value Pick':4, 'Breakout':3, 'Huge Upside':3, 'Sleeper':3 };
+const TAG_BONUS_CAP = 8;
+const isQueasy = (p) => (p.tags||[]).includes('Queasy');
+const tagBonus = (p) => Math.min(TAG_BONUS_CAP,
+  (p.tags||[]).reduce((a,t)=>a+(PRIORITY_TAGS[t]||0), 0));
+const effRank = (p) => p.bdge - tagBonus(p);
 
 const CAP={QB:3,RB:6,WR:7,TE:2,K:1,'D/ST':1};
 const STARTERS={QB:2,RB:2,WR:2,TE:1,K:1,'D/ST':1}; // +1 FLEX(RB/WR/TE)
@@ -169,13 +181,17 @@ function pickEvan(r, avail, roundNum, mode){
     if(count(r,p.pos)>=CAP[p.pos]) continue;
     if(!evanEligible(r,p.pos,roundNum,p,mode)) continue;
     if(mustFill && !mand.includes(p.pos)) continue;
-    const rank=p.bdge;
+    if(!ALLOW_QUEASY && isQueasy(p)) continue;
+    const rank=effRank(p);
     if(rank<bestRank || (rank===bestRank && p.adp<bestAdp)){ bestRank=rank; bestAdp=p.adp; best=p; }
   }
   if(!best){ for(const p of avail.slice().sort((a,b)=>a.adp-b.adp)){ if(count(r,p.pos)<CAP[p.pos] && ((p.pos!=='K'&&p.pos!=='D/ST')||roundNum>=ROUNDS-2)){best=p;break;} } }
   return best;
 }
 
+const AVAIL = !!process.env.AVAIL;
+const ALLOW_QUEASY = !!process.env.ALLOW_QUEASY;   // set to disable the queasy filter
+let availLog = [];
 function runDraft(mode){
   const rosters = Array.from({length:N},()=>rosterOf());
   const drafted=new Set();
@@ -183,6 +199,12 @@ function runDraft(mode){
   for(let i=0;i<seq.length;i++){
     const slot=seq[i]; const roundNum=Math.floor(i/N)+1; const mgr=slotMgr[slot];
     avail = avail.filter(p=>!drafted.has(p.id));
+    if(AVAIL && slot===EVAN_SLOT){
+      // snapshot who is still on the board when Evan is on the clock
+      availLog.push({ round:roundNum, overall:i+1,
+        ids: avail.filter(p=>isFinite(p.bdge)).sort((a,b)=>a.bdge-b.bdge).slice(0,90).map(p=>p.id)
+          .concat(avail.filter(p=>p.pos==='K'||p.pos==='D/ST').map(p=>p.id)) });
+    }
     const pick = (slot===EVAN_SLOT) ? pickEvan(rosters[slot],avail,roundNum,mode)
                                     : pickOpponent(mgr,rosters[slot],avail,roundNum,i+1);
     if(pick){ drafted.add(pick.id); rosters[slot][pick.pos].push({...pick, round:roundNum, overall:i+1}); }
@@ -197,6 +219,19 @@ const evanRosters=[];
 for(let k=0;k<RUNS;k++){ const rs=runDraft(MODE); evanRosters.push(rs[EVAN_SLOT]); }
 // Optional: dump every team's roster, not just Evan's, for validating the
 // simulated draft flow against the league's real drafts.
+if (AVAIL) {
+  const N2 = +(process.env.AVAIL_RUNS || 400);
+  const counts = new Map();   // `${round}|${id}` -> times available
+  for (let i = 0; i < N2; i++) { availLog = []; runDraft(MODE);
+    for (const snap of availLog) for (const id of snap.ids) {
+      const k = `${snap.round}|${id}`; counts.set(k, (counts.get(k) || 0) + 1);
+    } }
+  const meta = {};
+  for (const p of pool.values()) meta[p.id] = { name:p.name, pos:p.pos, team:p.team, adp:p.adp, bdge:p.bdge };
+  fs.writeFileSync(`${ROOT}/.espn-automation/availability_${MODE}.json`,
+    JSON.stringify({ mode:MODE, board:BOARD, runs:N2, counts:[...counts], meta }));
+  console.log(`AVAIL: ${N2} drafts -> .espn-automation/availability_${MODE}.json`);
+}
 if (process.env.DUMP_ALL) {
   const allRuns = [];
   const NRUNS = +(process.env.DUMP_RUNS || 50);

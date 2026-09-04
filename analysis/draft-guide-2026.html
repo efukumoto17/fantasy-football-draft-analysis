@@ -1,0 +1,432 @@
+<title>Slot 2 Draft Plan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ground:#F7F8FA; --surface:#FFFFFF; --surface-2:#EFF2F6; --ink:#0E1621; --ink-2:#3A4757;
+  --muted:#5C6875; --line:#D8DEE7; --line-2:#E8ECF2;
+  --accent:#1B5FBF; --accent-soft:#E4EDFA; --accent-ink:#12447F;
+  --good:#14806A; --good-soft:#E0F0EB; --warn:#B4740C; --warn-soft:#F8EEDB; --risk:#B03A48; --risk-soft:#F8E5E8;
+  --shadow:0 1px 2px rgba(14,22,33,.06),0 4px 14px rgba(14,22,33,.05);
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  --ground:#0B121B; --surface:#151F2C; --surface-2:#1C2837; --ink:#EAF0F7; --ink-2:#B9C6D4;
+  --muted:#8B9AAA; --line:#2A3849; --line-2:#22303F;
+  --accent:#6BA5F0; --accent-soft:#17293F; --accent-ink:#A8CBF7;
+  --good:#4FC0A1; --good-soft:#122B26; --warn:#E0A94A; --warn-soft:#2E2517; --risk:#E8899A; --risk-soft:#331C22;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.3);
+}}
+:root[data-theme="dark"]{
+  --ground:#0B121B; --surface:#151F2C; --surface-2:#1C2837; --ink:#EAF0F7; --ink-2:#B9C6D4;
+  --muted:#8B9AAA; --line:#2A3849; --line-2:#22303F;
+  --accent:#6BA5F0; --accent-soft:#17293F; --accent-ink:#A8CBF7;
+  --good:#4FC0A1; --good-soft:#122B26; --warn:#E0A94A; --warn-soft:#2E2517; --risk:#E8899A; --risk-soft:#331C22;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.3);
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+  font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px 72px}
+h1,h2,h3,.cond{font-family:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;text-wrap:balance}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
+
+/* header */
+header{border-bottom:2px solid var(--ink);padding:36px 0 18px;margin-bottom:28px}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h1{font-size:clamp(38px,7vw,60px);line-height:.95;margin:6px 0 10px;font-weight:700;letter-spacing:-.01em}
+.sub{color:var(--ink-2);max-width:64ch;margin:0}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:5px;padding:7px 11px;font-size:12.5px;
+  display:flex;gap:7px;align-items:baseline}
+.fact b{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600}
+.fact span{color:var(--muted);text-transform:uppercase;letter-spacing:.07em;font-size:10.5px;font-weight:600}
+
+h2{font-size:clamp(24px,3.4vw,31px);font-weight:700;margin:44px 0 6px;letter-spacing:-.005em}
+h2 .n{color:var(--muted);font-weight:500;margin-right:10px}
+.lede{color:var(--ink-2);max-width:66ch;margin:0 0 20px}
+
+/* callout */
+.key{background:var(--accent-soft);border:1px solid var(--accent);border-left-width:4px;border-radius:6px;
+  padding:16px 18px;margin:22px 0}
+.key h3{font-size:19px;margin:0 0 6px;font-weight:600;color:var(--accent-ink)}
+.key p{margin:0;color:var(--ink-2)}
+.key p+p{margin-top:8px}
+
+/* roster */
+.rosters{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px;margin-top:18px}
+.roster{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px;box-shadow:var(--shadow)}
+.roster h3{font-size:20px;margin:0 0 2px;font-weight:600}
+.roster .tag{font-size:11px;text-transform:uppercase;letter-spacing:.1em;font-weight:600;color:var(--muted);
+  display:block;margin-bottom:12px}
+.roster.pick{border-color:var(--accent);border-width:2px}
+.roster.pick h3{color:var(--accent-ink)}
+.rl{display:flex;gap:9px;padding:5px 0;border-bottom:1px solid var(--line-2);font-size:13.5px;align-items:baseline}
+.rl:last-of-type{border-bottom:0}
+.rl .rd{color:var(--muted);font-size:11.5px;min-width:26px;font-weight:600}
+.rl .ps{min-width:36px;font-size:10.5px;font-weight:700;letter-spacing:.05em;color:var(--muted)}
+.rl .nm{flex:1}
+.rl.qb .nm{font-weight:600;color:var(--accent-ink)}
+.comp{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+
+/* round cards */
+.round{background:var(--surface);border:1px solid var(--line);border-radius:8px;margin-bottom:14px;
+  overflow:hidden;box-shadow:var(--shadow)}
+.rhead{display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--line);
+  background:var(--surface-2);flex-wrap:wrap}
+.rnum{font-family:"Barlow Condensed",sans-serif;font-size:15px;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--muted)}
+.rpick{font-family:"IBM Plex Mono",monospace;font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1}
+.rtake{margin-left:auto;display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.rtake .lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:600}
+.rtake .who{font-size:17px;font-weight:600;color:var(--accent-ink);font-family:"Barlow Condensed",sans-serif;
+  letter-spacing:.01em}
+.rbody{padding:14px 18px 16px}
+.note{margin:0 0 12px;color:var(--ink-2);font-size:14px}
+.note strong{color:var(--ink)}
+
+/* table */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:520px}
+th{text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);
+  font-weight:700;padding:0 10px 7px 0;border-bottom:1px solid var(--line)}
+th.r,td.r{text-align:right;padding-right:0}
+td{padding:7px 10px 7px 0;border-bottom:1px solid var(--line-2)}
+tr:last-child td{border-bottom:0}
+td.nm{font-weight:500}
+td.mono{font-variant-numeric:tabular-nums}
+.pos{display:inline-block;min-width:30px;font-size:10px;font-weight:700;letter-spacing:.05em;color:var(--muted)}
+
+/* chips */
+.chip{display:inline-block;padding:2px 7px;border-radius:4px;font-size:11.5px;font-weight:600;
+  font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+.g-hi{background:var(--good-soft);color:var(--good)}
+.g-md{background:var(--accent-soft);color:var(--accent-ink)}
+.g-lo{background:var(--surface-2);color:var(--muted)}
+.av{display:inline-flex;align-items:center;gap:6px;font-family:"IBM Plex Mono",monospace;
+  font-variant-numeric:tabular-nums;font-size:12.5px;white-space:nowrap}
+.dot{width:7px;height:7px;border-radius:50%;flex:none}
+.d-safe{background:var(--good)} .d-warn{background:var(--warn)} .d-risk{background:var(--risk)}
+
+/* contingency */
+.cont{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px;margin-bottom:14px;
+  box-shadow:var(--shadow)}
+.cont h3{font-size:20px;margin:0 0 3px;font-weight:600}
+.cont .if{font-size:11px;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--risk);
+  display:block;margin-bottom:9px}
+.cont p{margin:0 0 10px;color:var(--ink-2)}
+.cont p:last-child{margin-bottom:0}
+.cont ul{margin:8px 0 0;padding-left:18px;color:var(--ink-2)}
+.cont li{margin-bottom:5px}
+.cont li:last-child{margin-bottom:0}
+
+/* rules */
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin-top:18px}
+.rule{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);
+  border-radius:6px;padding:14px 16px}
+.rule.no{border-left-color:var(--risk)}
+.rule h4{margin:0 0 5px;font-size:15px;font-weight:600;font-family:"IBM Plex Sans",sans-serif}
+.rule p{margin:0;font-size:13.5px;color:var(--ink-2)}
+
+.legend{display:flex;flex-wrap:wrap;gap:16px;padding:14px 16px;background:var(--surface-2);
+  border:1px solid var(--line);border-radius:6px;margin:18px 0;font-size:12.5px;color:var(--ink-2)}
+.legend div{display:flex;align-items:center;gap:7px}
+/* tag badges */
+.tags{display:inline-flex;gap:4px;flex-wrap:wrap;margin-left:7px;vertical-align:middle}
+.tg{font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:2px 5px;
+  border-radius:3px;white-space:nowrap;line-height:1.35}
+.t-fav{background:var(--accent-soft);color:var(--accent-ink)}
+.t-up{background:var(--good-soft);color:var(--good)}
+.t-inj{background:var(--warn-soft);color:var(--warn)}
+.t-q{background:var(--risk-soft);color:var(--risk)}
+tr.queasy td{opacity:.55}
+tr.queasy td.nm{text-decoration:line-through;text-decoration-color:var(--risk)}
+.kd{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:6px}
+.kd h4{margin:0 0 8px;font-size:15px;font-weight:600}
+footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
+footer p{margin:0 0 6px;max-width:74ch}
+a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media(max-width:620px){ .rtake{margin-left:0;width:100%} header{padding-top:26px} }
+</style>
+<div class="wrap">
+<header>
+  <div class="eyebrow">2026 Draft · League 275797 · Drafting for Evan Fukumoto</div>
+  <h1>Slot 2 Draft Plan</h1>
+  <p class="sub">Everything you need to draft this team without me. Each round tells you who to take, who to take instead if they're gone, and how likely each name is to still be on the board when the pick comes around.</p>
+  <div class="facts">
+    <div class="fact"><span>Slot</span><b>2 of 10</b></div>
+    <div class="fact"><span>Format</span><b>2 QB · Snake · PPR</b></div>
+    <div class="fact"><span>Rounds</span><b>16</b></div>
+    <div class="fact"><span>Starters</span><b>2QB 2RB 2WR TE FLEX K DST</b></div>
+    <div class="fact"><span>Our picks</span><b>2 · 19 · 22 · 39 · 42 · 59 · 62 · 79 · 82 · 99 · 102 · 119 · 122 · 139 · 142 · 159</b></div>
+  </div>
+</header>
+
+<div class="key">
+  <h3>Two things to understand before you start</h3>
+  <p><strong>1. This is a two-quarterback league.</strong> Quarterbacks are worth far more here than the ESPN rankings on your screen suggest — most QBs on our board are ranked 40 to 95 spots above where the market drafts them. That gap is the edge in this draft. But it's also a trap early: a quarterback will look like the best player available at nearly every pick from Round 2 on. The plan starts the quarterbacks in <strong>Round 5</strong>, and they will still be there. Trust that.</p>
+  <p><strong>2. Evan has tagged players.</strong> Names carrying <span class="tg t-fav">Favorite</span> or <span class="tg t-up">Huge Upside</span> <span class="tg t-up">Breakout</span> <span class="tg t-up">Sleeper</span> <span class="tg t-up">Value Pick</span> are the ones he wants — prefer them when the choice is close. Names carrying <span class="tg t-q">Queasy</span> are <strong>never to be drafted</strong>, no matter how good the value looks. The full list is at the bottom. <span class="tg t-inj">Injured</span> is a flag, not a veto.</p>
+</div>
+
+<h2><span class="n">01</span>What the team should look like</h2>
+<p class="lede">From 300 simulated drafts using this plan, with the Queasy players excluded and the tagged players preferred. Roughly <strong>3 QB · 4 RB · 6 WR · 1 TE</strong> plus a kicker and defense.</p>
+<div class="rosters">
+  <div class="roster pick">
+    <h3>Expected roster</h3>
+    <span class="tag">Recommended · wait on QB</span>
+    <div class="rl"><span class="rd mono">R1</span><span class="ps">RB</span><span class="nm">Jahmyr Gibbs</span></div>
+    <div class="rl"><span class="rd mono">R2</span><span class="ps">RB</span><span class="nm">Kenneth Walker III</span></div>
+    <div class="rl"><span class="rd mono">R3</span><span class="ps">RB</span><span class="nm">Omarion Hampton</span></div>
+    <div class="rl"><span class="rd mono">R4</span><span class="ps">WR</span><span class="nm">Emeka Egbuka</span></div>
+    <div class="rl qb"><span class="rd mono">R5</span><span class="ps">QB</span><span class="nm">Trevor Lawrence</span></div>
+    <div class="rl qb"><span class="rd mono">R6</span><span class="ps">QB</span><span class="nm">Justin Herbert</span></div>
+    <div class="rl"><span class="rd mono">R7</span><span class="ps">WR</span><span class="nm">Luther Burden III</span></div>
+    <div class="rl"><span class="rd mono">R8</span><span class="ps">WR</span><span class="nm">Parker Washington</span></div>
+    <div class="rl"><span class="rd mono">R9</span><span class="ps">TE</span><span class="nm">Tucker Kraft</span></div>
+    <div class="rl"><span class="rd mono">R10</span><span class="ps">RB</span><span class="nm">MarShawn Lloyd</span></div>
+    <div class="rl"><span class="rd mono">R11</span><span class="ps">RB</span><span class="nm">J.K. Dobbins</span></div>
+    <div class="rl"><span class="rd mono">R12</span><span class="ps">WR</span><span class="nm">Josh Downs</span></div>
+    <div class="rl"><span class="rd mono">R13</span><span class="ps">WR</span><span class="nm">De'Zhaun Stribling</span></div>
+    <div class="rl qb"><span class="rd mono">R14</span><span class="ps">QB</span><span class="nm">Malik Willis</span></div>
+    <div class="rl"><span class="rd mono">R15</span><span class="ps">DST</span><span class="nm">Defense</span></div>
+    <div class="rl"><span class="rd mono">R16</span><span class="ps">K</span><span class="nm">Kicker</span></div>
+    <p class="comp"><strong>83%</strong> of picks in this plan carry one of Evan's priority tags, and no Queasy player is ever drafted.</p>
+  </div>
+  <div class="roster">
+    <h3>How this was worked out</h3>
+    <span class="tag">Method</span>
+    <p style="margin:0 0 10px;color:var(--ink-2);font-size:14px">The nine other managers were modeled on their own drafting history from 2022–2025 — each one's habitual round for taking quarterbacks and their early-round positional lean.</p>
+    <p style="margin:0 0 10px;color:var(--ink-2);font-size:14px">That model reproduces their real behavior to within <strong>0.3 rounds</strong> on QB timing, so the "on board" percentages in the tables below are grounded in how this specific league actually drafts — not a generic ADP guess.</p>
+    <p style="margin:0;color:var(--ink-2);font-size:14px"><strong>Jeffrey Chan drafts immediately ahead of us at slot 1</strong>, and takes picks 20 and 21 back-to-back between our Round 2 and Round 3 selections. He usually opens with a receiver.</p>
+  </div>
+</div>
+
+<h2><span class="n">02</span>Round by round</h2>
+<p class="lede">Take the name in the header. If he's gone, work down the fallback table — it's sorted by how much we like the player, and everything listed is likely to still be there. Struck-through rows are Queasy: shown so you recognize the trap, never to be drafted.</p>
+<div class="legend">
+  <div><span class="chip g-hi">+40</span> we rank him 40+ spots above market</div>
+  <div><span class="chip g-md">+15</span> solid value</div>
+  <div><span class="chip g-lo">+3</span> roughly market price</div>
+  <div><span class="av"><span class="dot d-safe"></span>90%+</span> almost certainly there</div>
+  <div><span class="av"><span class="dot d-warn"></span>60–89%</span> probably there</div>
+  <div><span class="av"><span class="dot d-risk"></span>under 60%</span> coin flip</div>
+</div>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 1</div><div class="rpick">#2</div></div>
+    <div class="rtake"><span class="lbl">Take</span><span class="who">Jahmyr Gibbs</span></div>
+  </div>
+  <div class="rbody"><p class="note">Take <strong>Gibbs</strong> — top of the board and tagged Favorite. If he's gone, <strong>Bijan Robinson</strong>. Chan picks first and usually opens with a receiver, so one of them reaches us.</p><div class="tw"><table>
+      <thead><tr><th>Fallback options, best board value first</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">Gap</th><th class="r">On board</th></tr></thead>
+      <tbody><tr><td class="nm"><span class="pos">RB</span> Jahmyr Gibbs<span class="tags"><span class="tg t-fav">Favorite</span></span></td><td class="mono r">1</td><td class="mono r">1</td><td class="r"><span class="chip g-lo">0</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>91%</span></td></tr><tr><td class="nm"><span class="pos">RB</span> Bijan Robinson</td><td class="mono r">2</td><td class="mono r">2</td><td class="r"><span class="chip g-lo">0</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>96%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Josh Allen</td><td class="mono r">3</td><td class="mono r">21</td><td class="r"><span class="chip g-md">+18</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Puka Nacua<span class="tags"><span class="tg t-fav">Favorite</span></span></td><td class="mono r">4</td><td class="mono r">5</td><td class="r"><span class="chip g-lo">+1</span></td><td class="r"><span class="av"><span class="dot d-warn"></span>74%</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 2</div><div class="rpick">#19</div></div>
+    <div class="rtake"><span class="lbl">Take</span><span class="who">Kenneth Walker III — or Lamar if he slipped</span></div>
+  </div>
+  <div class="rbody"><p class="note"><strong>Walker</strong> is Favorite + Huge Upside and there 97% of the time. If <strong>Lamar Jackson</strong> somehow fell this far, take him instead — he's 9th on our board. Do <em>not</em> take Burrow or Daniels here; they last for ages.</p><div class="tw"><table>
+      <thead><tr><th>Fallback options, best board value first</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">Gap</th><th class="r">On board</th></tr></thead>
+      <tbody><tr><td class="nm"><span class="pos">RB</span> Kenneth Walker III<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">13</td><td class="mono r">23</td><td class="r"><span class="chip g-lo">+10</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>98%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Joe Burrow</td><td class="mono r">16</td><td class="mono r">57</td><td class="r"><span class="chip g-hi">+41</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Jayden Daniels<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Value Pick</span></span></td><td class="mono r">17</td><td class="mono r">52</td><td class="r"><span class="chip g-md">+35</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">RB</span> Chase Brown<span class="tags"><span class="tg t-fav">Favorite</span></span></td><td class="mono r">18</td><td class="mono r">20</td><td class="r"><span class="chip g-lo">+2</span></td><td class="r"><span class="av"><span class="dot d-warn"></span>64%</span></td></tr><tr><td class="nm"><span class="pos">RB</span> Omarion Hampton<span class="tags"><span class="tg t-up">Breakout</span></span></td><td class="mono r">20</td><td class="mono r">23</td><td class="r"><span class="chip g-lo">+3</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>98%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Malik Nabers<span class="tags"><span class="tg t-inj">Injured</span><span class="tg t-fav">Favorite</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">23</td><td class="mono r">34</td><td class="r"><span class="chip g-lo">+11</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 3</div><div class="rpick">#22</div></div>
+    <div class="rtake"><span class="lbl">Take</span><span class="who">Best tagged RB — Hampton or Chase Brown</span></div>
+  </div>
+  <div class="rbody"><p class="note">We pick again right away (Chan takes 20 and 21). <strong>Omarion Hampton</strong> is tagged Breakout and there 92% of the time. <strong>Nico Collins</strong> or <strong>Malik Nabers</strong> work if you'd rather take the receiver.<br><strong>Skip De'Von Achane.</strong> He's 26th on the board and will look like great value here — he's tagged Queasy and we're not touching him.</p><div class="tw"><table>
+      <thead><tr><th>Fallback options, best board value first</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">Gap</th><th class="r">On board</th></tr></thead>
+      <tbody><tr><td class="nm"><span class="pos">QB</span> Joe Burrow</td><td class="mono r">16</td><td class="mono r">57</td><td class="r"><span class="chip g-hi">+41</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Jayden Daniels<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Value Pick</span></span></td><td class="mono r">17</td><td class="mono r">52</td><td class="r"><span class="chip g-md">+35</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">RB</span> Omarion Hampton<span class="tags"><span class="tg t-up">Breakout</span></span></td><td class="mono r">20</td><td class="mono r">23</td><td class="r"><span class="chip g-lo">+3</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>92%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Malik Nabers<span class="tags"><span class="tg t-inj">Injured</span><span class="tg t-fav">Favorite</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">23</td><td class="mono r">34</td><td class="r"><span class="chip g-lo">+11</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">TE</span> Brock Bowers<span class="tags"><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">24</td><td class="mono r">24</td><td class="r"><span class="chip g-lo">0</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>96%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Nico Collins<span class="tags"><span class="tg t-fav">Favorite</span></span></td><td class="mono r">25</td><td class="mono r">26</td><td class="r"><span class="chip g-lo">+1</span></td><td class="r"><span class="av"><span class="dot d-warn"></span>87%</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 4</div><div class="rpick">#39</div></div>
+    <div class="rtake"><span class="lbl">Take</span><span class="who">Best tagged WR — this is our WR1</span></div>
+  </div>
+  <div class="rbody"><p class="note">Take a receiver. <strong>DeVonta Smith</strong> (Favorite + Breakout) if he lasted, otherwise <strong>Emeka Egbuka</strong> — Favorite, Huge Upside and Breakout all at once. Last round a true WR1 is available.</p><div class="tw"><table>
+      <thead><tr><th>Fallback options, best board value first</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">Gap</th><th class="r">On board</th></tr></thead>
+      <tbody><tr><td class="nm"><span class="pos">QB</span> Joe Burrow</td><td class="mono r">16</td><td class="mono r">57</td><td class="r"><span class="chip g-hi">+41</span></td><td class="r"><span class="av"><span class="dot d-warn"></span>82%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Trevor Lawrence<span class="tags"><span class="tg t-fav">Favorite</span></span></td><td class="mono r">30</td><td class="mono r">94</td><td class="r"><span class="chip g-hi">+64</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> DeVonta Smith<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Breakout</span></span></td><td class="mono r">34</td><td class="mono r">39</td><td class="r"><span class="chip g-lo">+5</span></td><td class="r"><span class="av"><span class="dot d-risk"></span>42%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Justin Herbert</td><td class="mono r">37</td><td class="mono r">101</td><td class="r"><span class="chip g-hi">+64</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Matthew Stafford</td><td class="mono r">38</td><td class="mono r">84</td><td class="r"><span class="chip g-hi">+46</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Dak Prescott</td><td class="mono r">39</td><td class="mono r">81</td><td class="r"><span class="chip g-hi">+42</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 5</div><div class="rpick">#42</div></div>
+    <div class="rtake"><span class="lbl">Take</span><span class="who">QB1 — Trevor Lawrence</span></div>
+  </div>
+  <div class="rbody"><p class="note"><strong>Start the QB run.</strong> Lawrence is Favorite-tagged, 30th on our board, and goes 94th on ESPN. Available here in essentially every draft. Fallbacks with tags: <strong>Brock Purdy</strong> (Value Pick), <strong>Caleb Williams</strong> (Huge Upside).</p><div class="tw"><table>
+      <thead><tr><th>Fallback options, best board value first</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">Gap</th><th class="r">On board</th></tr></thead>
+      <tbody><tr><td class="nm"><span class="pos">QB</span> Trevor Lawrence<span class="tags"><span class="tg t-fav">Favorite</span></span></td><td class="mono r">30</td><td class="mono r">94</td><td class="r"><span class="chip g-hi">+64</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Justin Herbert</td><td class="mono r">37</td><td class="mono r">101</td><td class="r"><span class="chip g-hi">+64</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Matthew Stafford</td><td class="mono r">38</td><td class="mono r">84</td><td class="r"><span class="chip g-hi">+46</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Dak Prescott</td><td class="mono r">39</td><td class="mono r">81</td><td class="r"><span class="chip g-hi">+42</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Caleb Williams<span class="tags"><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">40</td><td class="mono r">93</td><td class="r"><span class="chip g-hi">+53</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Brock Purdy<span class="tags"><span class="tg t-up">Value Pick</span></span></td><td class="mono r">42</td><td class="mono r">104</td><td class="r"><span class="chip g-hi">+62</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 6</div><div class="rpick">#59</div></div>
+    <div class="rtake"><span class="lbl">Take</span><span class="who">QB2 — Herbert, Purdy or Goff</span></div>
+  </div>
+  <div class="rbody"><p class="note">Second quarterback. <strong>Herbert</strong> is the board pick; <strong>Purdy</strong> (Value Pick) and <strong>Jared Goff</strong> (Value Pick) are tagged and both there ~100%. Both starting QB slots now filled cheaply.</p><div class="tw"><table>
+      <thead><tr><th>Fallback options, best board value first</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">Gap</th><th class="r">On board</th></tr></thead>
+      <tbody><tr><td class="nm"><span class="pos">QB</span> Justin Herbert</td><td class="mono r">37</td><td class="mono r">101</td><td class="r"><span class="chip g-hi">+64</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Caleb Williams<span class="tags"><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">40</td><td class="mono r">93</td><td class="r"><span class="chip g-hi">+53</span></td><td class="r"><span class="av"><span class="dot d-warn"></span>68%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Brock Purdy<span class="tags"><span class="tg t-up">Value Pick</span></span></td><td class="mono r">42</td><td class="mono r">104</td><td class="r"><span class="chip g-hi">+62</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Patrick Mahomes</td><td class="mono r">55</td><td class="mono r">107</td><td class="r"><span class="chip g-hi">+52</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Jared Goff<span class="tags"><span class="tg t-up">Value Pick</span></span></td><td class="mono r">56</td><td class="mono r">136</td><td class="r"><span class="chip g-hi">+80</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Kyler Murray</td><td class="mono r">58</td><td class="mono r">144</td><td class="r"><span class="chip g-hi">+86</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 7</div><div class="rpick">#62</div></div>
+    <div class="rtake"><span class="lbl">Take</span><span class="who">WR — Luther Burden III</span></div>
+  </div>
+  <div class="rbody"><p class="note"><strong>Burden</strong> — Breakout + Huge Upside. <strong>D.J. Moore</strong> (Huge Upside) behind him. Stop taking quarterbacks; the third can wait.</p><div class="tw"><table>
+      <thead><tr><th>Fallback options, best board value first</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">Gap</th><th class="r">On board</th></tr></thead>
+      <tbody><tr><td class="nm"><span class="pos">QB</span> Justin Herbert</td><td class="mono r">37</td><td class="mono r">101</td><td class="r"><span class="chip g-hi">+64</span></td><td class="r"><span class="av"><span class="dot d-warn"></span>78%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Brock Purdy<span class="tags"><span class="tg t-up">Value Pick</span></span></td><td class="mono r">42</td><td class="mono r">104</td><td class="r"><span class="chip g-hi">+62</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>99%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Patrick Mahomes</td><td class="mono r">55</td><td class="mono r">107</td><td class="r"><span class="chip g-hi">+52</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Jared Goff<span class="tags"><span class="tg t-up">Value Pick</span></span></td><td class="mono r">56</td><td class="mono r">136</td><td class="r"><span class="chip g-hi">+80</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Kyler Murray</td><td class="mono r">58</td><td class="mono r">144</td><td class="r"><span class="chip g-hi">+86</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 8</div><div class="rpick">#79</div></div>
+    <div class="rtake"><span class="lbl">Take</span><span class="who">WR — Parker Washington</span></div>
+  </div>
+  <div class="rbody"><p class="note"><strong>Washington</strong> is Favorite + Breakout at a +25 gap and there every time. <strong>Tucker Kraft</strong> (Favorite, Huge Upside) is the alternative if you want the tight end locked early.</p><div class="tw"><table>
+      <thead><tr><th>Fallback options, best board value first</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">Gap</th><th class="r">On board</th></tr></thead>
+      <tbody><tr><td class="nm"><span class="pos">QB</span> Kyler Murray</td><td class="mono r">58</td><td class="mono r">144</td><td class="r"><span class="chip g-hi">+86</span></td><td class="r"><span class="av"><span class="dot d-warn"></span>60%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Jordan Love</td><td class="mono r">62</td><td class="mono r">157</td><td class="r"><span class="chip g-hi">+95</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Parker Washington<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Breakout</span></span></td><td class="mono r">67</td><td class="mono r">92</td><td class="r"><span class="chip g-md">+25</span></td><td class="r"><span class="av"><span class="dot d-warn"></span>89%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Christian Watson<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">68</td><td class="mono r">93</td><td class="r"><span class="chip g-md">+25</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">TE</span> Tucker Kraft<span class="tags"><span class="tg t-inj">Injured</span><span class="tg t-fav">Favorite</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">74</td><td class="mono r">89</td><td class="r"><span class="chip g-md">+15</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">RB</span> MarShawn Lloyd<span class="tags"><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">75</td><td class="mono r">167</td><td class="r"><span class="chip g-hi">+92</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 9</div><div class="rpick">#82</div></div>
+    <div class="rtake"><span class="lbl">Take</span><span class="who">Tucker Kraft at TE, or Christian Watson</span></div>
+  </div>
+  <div class="rbody"><p class="note"><strong>Take Kraft here</strong> — Favorite + Huge Upside, and it settles tight end while the good ones are still around. If you already have a TE, <strong>Christian Watson</strong> (Favorite + Huge Upside) is the pick.</p><div class="tw"><table>
+      <thead><tr><th>Fallback options, best board value first</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">Gap</th><th class="r">On board</th></tr></thead>
+      <tbody><tr><td class="nm"><span class="pos">QB</span> Jordan Love</td><td class="mono r">62</td><td class="mono r">157</td><td class="r"><span class="chip g-hi">+95</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Christian Watson<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">68</td><td class="mono r">93</td><td class="r"><span class="chip g-md">+25</span></td><td class="r"><span class="av"><span class="dot d-warn"></span>89%</span></td></tr><tr><td class="nm"><span class="pos">TE</span> Tucker Kraft<span class="tags"><span class="tg t-inj">Injured</span><span class="tg t-fav">Favorite</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">74</td><td class="mono r">89</td><td class="r"><span class="chip g-md">+15</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">RB</span> MarShawn Lloyd<span class="tags"><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">75</td><td class="mono r">167</td><td class="r"><span class="chip g-hi">+92</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Tyler Shough<span class="tags"><span class="tg t-up">Sleeper</span><span class="tg t-up">Breakout</span></span></td><td class="mono r">77</td><td class="mono r">155</td><td class="r"><span class="chip g-hi">+78</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Malik Willis<span class="tags"><span class="tg t-up">Sleeper</span></span></td><td class="mono r">78</td><td class="mono r">167</td><td class="r"><span class="chip g-hi">+89</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 10</div><div class="rpick">#99</div></div>
+    <div class="rtake"><span class="lbl">Take</span><span class="who">MarShawn Lloyd — biggest value on the board</span></div>
+  </div>
+  <div class="rbody"><p class="note"><strong>Take Lloyd.</strong> 75th on our board, 167th on ESPN — a <strong>+92 gap</strong>, the largest anywhere, and tagged Huge Upside. There in 100% of drafts. Don't overthink it.</p><div class="tw"><table>
+      <thead><tr><th>Fallback options, best board value first</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">Gap</th><th class="r">On board</th></tr></thead>
+      <tbody><tr><td class="nm"><span class="pos">RB</span> MarShawn Lloyd<span class="tags"><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">75</td><td class="mono r">167</td><td class="r"><span class="chip g-hi">+92</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Malik Willis<span class="tags"><span class="tg t-up">Sleeper</span></span></td><td class="mono r">78</td><td class="mono r">167</td><td class="r"><span class="chip g-hi">+89</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Michael Wilson<span class="tags"><span class="tg t-up">Value Pick</span></span></td><td class="mono r">88</td><td class="mono r">102</td><td class="r"><span class="chip g-lo">+14</span></td><td class="r"><span class="av"><span class="dot d-warn"></span>62%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> C.J. Stroud</td><td class="mono r">89</td><td class="mono r">165</td><td class="r"><span class="chip g-hi">+76</span></td><td class="r"><span class="av"><span class="dot d-warn"></span>73%</span></td></tr><tr><td class="nm"><span class="pos">RB</span> J.K. Dobbins<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Value Pick</span></span></td><td class="mono r">91</td><td class="mono r">114</td><td class="r"><span class="chip g-md">+23</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 11</div><div class="rpick">#102</div></div>
+    <div class="rtake"><span class="lbl">Take</span><span class="who">J.K. Dobbins or QB3 Malik Willis</span></div>
+  </div>
+  <div class="rbody"><p class="note"><strong>Dobbins</strong> is Favorite + Value Pick at +23. <strong>Malik Willis</strong> (Sleeper) is the insurance quarterback if you'd rather cover the 2-QB requirement now.</p><div class="tw"><table>
+      <thead><tr><th>Fallback options, best board value first</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">Gap</th><th class="r">On board</th></tr></thead>
+      <tbody><tr><td class="nm"><span class="pos">QB</span> Malik Willis<span class="tags"><span class="tg t-up">Sleeper</span></span></td><td class="mono r">78</td><td class="mono r">167</td><td class="r"><span class="chip g-hi">+89</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>97%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> C.J. Stroud</td><td class="mono r">89</td><td class="mono r">165</td><td class="r"><span class="chip g-hi">+76</span></td><td class="r"><span class="av"><span class="dot d-risk"></span>47%</span></td></tr><tr><td class="nm"><span class="pos">RB</span> J.K. Dobbins<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Value Pick</span></span></td><td class="mono r">91</td><td class="mono r">114</td><td class="r"><span class="chip g-md">+23</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Aaron Rodgers</td><td class="mono r">94</td><td class="mono r">169</td><td class="r"><span class="chip g-hi">+75</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Alec Pierce<span class="tags"><span class="tg t-inj">Injured</span><span class="tg t-fav">Favorite</span></span></td><td class="mono r">95</td><td class="mono r">103</td><td class="r"><span class="chip g-lo">+8</span></td><td class="r"><span class="av"><span class="dot d-risk"></span>46%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Josh Downs<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Value Pick</span></span></td><td class="mono r">96</td><td class="mono r">136</td><td class="r"><span class="chip g-hi">+40</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 12</div><div class="rpick">#119</div></div>
+    <div class="rtake"><span class="lbl">Take</span><span class="who">Josh Downs</span></div>
+  </div>
+  <div class="rbody"><p class="note"><strong>Downs</strong> — Favorite + Value Pick, +40 gap, there every time. <strong>Jakobi Meyers</strong> (Favorite) is the fallback.</p><div class="tw"><table>
+      <thead><tr><th>Fallback options, best board value first</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">Gap</th><th class="r">On board</th></tr></thead>
+      <tbody><tr><td class="nm"><span class="pos">QB</span> Aaron Rodgers</td><td class="mono r">94</td><td class="mono r">169</td><td class="r"><span class="chip g-hi">+75</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Josh Downs<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Value Pick</span></span></td><td class="mono r">96</td><td class="mono r">136</td><td class="r"><span class="chip g-hi">+40</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> De&#x27;Zhaun Stribling<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Sleeper</span><span class="tg t-up">Breakout</span></span></td><td class="mono r">105</td><td class="mono r">147</td><td class="r"><span class="chip g-hi">+42</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Quentin Johnston</td><td class="mono r">106</td><td class="mono r">135</td><td class="r"><span class="chip g-md">+29</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Jayden Reed</td><td class="mono r">107</td><td class="mono r">129</td><td class="r"><span class="chip g-md">+22</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>98%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Makai Lemon<span class="tags"><span class="tg t-fav">Favorite</span></span></td><td class="mono r">108</td><td class="mono r">138</td><td class="r"><span class="chip g-md">+30</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 13</div><div class="rpick">#122</div></div>
+    <div class="rtake"><span class="lbl">Take</span><span class="who">De&#x27;Zhaun Stribling</span></div>
+  </div>
+  <div class="rbody"><p class="note"><strong>Stribling</strong> carries four tags — Favorite, Sleeper, Breakout, Rookie — at a +43 gap. Best remaining upside on the board.</p><div class="tw"><table>
+      <thead><tr><th>Fallback options, best board value first</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">Gap</th><th class="r">On board</th></tr></thead>
+      <tbody><tr><td class="nm"><span class="pos">QB</span> Aaron Rodgers</td><td class="mono r">94</td><td class="mono r">169</td><td class="r"><span class="chip g-hi">+75</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> De&#x27;Zhaun Stribling<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Sleeper</span><span class="tg t-up">Breakout</span></span></td><td class="mono r">105</td><td class="mono r">147</td><td class="r"><span class="chip g-hi">+42</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Quentin Johnston</td><td class="mono r">106</td><td class="mono r">135</td><td class="r"><span class="chip g-md">+29</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Jayden Reed</td><td class="mono r">107</td><td class="mono r">129</td><td class="r"><span class="chip g-md">+22</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>92%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Makai Lemon<span class="tags"><span class="tg t-fav">Favorite</span></span></td><td class="mono r">108</td><td class="mono r">138</td><td class="r"><span class="chip g-md">+30</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 14</div><div class="rpick">#139</div></div>
+    <div class="rtake"><span class="lbl">Take</span><span class="who">TE if still open, else best tagged WR</span></div>
+  </div>
+  <div class="rbody"><p class="note">If tight end is somehow still empty, fill it now. Otherwise take <strong>Makai Lemon</strong> or <strong>KC Concepcion</strong>, both Favorite-tagged rookies.</p><div class="tw"><table>
+      <thead><tr><th>Fallback options, best board value first</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">Gap</th><th class="r">On board</th></tr></thead>
+      <tbody><tr><td class="nm"><span class="pos">QB</span> Aaron Rodgers</td><td class="mono r">94</td><td class="mono r">169</td><td class="r"><span class="chip g-hi">+75</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>97%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Quentin Johnston</td><td class="mono r">106</td><td class="mono r">135</td><td class="r"><span class="chip g-md">+29</span></td><td class="r"><span class="av"><span class="dot d-warn"></span>86%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Makai Lemon<span class="tags"><span class="tg t-fav">Favorite</span></span></td><td class="mono r">108</td><td class="mono r">138</td><td class="r"><span class="chip g-md">+30</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>99%</span></td></tr><tr><td class="nm"><span class="pos">WR</span> KC Concepcion<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Sleeper</span></span></td><td class="mono r">110</td><td class="mono r">145</td><td class="r"><span class="chip g-md">+35</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr><tr><td class="nm"><span class="pos">RB</span> Jordan Mason<span class="tags"><span class="tg t-fav">Favorite</span></span></td><td class="mono r">111</td><td class="mono r">139</td><td class="r"><span class="chip g-md">+28</span></td><td class="r"><span class="av"><span class="dot d-safe"></span>100%</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 15</div><div class="rpick">#142</div></div>
+    <div class="rtake"><span class="lbl">Take</span><span class="who">Defense — Texans or Broncos</span></div>
+  </div>
+  <div class="rbody"><p class="note">See the kicker and defense board below. Take the <strong>defense</strong> here — the top of that list thins out faster than kicker.</p></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 16</div><div class="rpick">#159</div></div>
+    <div class="rtake"><span class="lbl">Take</span><span class="who">Kicker — best remaining</span></div>
+  </div>
+  <div class="rbody"><p class="note">Take a kicker from the list below. Several of the top ten are still there at this pick. Draft complete.</p></div>
+</article>
+<h2><span class="n">03</span>Kicker and defense board</h2>
+<p class="lede">These come from BDGE's separate kicker and defense rankings, which weren't in the main export. Take the <strong>defense at #142</strong> and the <strong>kicker at #159</strong> — both lists still have good names at our picks, but the top of the defense list goes first.</p>
+<div class="kd"><div><h4>Defenses</h4><div class="tw"><table>
+      <thead><tr><th>Defenses</th><th class="r">BDGE</th><th class="r">ADP</th><th class="r">Bye</th></tr></thead>
+      <tbody><tr><td class="nm">Houston Texans</td><td class="mono r">1</td><td class="mono r">92.7</td><td class="mono r">8</td></tr><tr><td class="nm">Denver Broncos</td><td class="mono r">2</td><td class="mono r">89.5</td><td class="mono r">10</td></tr><tr><td class="nm">Seattle Seahawks</td><td class="mono r">3</td><td class="mono r">107.2</td><td class="mono r">11</td></tr><tr><td class="nm">Los Angeles Rams</td><td class="mono r">4</td><td class="mono r">97.8</td><td class="mono r">11</td></tr><tr><td class="nm">Philadelphia Eagles</td><td class="mono r">5</td><td class="mono r">134.5</td><td class="mono r">10</td></tr><tr><td class="nm">Minnesota Vikings</td><td class="mono r">6</td><td class="mono r">168.7</td><td class="mono r">6</td></tr><tr><td class="nm">New England Patriots</td><td class="mono r">7</td><td class="mono r">146.9</td><td class="mono r">11</td></tr><tr><td class="nm">Pittsburgh Steelers</td><td class="mono r">8</td><td class="mono r">117.7</td><td class="mono r">9</td></tr><tr><td class="nm">Jacksonville Jaguars</td><td class="mono r">9</td><td class="mono r">165.7</td><td class="mono r">7</td></tr><tr><td class="nm">Atlanta Falcons</td><td class="mono r">10</td><td class="mono r">170.2</td><td class="mono r">11</td></tr></tbody></table></div></div><div><h4>Kickers</h4><div class="tw"><table>
+      <thead><tr><th>Kickers</th><th class="r">BDGE</th><th class="r">ADP</th><th class="r">Bye</th></tr></thead>
+      <tbody><tr><td class="nm">Brandon Aubrey</td><td class="mono r">1</td><td class="mono r">208</td><td class="mono r">14</td></tr><tr><td class="nm">Cameron Dicker</td><td class="mono r">2</td><td class="mono r">227</td><td class="mono r">7</td></tr><tr><td class="nm">Jason Myers</td><td class="mono r">3</td><td class="mono r">225</td><td class="mono r">11</td></tr><tr><td class="nm">Ka&#x27;imi Fairbairn</td><td class="mono r">4</td><td class="mono r">223</td><td class="mono r">8</td></tr><tr><td class="nm">Eddy Pineiro</td><td class="mono r">5</td><td class="mono r">234</td><td class="mono r">8</td></tr><tr><td class="nm">Chris Boswell</td><td class="mono r">6</td><td class="mono r">284</td><td class="mono r">9</td></tr><tr><td class="nm">Tyler Loop</td><td class="mono r">7</td><td class="mono r">236</td><td class="mono r">13</td></tr><tr><td class="nm">Harrison Butker</td><td class="mono r">8</td><td class="mono r">260</td><td class="mono r">5</td></tr><tr><td class="nm">Cam Little</td><td class="mono r">9</td><td class="mono r">230</td><td class="mono r">7</td></tr><tr><td class="nm">Will Reichard</td><td class="mono r">10</td><td class="mono r">240</td><td class="mono r">6</td></tr></tbody></table></div></div></div>
+<h2><span class="n">04</span>Do not draft — Queasy list</h2>
+<p class="lede">Evan has flagged these 12 players. Several will look like obvious value when their board rank sits well above where they're going — <strong>De'Von Achane at #26 is the one you're most likely to be tempted by</strong>. Pass on all of them, every time.</p>
+<div class="tw"><table style="max-width:520px">
+  <thead><tr><th>Player</th><th class="r">Our rank</th><th class="r">ADP</th></tr></thead>
+  <tbody><tr class="queasy"><td class="nm"><span class="pos">RB</span> De&#x27;Von Achane</td><td class="mono r">26</td><td class="mono r">22</td></tr><tr class="queasy"><td class="nm"><span class="pos">RB</span> TreVeyon Henderson</td><td class="mono r">93</td><td class="mono r">72</td></tr><tr class="queasy"><td class="nm"><span class="pos">WR</span> DK Metcalf</td><td class="mono r">98</td><td class="mono r">101</td></tr><tr class="queasy"><td class="nm"><span class="pos">WR</span> Brian Thomas Jr.</td><td class="mono r">102</td><td class="mono r">94</td></tr><tr class="queasy"><td class="nm"><span class="pos">RB</span> Chuba Hubbard</td><td class="mono r">123</td><td class="mono r">106</td></tr><tr class="queasy"><td class="nm"><span class="pos">RB</span> RJ Harvey</td><td class="mono r">130</td><td class="mono r">95</td></tr><tr class="queasy"><td class="nm"><span class="pos">WR</span> Jordan Addison</td><td class="mono r">134</td><td class="mono r">130</td></tr><tr class="queasy"><td class="nm"><span class="pos">WR</span> Xavier Worthy</td><td class="mono r">154</td><td class="mono r">142</td></tr><tr class="queasy"><td class="nm"><span class="pos">RB</span> Alvin Kamara</td><td class="mono r">169</td><td class="mono r">167</td></tr><tr class="queasy"><td class="nm"><span class="pos">WR</span> Khalil Shakir</td><td class="mono r">177</td><td class="mono r">150</td></tr><tr class="queasy"><td class="nm"><span class="pos">WR</span> Jerry Jeudy</td><td class="mono r">196</td><td class="mono r">191</td></tr><tr class="queasy"><td class="nm"><span class="pos">TE</span> Oronde Gadsden II</td><td class="mono r">200</td><td class="mono r">141</td></tr></tbody></table></div>
+
+<h2><span class="n">05</span>If the draft goes sideways</h2>
+<p class="lede">Drafts don't follow scripts. Find the situation that matches and follow it — each of these is a real adjustment, not a panic move.</p>
+
+<div class="cont">
+  <span class="if">If · we reach Round 7 with only one running back</span>
+  <h3>Take running backs in Rounds 7 and 8</h3>
+  <p>The most likely way to go wrong, because receivers keep looking like better value. Skip the Round 7 receiver and take the best tagged back available.</p>
+  <ul>
+    <li><strong>Bhayshul Tuten</strong> — Huge Upside + Breakout, on the board ~100%</li>
+    <li><strong>MarShawn Lloyd</strong> — Huge Upside; he also lasts to Round 10, so prefer Tuten first</li>
+    <li><strong>J.K. Dobbins</strong> — Favorite + Value Pick, available into Round 11</li>
+  </ul>
+  <p>Receiver is the deepest position on this board — fifteen-plus receivers still carry a positive gap in Rounds 9 through 13. Running back dries up first. <strong>When in doubt in the middle rounds, take the back.</strong></p>
+</div>
+
+<div class="cont">
+  <span class="if">If · a quarterback run starts before Round 5</span>
+  <h3>Move the QBs up one round, don't chase further</h3>
+  <p>If four or more quarterbacks go before our Round 5 pick, take the first one there and the second in Round 6 as planned. Do <em>not</em> reach into Round 3 or 4 to get ahead of it.</p>
+  <p>Nine quarterbacks carry a <strong>+50 gap or better</strong>. Even in the worst case we get two. The names change; the value doesn't.</p>
+  <ul>
+    <li>Tagged deep fallbacks, all available past Round 6 in ~100% of drafts: <strong>Brock Purdy</strong> (Value Pick, +62), <strong>Jared Goff</strong> (Value Pick, +80), <strong>Kyler Murray</strong> (+86), <strong>Jordan Love</strong> (+95)</li>
+  </ul>
+</div>
+
+<div class="cont">
+  <span class="if">If · a Queasy player looks like unmissable value</span>
+  <h3>Still don't take him</h3>
+  <p>This will happen. <strong>De'Von Achane sits 26th on our board and goes around 22nd</strong> — he'll be there at pick 22 looking like the obvious pick. <strong>TreVeyon Henderson</strong> and <strong>Brian Thomas Jr.</strong> create the same temptation later.</p>
+  <p>The Queasy tag is Evan's judgment that the ranking overstates the player. Take the next name on the fallback list instead — there's always one within a few spots.</p>
+</div>
+
+<div class="cont">
+  <span class="if">If · we somehow have three QBs before Round 8</span>
+  <h3>Stop entirely and take skill players for four rounds</h3>
+  <p>Two quarterbacks start; a third is insurance, not an asset. Ignore the position for the rest of the draft — there's no fourth QB slot and the bench is only six deep.</p>
+  <p>Use Rounds 8 through 11 on the best available tagged back and receiver, alternating. <strong>MarShawn Lloyd in Round 10 is still the pick</strong> regardless of what else happened.</p>
+</div>
+
+<div class="cont">
+  <span class="if">If · Tucker Kraft is gone before Round 9</span>
+  <h3>Take Sam LaPorta, or wait for Kincaid</h3>
+  <p><strong>Sam LaPorta</strong> (Favorite + Value Pick) is on the board ~100% through Round 7. If both are gone, <strong>Dalton Kincaid</strong> (Favorite + Huge Upside) holds to Round 10 and <strong>Juwan Johnson</strong> to Round 14. Any of them starts. Don't spend a Round 6 pick on a tight end just to feel safe.</p>
+</div>
+
+<div class="cont">
+  <span class="if">If · someone takes Gibbs and Bijan before pick 2</span>
+  <h3>Take the best tagged receiver, then rebalance</h3>
+  <p>Unlikely — Chan opens with a receiver most years. If it happens, take <strong>Puka Nacua</strong> (Favorite), then treat Rounds 2 and 3 as running back rounds and push the first quarterback to Round 6.</p>
+</div>
+
+<h2><span class="n">06</span>Rules that hold all draft</h2>
+<div class="rules">
+  <div class="rule"><h4>Two QBs by Round 6</h4><p>Not one, not three. Both starting slots filled by the end of Round 6; the third only as late insurance.</p></div>
+  <div class="rule"><h4>Prefer the tagged player</h4><p>When two names are close on the board, take the one carrying Favorite, Breakout, Huge Upside, Sleeper or Value Pick.</p></div>
+  <div class="rule"><h4>Take MarShawn Lloyd in Round 10</h4><p>Largest value gap on the board at +92, tagged Huge Upside, and there in every simulation.</p></div>
+  <div class="rule"><h4>When it's close, take the running back</h4><p>Receiver stays deep into the late rounds. Running back does not.</p></div>
+  <div class="rule no"><h4>Never draft a Queasy player</h4><p>All twelve are listed in section 04. No exceptions, however good the value looks.</p></div>
+  <div class="rule no"><h4>No K or D/ST before Round 15</h4><p>This league always waits and so do we. An earlier pick here wastes a roster spot outright.</p></div>
+</div>
+
+<footer>
+  <p><strong>Where these numbers come from.</strong> Rankings, tiers and tags are Evan's BDGE <em>superflex</em> board, pulled from bdge.co on Sep 4 — superflex is the two-quarterback format, which is why the quarterback ranks look aggressive against ESPN. Kicker and defense rankings come from BDGE's separate lists. ADP is ESPN's public average draft position. The "on board" percentages come from 400 simulated drafts in which the other nine managers were modeled on their own 2022–2025 draft history and validated to within 0.3 rounds of their real quarterback timing.</p>
+  <p><strong>One honest limit.</strong> The simulation takes about one fewer quarterback than reality through the first 40 picks, so if anything the quarterbacks will go slightly faster than these percentages suggest. That argues for taking the Round 5 quarterback promptly rather than waiting another round.</p>
+</footer>
+</div>
