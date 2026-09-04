@@ -14,3 +14,6 @@ node_modules/
 .espn-automation/bench.json
 .espn-automation/trade_points.json
 .espn-automation/luck.json
+
+# Tagged sim comparison runs (regenerable: BOARD=<csv> MODE=<mode> SEED=<n>)
+.espn-automation/sim_results_*_v*.json
