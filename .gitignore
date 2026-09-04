@@ -17,3 +17,4 @@ node_modules/
 
 # Tagged sim comparison runs (regenerable: BOARD=<csv> MODE=<mode> SEED=<n>)
 .espn-automation/sim_results_*_v*.json
+.espn-automation/sim_full_*.json

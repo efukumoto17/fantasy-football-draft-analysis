@@ -1,0 +1,109 @@
+{
+  "fittedAt": "2026-09-04",
+  "seed": 4242,
+  "runs": 120,
+  "note": "Fitted from 2022-25 drafts by fit_manager_models.js. qbHabit rounds are observed directly; qbHabitStrength and lean are calibrated. Evan is excluded (his picks come from the strategy mode).",
+  "qbHabitStrength": 8.959782815596105,
+  "qbHabit": {
+    "Chase Mizoguchi": {
+      "first": 6.25,
+      "second": 8.25
+    },
+    "Christopher Pascual": {
+      "first": 3.5,
+      "second": 7
+    },
+    "Darwin Hu": {
+      "first": 1.5,
+      "second": 6.5
+    },
+    "Harvey Wang": {
+      "first": 4.5,
+      "second": 8
+    },
+    "Ikaika Stone": {
+      "first": 3,
+      "second": 5
+    },
+    "Jeffrey Chan": {
+      "first": 4.25,
+      "second": 8
+    },
+    "Justin Ho": {
+      "first": 5.75,
+      "second": 9.25
+    },
+    "Prashanth Balaraman": {
+      "first": 5,
+      "second": 7.25
+    },
+    "Rollin Odama-Wong": {
+      "first": 1,
+      "second": 6.5
+    }
+  },
+  "qbAggr": {
+    "Chase Mizoguchi": 1,
+    "Christopher Pascual": 1,
+    "Darwin Hu": 1,
+    "Evan Fukumoto": 1,
+    "Harvey Wang": 1,
+    "Ikaika Stone": 1,
+    "Jeffrey Chan": 1,
+    "Justin Ho": 1,
+    "Prashanth Balaraman": 1,
+    "Rollin Odama-Wong": 1
+  },
+  "lean": {
+    "Chase Mizoguchi": {
+      "RB": 3.960000000000004,
+      "WR": 2.2800000000000016,
+      "TE": 3.719999999999998
+    },
+    "Christopher Pascual": {
+      "RB": 3.5549999999999953,
+      "WR": 4.59,
+      "TE": 2.8499999999999988
+    },
+    "Darwin Hu": {
+      "RB": 0.23999999999999638,
+      "WR": 4.770000000000005,
+      "TE": 4.875000000000001
+    },
+    "Evan Fukumoto": {
+      "RB": 0,
+      "WR": 0,
+      "TE": 0
+    },
+    "Harvey Wang": {
+      "RB": -4.140000000000004,
+      "WR": -0.7200000000000041,
+      "TE": 2.115
+    },
+    "Ikaika Stone": {
+      "RB": 0.23999999999999921,
+      "WR": -2.1750000000000025,
+      "TE": -0.31500000000000045
+    },
+    "Jeffrey Chan": {
+      "RB": -2.6849999999999987,
+      "WR": -7.590000000000011,
+      "TE": -3.5700000000000003
+    },
+    "Justin Ho": {
+      "RB": 1.3499999999999976,
+      "WR": 2.415000000000005,
+      "TE": 2.5199999999999987
+    },
+    "Prashanth Balaraman": {
+      "RB": -1.9650000000000034,
+      "WR": 0.3600000000000043,
+      "TE": -2.2800000000000007
+    },
+    "Rollin Odama-Wong": {
+      "RB": -0.26999999999999774,
+      "WR": 0.9749999999999981,
+      "TE": -0.6900000000000003
+    }
+  }
+}

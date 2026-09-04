@@ -72,13 +72,24 @@ const N=10, ROUNDS=16;
 const seq=[];
 for(let r=0;r<ROUNDS;r++){ const order=[...Array(N).keys()]; if(r%2===1)order.reverse(); for(const s of order) seq.push(s); }
 
-// manager QB aggression multiplier (lower = earlier QB)
-const qbAggr = { 'Rollin Odama-Wong':0.6, 'Darwin Hu':0.72, 'Christopher Pascual':0.85, 'Ikaika Stone':0.9 };
-// early-round positional lean nudges (subtracted from effADP in rounds<=5)
-const lean = {
+// Manager models. Fitted from this league's 2022-25 drafts by
+// fit_manager_models.js; the hand-tuned values below are only a fallback.
+const MODELS_FILE = `${ROOT}/.espn-automation/manager_models.json`;
+let qbAggr = { 'Rollin Odama-Wong':0.6, 'Darwin Hu':0.72, 'Christopher Pascual':0.85, 'Ikaika Stone':0.9 };
+let lean = {
   'Justin Ho': {RB:-6}, 'Chase Mizoguchi': {WR:-6}, 'Jeffrey Chan': {WR:-5}, 'Ikaika Stone': {WR:-7},
   'Prashanth Balaraman': {WR:-4}, 'Harvey Wang': {TE:+30}, 'Evan Fukumoto': {}
 };
+let qbHabit = {};          // manager -> {first, second} round of Nth QB, from real drafts
+let QB_HABIT = 10;         // effective-ADP points charged per round taken early
+let MODEL_SOURCE = 'hand-tuned fallback';
+if (!process.env.NO_MODELS && fs.existsSync(MODELS_FILE)) {
+  const m = JSON.parse(fs.readFileSync(MODELS_FILE, 'utf8'));
+  qbAggr = m.qbAggr; lean = m.lean;
+  qbHabit = m.qbHabit || {};
+  if (m.qbHabitStrength) QB_HABIT = m.qbHabitStrength;
+  MODEL_SOURCE = `fitted (${m.fittedAt || 'unknown date'})`;
+}
 
 const CAP={QB:3,RB:6,WR:7,TE:2,K:1,'D/ST':1};
 const STARTERS={QB:2,RB:2,WR:2,TE:1,K:1,'D/ST':1}; // +1 FLEX(RB/WR/TE)
@@ -108,6 +119,15 @@ function pickOpponent(mgr, r, avail, roundNum, pickNum){
     if(!allowed(r,p.pos,roundNum)) continue;
     if(mustFill && !mand.includes(p.pos)) continue;
     let eff = p.pos==='QB' ? Math.min(p.adp, p.qbTarget*(qbAggr[mgr]||1)) : p.adp;
+    // Per-manager QB habit. The scarcity term above makes elite QBs look like
+    // top-5 picks to everyone, so a multiplier alone cannot express "this
+    // manager waits until round 6". Penalise taking a QB earlier than the round
+    // this manager actually takes their Nth QB, measured from real drafts.
+    if(p.pos==='QB' && qbHabit[mgr]){
+      const h = qbHabit[mgr], nth = count(r,'QB');
+      const want = nth===0 ? h.first : (nth===1 ? h.second : h.second+3);
+      if(roundNum < want) eff += (want - roundNum) * QB_HABIT;
+    }
     if(roundNum<=5 && lean[mgr] && lean[mgr][p.pos]) eff += lean[mgr][p.pos];
     // small need bonus to fill starters
     if(count(r,p.pos)<STARTERS[p.pos]) eff -= 3;
@@ -175,6 +195,16 @@ const RUNS=300;
 const MODE = process.env.MODE || 'strict';
 const evanRosters=[];
 for(let k=0;k<RUNS;k++){ const rs=runDraft(MODE); evanRosters.push(rs[EVAN_SLOT]); }
+// Optional: dump every team's roster, not just Evan's, for validating the
+// simulated draft flow against the league's real drafts.
+if (process.env.DUMP_ALL) {
+  const allRuns = [];
+  const NRUNS = +(process.env.DUMP_RUNS || 50);
+  for (let i = 0; i < NRUNS; i++) allRuns.push(runDraft(MODE));
+  fs.writeFileSync(`${ROOT}/.espn-automation/sim_full_${MODE}.json`,
+    JSON.stringify({ mode: MODE, board: BOARD, seed: SEED, modelSource: MODEL_SOURCE, slotMgr, runs: allRuns }));
+  console.log(`DUMP_ALL: wrote ${NRUNS} full drafts to .espn-automation/sim_full_${MODE}.json`);
+}
 const TAG = process.env.TAG || '';
 fs.writeFileSync(`${ROOT}/.espn-automation/sim_results_${MODE}${TAG}.json`, JSON.stringify({ mode:MODE, board:BOARD, seed:SEED, evanSlot:EVAN_SLOT+1, slotMgr, evanRosters }, null, 2));
 console.log('STRATEGY MODE:', MODE, '\n');
