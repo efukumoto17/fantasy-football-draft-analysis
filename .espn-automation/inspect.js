@@ -13,5 +13,6 @@ const { chromium } = require('playwright');
   const hasLogin = /log ?in|sign ?in/i.test(bodyText) && !/draft strateg/i.test(bodyText.toLowerCase());
   await page.screenshot({ path: __dirname + '/state.png', fullPage: false }).catch(e => console.log('shot err', e.message));
   console.log(JSON.stringify({ url, title, hasLoginHint: hasLogin, bodyPreview: bodyText.replace(/\n/g, ' ').slice(0, 300) }, null, 2));
-  await browser.close(); // detaches CDP, does NOT close the browser
+  // do not close: this browser is the user's live session, attached over CDP
+  process.exit(0); // detaches CDP, does NOT close the browser
 })();

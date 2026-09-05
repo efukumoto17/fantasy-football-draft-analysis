@@ -47,5 +47,6 @@ const { chromium } = require('playwright');
   });
 
   console.log(JSON.stringify(info, null, 2));
-  await browser.close();
+  // do not close: this browser is the user's live session, attached over CDP
+  process.exit(0);
 })();

@@ -34,5 +34,6 @@ const fs = require('fs');
     .map(tr => (tr.querySelector('.ranking')?.textContent||'')+' '+(tr.querySelector('.player-column__athlete a')?.textContent||'')));
   console.log('UI top15 after reload:');
   topUI.forEach(t=>console.log('  '+t));
-  await browser.close();
+  // do not close: this browser is the user's live session, attached over CDP
+  process.exit(0);
 })();

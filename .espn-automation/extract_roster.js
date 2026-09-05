@@ -39,5 +39,6 @@ const fs = require('fs');
   const missingPid = rows.filter(r => !r.pid).length;
   const missingName = rows.filter(r => !r.name).length;
   console.log('missing pid:', missingPid, ' missing name:', missingName);
-  await browser.close();
+  // do not close: this browser is the user's live session, attached over CDP
+  process.exit(0);
 })();

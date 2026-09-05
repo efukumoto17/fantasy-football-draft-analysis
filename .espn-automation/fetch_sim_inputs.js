@@ -39,5 +39,6 @@ const ROOT = '/Users/evanfukumoto/Documents/VSCodeRepos/ridetrainingscheduling';
   console.log('DRAFT ORDER (slot -> teamId -> manager):');
   data.pickOrder.forEach((tid,i)=>{ const t=teamById.get(tid); console.log(`  slot ${i+1}: team ${tid} = ${t?mgr(t):'??'} (${t?t.name:'?'})`); });
   console.log('\nplayers pulled:', data.players.length, ' with ADP:', data.players.filter(p=>p.adp&&p.adp>0&&p.adp<300).length);
-  await browser.close();
+  // do not close: this browser is the user's live session, attached over CDP
+  process.exit(0);
 })();

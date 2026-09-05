@@ -230,7 +230,7 @@ const r1 = (n) => (n === null || n === undefined) ? null : Math.round(n * 100) /
     txnRows);
   writeCsv(path.join(OUT, 'team-managers-2022-2025.csv'),
     ['Year','TeamId','TeamName','Abbrev','Manager'], managerRows);
-
-  await browser.close();
+  // do not close: this browser is the user's live session, attached over CDP
+  process.exit(0);
   console.log('\nDONE');
 })();

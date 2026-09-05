@@ -61,7 +61,8 @@ const csvCell = (s) => { s = (s==null?'':String(s)); return /[",\n]/.test(s) ? '
         manager:tb.manager, teamName:tb.name, keeper:pk.keeper });
     }
   }
-  await browser.close();
+  // do not close: this browser is the user's live session, attached over CDP
+  process.exit(0);
 
   // combined csv
   const header = 'Year,Round,Round Pick,Overall Pick,Player,NFL Team,Position,Manager,Team Name';

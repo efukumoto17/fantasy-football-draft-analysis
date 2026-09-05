@@ -38,5 +38,6 @@ const fs = require('fs');
     return dl ? dl.slice(0, 12).map(x => x.playerId) : null;
   });
   console.log('read-back top12 playerIds:', JSON.stringify(verify));
-  await browser.close();
+  // do not close: this browser is the user's live session, attached over CDP
+  process.exit(0);
 })();

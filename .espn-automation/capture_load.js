@@ -39,5 +39,6 @@ const fs = require('fs');
   fs.writeFileSync(__dirname + '/load_calls.json', JSON.stringify(calls, null, 2));
   console.log('captured', calls.length, 'api calls');
   for (const c of calls) console.log(`${c.method} ${c.status} len=${c.bodyLen} ${c.url.slice(0, 160)}`);
-  await browser.close();
+  // do not close: this browser is the user's live session, attached over CDP
+  process.exit(0);
 })();

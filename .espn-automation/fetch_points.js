@@ -25,5 +25,6 @@ const posMap = {1:'QB',2:'RB',3:'WR',4:'TE',5:'K',16:'D/ST',9:'DT',10:'DE',11:'L
     console.log(`${year}: ${data.length} players, top: ${data[0].name} ${data[0].pts}`);
   }
   fs.writeFileSync(`${ROOT}/.espn-automation/season_points.json`, JSON.stringify(all));
-  await browser.close();
+  // do not close: this browser is the user's live session, attached over CDP
+  process.exit(0);
 })();

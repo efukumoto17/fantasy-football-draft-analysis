@@ -42,5 +42,6 @@ const fs = require('fs');
   console.log('final DOM row count:', finalCount, ' extracted:', rows.length);
   console.log('missing pid:', rows.filter(r => !r.pid).length, ' missing name:', rows.filter(r => !r.name).length);
   console.log('last 3:', JSON.stringify(rows.slice(-3)));
-  await browser.close();
+  // do not close: this browser is the user's live session, attached over CDP
+  process.exit(0);
 })();

@@ -67,7 +67,8 @@ const writeCsv = (file, header, rows) => {
       }
       if ([...needed].every(id => nameById.has(id))) break;
     }
-    await browser.close();
+  // do not close: this browser is the user's live session, attached over CDP
+  process.exit(0);
     console.log(`  still unresolved: ${[...needed].filter(id => !nameById.has(id)).join(', ') || 'none'}`);
   }
 

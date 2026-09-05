@@ -48,5 +48,6 @@ const fs = require('fs');
   fs.writeFileSync(__dirname + '/write_calls.json', JSON.stringify(writes, null, 2));
   console.log('captured writes:', writes.length);
   for (const w of writes) console.log(`${w.method} ${w.url.slice(0,170)}\n   body: ${w.postData.slice(0,500)}`);
-  await browser.close();
+  // do not close: this browser is the user's live session, attached over CDP
+  process.exit(0);
 })();

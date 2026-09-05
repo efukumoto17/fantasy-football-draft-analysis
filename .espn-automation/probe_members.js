@@ -25,5 +25,6 @@ const { chromium } = require('playwright');
   Object.entries(guidNames).forEach(([g,names])=>console.log(g, '->', [...names].join(' | ')));
   console.log('\n=== per-year roster (GUID short) ===');
   for (const y of Object.keys(out)) console.log(y+':', out[y].map(t=>t.name+' ['+t.g.slice(1,5)+']').join(', '));
-  await browser.close();
+  // do not close: this browser is the user's live session, attached over CDP
+  process.exit(0);
 })();

@@ -91,5 +91,6 @@ const csvCell = (s) => {
   fs.writeFileSync(`${ROOT}/draft-history-team-managers.csv`, mappingRows.map(r => r.map(csvCell).join(',')).join('\n') + '\n');
   console.log(summary.join('\n'));
   console.log('\nwrote draft-history-team-managers.csv');
-  await browser.close();
+  // do not close: this browser is the user's live session, attached over CDP
+  process.exit(0);
 })();
