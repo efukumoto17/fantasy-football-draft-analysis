@@ -1,0 +1,298 @@
+<title>Value Board</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ground:#F7F8FA; --surface:#FFFFFF; --surface-2:#EFF2F6; --ink:#0E1621; --ink-2:#3A4757;
+  --muted:#5C6875; --line:#D8DEE7; --line-2:#E8ECF2;
+  --accent:#1B5FBF; --accent-soft:#E4EDFA; --accent-ink:#12447F;
+  --good:#14806A; --good-soft:#E0F0EB; --warn:#B4740C; --warn-soft:#F8EEDB; --risk:#B03A48; --risk-soft:#F8E5E8;
+  --shadow:0 1px 2px rgba(14,22,33,.06),0 4px 14px rgba(14,22,33,.05);
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  --ground:#0B121B; --surface:#151F2C; --surface-2:#1C2837; --ink:#EAF0F7; --ink-2:#B9C6D4;
+  --muted:#8B9AAA; --line:#2A3849; --line-2:#22303F;
+  --accent:#6BA5F0; --accent-soft:#17293F; --accent-ink:#A8CBF7;
+  --good:#4FC0A1; --good-soft:#122B26; --warn:#E0A94A; --warn-soft:#2E2517; --risk:#E8899A; --risk-soft:#331C22;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.3);
+}}
+:root[data-theme="dark"]{
+  --ground:#0B121B; --surface:#151F2C; --surface-2:#1C2837; --ink:#EAF0F7; --ink-2:#B9C6D4;
+  --muted:#8B9AAA; --line:#2A3849; --line-2:#22303F;
+  --accent:#6BA5F0; --accent-soft:#17293F; --accent-ink:#A8CBF7;
+  --good:#4FC0A1; --good-soft:#122B26; --warn:#E0A94A; --warn-soft:#2E2517; --risk:#E8899A; --risk-soft:#331C22;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.3);
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+  font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px 72px}
+h1,h2,h3,.cond{font-family:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;text-wrap:balance}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
+
+/* header */
+header{border-bottom:2px solid var(--ink);padding:36px 0 18px;margin-bottom:28px}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h1{font-size:clamp(38px,7vw,60px);line-height:.95;margin:6px 0 10px;font-weight:700;letter-spacing:-.01em}
+.sub{color:var(--ink-2);max-width:64ch;margin:0}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:5px;padding:7px 11px;font-size:12.5px;
+  display:flex;gap:7px;align-items:baseline}
+.fact b{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600}
+.fact span{color:var(--muted);text-transform:uppercase;letter-spacing:.07em;font-size:10.5px;font-weight:600}
+
+h2{font-size:clamp(24px,3.4vw,31px);font-weight:700;margin:44px 0 6px;letter-spacing:-.005em}
+h2 .n{color:var(--muted);font-weight:500;margin-right:10px}
+.lede{color:var(--ink-2);max-width:66ch;margin:0 0 20px}
+
+/* callout */
+.key{background:var(--accent-soft);border:1px solid var(--accent);border-left-width:4px;border-radius:6px;
+  padding:16px 18px;margin:22px 0}
+.key h3{font-size:19px;margin:0 0 6px;font-weight:600;color:var(--accent-ink)}
+.key p{margin:0;color:var(--ink-2)}
+.key p+p{margin-top:8px}
+
+/* roster */
+.rosters{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px;margin-top:18px}
+.roster{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px;box-shadow:var(--shadow)}
+.roster h3{font-size:20px;margin:0 0 2px;font-weight:600}
+.roster .tag{font-size:11px;text-transform:uppercase;letter-spacing:.1em;font-weight:600;color:var(--muted);
+  display:block;margin-bottom:12px}
+.roster.pick{border-color:var(--accent);border-width:2px}
+.roster.pick h3{color:var(--accent-ink)}
+.rl{display:flex;gap:9px;padding:5px 0;border-bottom:1px solid var(--line-2);font-size:13.5px;align-items:baseline}
+.rl:last-of-type{border-bottom:0}
+.rl .rd{color:var(--muted);font-size:11.5px;min-width:26px;font-weight:600}
+.rl .ps{min-width:36px;font-size:10.5px;font-weight:700;letter-spacing:.05em;color:var(--muted)}
+.rl .nm{flex:1}
+.rl.qb .nm{font-weight:600;color:var(--accent-ink)}
+.comp{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+
+/* round cards */
+.round{background:var(--surface);border:1px solid var(--line);border-radius:8px;margin-bottom:14px;
+  overflow:hidden;box-shadow:var(--shadow)}
+.rhead{display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--line);
+  background:var(--surface-2);flex-wrap:wrap}
+.rnum{font-family:"Barlow Condensed",sans-serif;font-size:15px;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--muted)}
+.rpick{font-family:"IBM Plex Mono",monospace;font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1}
+.rtake{margin-left:auto;display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.rtake .lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:600}
+.rtake .who{font-size:17px;font-weight:600;color:var(--accent-ink);font-family:"Barlow Condensed",sans-serif;
+  letter-spacing:.01em}
+.rbody{padding:14px 18px 16px}
+.note{margin:0 0 12px;color:var(--ink-2);font-size:14px}
+.note strong{color:var(--ink)}
+
+/* table */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:520px}
+th{text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);
+  font-weight:700;padding:0 10px 7px 0;border-bottom:1px solid var(--line)}
+th.r,td.r{text-align:right;padding-right:0}
+td{padding:7px 10px 7px 0;border-bottom:1px solid var(--line-2)}
+tr:last-child td{border-bottom:0}
+td.nm{font-weight:500}
+td.mono{font-variant-numeric:tabular-nums}
+.pos{display:inline-block;min-width:30px;font-size:10px;font-weight:700;letter-spacing:.05em;color:var(--muted)}
+
+/* chips */
+.chip{display:inline-block;padding:2px 7px;border-radius:4px;font-size:11.5px;font-weight:600;
+  font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+.g-hi{background:var(--good-soft);color:var(--good)}
+.g-md{background:var(--accent-soft);color:var(--accent-ink)}
+.g-lo{background:var(--surface-2);color:var(--muted)}
+.av{display:inline-flex;align-items:center;gap:6px;font-family:"IBM Plex Mono",monospace;
+  font-variant-numeric:tabular-nums;font-size:12.5px;white-space:nowrap}
+.dot{width:7px;height:7px;border-radius:50%;flex:none}
+.d-safe{background:var(--good)} .d-warn{background:var(--warn)} .d-risk{background:var(--risk)}
+
+/* contingency */
+.cont{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px;margin-bottom:14px;
+  box-shadow:var(--shadow)}
+.cont h3{font-size:20px;margin:0 0 3px;font-weight:600}
+.cont .if{font-size:11px;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--risk);
+  display:block;margin-bottom:9px}
+.cont p{margin:0 0 10px;color:var(--ink-2)}
+.cont p:last-child{margin-bottom:0}
+.cont ul{margin:8px 0 0;padding-left:18px;color:var(--ink-2)}
+.cont li{margin-bottom:5px}
+.cont li:last-child{margin-bottom:0}
+
+/* rules */
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin-top:18px}
+.rule{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);
+  border-radius:6px;padding:14px 16px}
+.rule.no{border-left-color:var(--risk)}
+.rule h4{margin:0 0 5px;font-size:15px;font-weight:600;font-family:"IBM Plex Sans",sans-serif}
+.rule p{margin:0;font-size:13.5px;color:var(--ink-2)}
+
+.legend{display:flex;flex-wrap:wrap;gap:16px;padding:14px 16px;background:var(--surface-2);
+  border:1px solid var(--line);border-radius:6px;margin:18px 0;font-size:12.5px;color:var(--ink-2)}
+.legend div{display:flex;align-items:center;gap:7px}
+/* tag badges */
+.tags{display:inline-flex;gap:4px;flex-wrap:wrap;margin-left:7px;vertical-align:middle}
+.tg{font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:2px 5px;
+  border-radius:3px;white-space:nowrap;line-height:1.35}
+.t-fav{background:var(--accent-soft);color:var(--accent-ink)}
+.t-up{background:var(--good-soft);color:var(--good)}
+.t-inj{background:var(--warn-soft);color:var(--warn)}
+.t-q{background:var(--risk-soft);color:var(--risk)}
+tr.queasy td{opacity:.55}
+tr.queasy td.nm{text-decoration:line-through;text-decoration-color:var(--risk)}
+.kd{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:6px}
+.kd h4{margin:0 0 8px;font-size:15px;font-weight:600}
+.pos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:18px}
+.pc{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px 18px;box-shadow:var(--shadow)}
+.pc .ph{display:flex;align-items:baseline;gap:9px;margin-bottom:8px}
+.pc .pn{font-family:"Barlow Condensed",sans-serif;font-size:26px;font-weight:700;letter-spacing:.01em;line-height:1}
+.pc .pm{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.pc p{margin:0;font-size:13.5px;color:var(--ink-2)}
+.pc .verdict{margin-top:9px;padding-top:9px;border-top:1px solid var(--line-2);font-size:13px;font-weight:600;color:var(--ink)}
+footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
+footer p{margin:0 0 6px;max-width:74ch}
+a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media(max-width:620px){ .rtake{margin-left:0;width:100%} header{padding-top:26px} }
+</style>
+<div class="wrap">
+<header>
+  <div class="eyebrow">2026 Draft · Slot 2 · Drafting for Evan Fukumoto</div>
+  <h1>Value Board</h1>
+  <p class="sub">The players I rank higher than the market, grouped by when they're likely to still be there, and how big the gap is. Pair this with the positional plan below and you can draft the team off this sheet alone.</p>
+  <div class="facts">
+    <div class="fact"><span>Slot</span><b>2 of 10</b></div>
+    <div class="fact"><span>Format</span><b>2 QB · Snake · PPR</b></div>
+    <div class="fact"><span>Our picks</span><b>2 · 19 · 22 · 39 · 42 · 59 · 62 · 79 · 82 · 99 · 102 · 119 · 122 · 139 · 142 · 159</b></div>
+  </div>
+</header>
+
+<div class="key">
+  <h3>How to read this</h3>
+  <p><strong>"We're higher by"</strong> is how many draft slots above the market I have that player. A <span class="chip g-hi">+64</span> means the field takes him 64 picks later than I'd rank him — so he'll be sitting there when we pick, and he's worth more than his draft slot suggests.</p>
+  <p>Players are listed in the <strong>last group where they're likely to still be available</strong>. That's the deadline, not the target — if you want someone, taking him a turn early is fine. Waiting past his group usually isn't.</p>
+  <p>Tags: <span class="tg t-fav">Favorite</span> <span class="tg t-up">Huge Upside</span> <span class="tg t-up">Sleeper</span> <span class="tg t-up">Value</span> are players I want. <span class="tg t-inj">Injured</span> is a flag, not a veto. Anyone on the Do Not Draft list has been removed from this sheet entirely — they're not options.</p>
+</div>
+
+<h2><span class="n">01</span>Positional plan</h2>
+<p class="lede">The short version: <strong>quarterback is where the edge is, running back is where the scarcity is.</strong> Spend early picks on the scarce position and cash the quarterback edge in the middle rounds.</p>
+<div class="pos-grid">
+  <div class="pc">
+    <div class="ph"><span class="pn">QB</span><span class="pm">32 value plays · median +52</span></div>
+    <p>We start <strong>two</strong>, and this is the deepest pool of value on the whole board — 16 quarterbacks sit 50+ slots above their draft cost. The market underrates them because most leagues start one.</p>
+    <p class="verdict">Take both starters in Rounds 5–7. Not earlier. A third late as insurance.</p>
+  </div>
+  <div class="pc">
+    <div class="ph"><span class="pn">RB</span><span class="pm">16 value plays · median +13</span></div>
+    <p>The <strong>scarcest</strong> position — half as many value plays as QB or WR, and the smallest gaps. Where my board and the market mostly agree, which means you have to pay market price.</p>
+    <p class="verdict">Take three in Rounds 1–3, while they exist. Don't wait.</p>
+  </div>
+  <div class="pc">
+    <div class="ph"><span class="pn">WR</span><span class="pm">32 value plays · median +22</span></div>
+    <p>The <strong>deepest</strong> position. Real gaps stay available past board rank 150 — there are still receivers worth +20 or more in the last few rounds.</p>
+    <p class="verdict">One early (Round 4), then keep taking them from Round 7 onward.</p>
+  </div>
+  <div class="pc">
+    <div class="ph"><span class="pn">TE</span><span class="pm">4 value plays · median +17</span></div>
+    <p>Only one starts and there are just <strong>four</strong> tight ends I rank meaningfully above market. Outside those four it barely matters who you take.</p>
+    <p class="verdict">Grab one of the four around Round 9. Don't reach earlier.</p>
+  </div>
+  <div class="pc">
+    <div class="ph"><span class="pn">K + DST</span><span class="pm">last two rounds</span></div>
+    <p>Everyone in this league waits until the end, so supply far outstrips demand at our picks. Spending anything earlier wastes a roster spot.</p>
+    <p class="verdict">Rounds 15 and 16, defense first.</p>
+  </div>
+  <div class="pc" style="border-color:var(--accent);border-width:2px">
+    <div class="ph"><span class="pn" style="color:var(--accent-ink)">Order</span></div>
+    <p><strong>RB · RB · RB · WR · QB · QB · WR · WR · TE · RB · then best value</strong></p>
+    <p style="margin-top:8px">That sequence takes the scarce position while it lasts, gets a receiver before the top tier empties, and cashes the quarterback edge in the middle where nobody else is competing for it.</p>
+  </div>
+</div>
+
+<h2><span class="n">02</span>Who's still on the board, and by how much</h2>
+<p class="lede">Each group covers one turn of the snake. The number beside each player is my rank, the market's rank, and the gap between them.</p>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 1</div><div class="rpick">#2</div></div>
+    <div class="rtake"><span class="lbl">Our guys still here</span><span class="who">2 players</span></div>
+  </div>
+  <div class="rbody"><div class="tw"><table>
+    <thead><tr><th>Player</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">We're higher by</th></tr></thead>
+    <tbody><tr><td class="nm"><span class="pos">QB</span> Lamar Jackson</td><td class="mono r">9</td><td class="mono r">38</td><td class="r"><span class="chip g-md">+29</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Josh Allen</td><td class="mono r">3</td><td class="mono r">21</td><td class="r"><span class="chip g-md">+18</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Rounds 2–3</div><div class="rpick">#19 · #22</div></div>
+    <div class="rtake"><span class="lbl">Our guys still here</span><span class="who">7 players</span></div>
+  </div>
+  <div class="rbody"><div class="tw"><table>
+    <thead><tr><th>Player</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">We're higher by</th></tr></thead>
+    <tbody><tr><td class="nm"><span class="pos">QB</span> Jayden Daniels<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Value</span></span></td><td class="mono r">17</td><td class="mono r">52</td><td class="r"><span class="chip g-md">+35</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Jalen Hurts<span class="tags"><span class="tg t-up">Value</span></span></td><td class="mono r">29</td><td class="mono r">52</td><td class="r"><span class="chip g-md">+23</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Drake Maye</td><td class="mono r">31</td><td class="mono r">47</td><td class="r"><span class="chip g-md">+16</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Malik Nabers<span class="tags"><span class="tg t-inj">Injured</span><span class="tg t-fav">Favorite</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">23</td><td class="mono r">34</td><td class="r"><span class="chip g-lo">+11</span></td></tr><tr><td class="nm"><span class="pos">RB</span> Kenneth Walker III<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">13</td><td class="mono r">23</td><td class="r"><span class="chip g-lo">+10</span></td></tr><tr><td class="nm"><span class="pos">RB</span> Javonte Williams<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Value</span></span></td><td class="mono r">27</td><td class="mono r">35</td><td class="r"><span class="chip g-lo">+8</span></td></tr><tr><td class="nm"><span class="pos">WR</span> DeVonta Smith<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">34</td><td class="mono r">39</td><td class="r"><span class="chip g-lo">+5</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Rounds 4–5</div><div class="rpick">#39 · #42</div></div>
+    <div class="rtake"><span class="lbl">Our guys still here</span><span class="who">7 players</span></div>
+  </div>
+  <div class="rbody"><div class="tw"><table>
+    <thead><tr><th>Player</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">We're higher by</th></tr></thead>
+    <tbody><tr><td class="nm"><span class="pos">QB</span> Trevor Lawrence<span class="tags"><span class="tg t-fav">Favorite</span></span></td><td class="mono r">30</td><td class="mono r">94</td><td class="r"><span class="chip g-hi">+64</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Matthew Stafford</td><td class="mono r">38</td><td class="mono r">84</td><td class="r"><span class="chip g-hi">+46</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Bo Nix</td><td class="mono r">48</td><td class="mono r">91</td><td class="r"><span class="chip g-hi">+43</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Dak Prescott</td><td class="mono r">39</td><td class="mono r">81</td><td class="r"><span class="chip g-hi">+42</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Joe Burrow</td><td class="mono r">16</td><td class="mono r">57</td><td class="r"><span class="chip g-hi">+41</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Jaxson Dart<span class="tags"><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">53</td><td class="mono r">78</td><td class="r"><span class="chip g-md">+25</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Tee Higgins</td><td class="mono r">43</td><td class="mono r">54</td><td class="r"><span class="chip g-lo">+11</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Rounds 6–7</div><div class="rpick">#59 · #62</div></div>
+    <div class="rtake"><span class="lbl">Our guys still here</span><span class="who">7 players</span></div>
+  </div>
+  <div class="rbody"><div class="tw"><table>
+    <thead><tr><th>Player</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">We're higher by</th></tr></thead>
+    <tbody><tr><td class="nm"><span class="pos">QB</span> Kyler Murray</td><td class="mono r">58</td><td class="mono r">144</td><td class="r"><span class="chip g-hi">+86</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Jared Goff<span class="tags"><span class="tg t-up">Value</span></span></td><td class="mono r">56</td><td class="mono r">136</td><td class="r"><span class="chip g-hi">+80</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Justin Herbert</td><td class="mono r">37</td><td class="mono r">101</td><td class="r"><span class="chip g-hi">+64</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Brock Purdy<span class="tags"><span class="tg t-up">Value</span></span></td><td class="mono r">42</td><td class="mono r">104</td><td class="r"><span class="chip g-hi">+62</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Caleb Williams<span class="tags"><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">40</td><td class="mono r">93</td><td class="r"><span class="chip g-hi">+53</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Patrick Mahomes</td><td class="mono r">55</td><td class="mono r">107</td><td class="r"><span class="chip g-hi">+52</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Luther Burden III<span class="tags"><span class="tg t-inj">Injured</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">61</td><td class="mono r">76</td><td class="r"><span class="chip g-md">+15</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Rounds 8–9</div><div class="rpick">#79 · #82</div></div>
+    <div class="rtake"><span class="lbl">Our guys still here</span><span class="who">10 players</span></div>
+  </div>
+  <div class="rbody"><div class="tw"><table>
+    <thead><tr><th>Player</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">We're higher by</th></tr></thead>
+    <tbody><tr><td class="nm"><span class="pos">QB</span> Jordan Love</td><td class="mono r">62</td><td class="mono r">157</td><td class="r"><span class="chip g-hi">+95</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Tyler Shough<span class="tags"><span class="tg t-up">Sleeper</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">77</td><td class="mono r">155</td><td class="r"><span class="chip g-hi">+78</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Sam Darnold</td><td class="mono r">87</td><td class="mono r">162</td><td class="r"><span class="chip g-hi">+75</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Baker Mayfield</td><td class="mono r">86</td><td class="mono r">147</td><td class="r"><span class="chip g-hi">+61</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Daniel Jones<span class="tags"><span class="tg t-inj">Injured</span></span></td><td class="mono r">125</td><td class="mono r">159</td><td class="r"><span class="chip g-md">+34</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Christian Watson<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">68</td><td class="mono r">93</td><td class="r"><span class="chip g-md">+25</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Parker Washington<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">67</td><td class="mono r">92</td><td class="r"><span class="chip g-md">+25</span></td></tr><tr><td class="nm"><span class="pos">TE</span> Tucker Kraft<span class="tags"><span class="tg t-inj">Injured</span><span class="tg t-fav">Favorite</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">74</td><td class="mono r">89</td><td class="r"><span class="chip g-md">+15</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Mike Evans<span class="tags"><span class="tg t-inj">Injured</span></span></td><td class="mono r">79</td><td class="mono r">91</td><td class="r"><span class="chip g-lo">+12</span></td></tr><tr><td class="nm"><span class="pos">RB</span> Jaylen Warren</td><td class="mono r">90</td><td class="mono r">95</td><td class="r"><span class="chip g-lo">+5</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Rounds 10–11</div><div class="rpick">#99 · #102</div></div>
+    <div class="rtake"><span class="lbl">Our guys still here</span><span class="who">10 players</span></div>
+  </div>
+  <div class="rbody"><div class="tw"><table>
+    <thead><tr><th>Player</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">We're higher by</th></tr></thead>
+    <tbody><tr><td class="nm"><span class="pos">RB</span> MarShawn Lloyd<span class="tags"><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">75</td><td class="mono r">167</td><td class="r"><span class="chip g-hi">+92</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Malik Willis<span class="tags"><span class="tg t-up">Sleeper</span></span></td><td class="mono r">78</td><td class="mono r">167</td><td class="r"><span class="chip g-hi">+89</span></td></tr><tr><td class="nm"><span class="pos">QB</span> C.J. Stroud</td><td class="mono r">89</td><td class="mono r">165</td><td class="r"><span class="chip g-hi">+76</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Fernando Mendoza</td><td class="mono r">129</td><td class="mono r">168</td><td class="r"><span class="chip g-md">+39</span></td></tr><tr><td class="nm"><span class="pos">RB</span> J.K. Dobbins<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Value</span></span></td><td class="mono r">91</td><td class="mono r">114</td><td class="r"><span class="chip g-md">+23</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Jakobi Meyers<span class="tags"><span class="tg t-fav">Favorite</span></span></td><td class="mono r">97</td><td class="mono r">116</td><td class="r"><span class="chip g-md">+19</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Wan&#x27;Dale Robinson<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Value</span></span></td><td class="mono r">99</td><td class="mono r">114</td><td class="r"><span class="chip g-md">+15</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Michael Wilson<span class="tags"><span class="tg t-up">Value</span></span></td><td class="mono r">88</td><td class="mono r">102</td><td class="r"><span class="chip g-lo">+14</span></td></tr><tr><td class="nm"><span class="pos">RB</span> Jonathon Brooks<span class="tags"><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">101</td><td class="mono r">112</td><td class="r"><span class="chip g-lo">+11</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Alec Pierce<span class="tags"><span class="tg t-inj">Injured</span><span class="tg t-fav">Favorite</span></span></td><td class="mono r">95</td><td class="mono r">103</td><td class="r"><span class="chip g-lo">+8</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Rounds 12–13</div><div class="rpick">#119 · #122</div></div>
+    <div class="rtake"><span class="lbl">Our guys still here</span><span class="who">7 players</span></div>
+  </div>
+  <div class="rbody"><div class="tw"><table>
+    <thead><tr><th>Player</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">We're higher by</th></tr></thead>
+    <tbody><tr><td class="nm"><span class="pos">QB</span> Bryce Young</td><td class="mono r">127</td><td class="mono r">169</td><td class="r"><span class="chip g-hi">+42</span></td></tr><tr><td class="nm"><span class="pos">WR</span> De&#x27;Zhaun Stribling<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Sleeper</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">105</td><td class="mono r">147</td><td class="r"><span class="chip g-hi">+42</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Josh Downs<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Value</span></span></td><td class="mono r">96</td><td class="mono r">136</td><td class="r"><span class="chip g-hi">+40</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Jayden Reed</td><td class="mono r">107</td><td class="mono r">129</td><td class="r"><span class="chip g-md">+22</span></td></tr><tr><td class="nm"><span class="pos">TE</span> Dalton Kincaid<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Huge Upside</span></span></td><td class="mono r">114</td><td class="mono r">131</td><td class="r"><span class="chip g-md">+17</span></td></tr><tr><td class="nm"><span class="pos">RB</span> Blake Corum</td><td class="mono r">119</td><td class="mono r">132</td><td class="r"><span class="chip g-lo">+13</span></td></tr><tr><td class="nm"><span class="pos">RB</span> Jacory Croskey-Merritt<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Sleeper</span><span class="tg t-up">Value</span></span></td><td class="mono r">121</td><td class="mono r">133</td><td class="r"><span class="chip g-lo">+12</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Rounds 14–15</div><div class="rpick">#139 · #142</div></div>
+    <div class="rtake"><span class="lbl">Our guys still here</span><span class="who">7 players</span></div>
+  </div>
+  <div class="rbody"><div class="tw"><table>
+    <thead><tr><th>Player</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">We're higher by</th></tr></thead>
+    <tbody><tr><td class="nm"><span class="pos">QB</span> Cam Ward</td><td class="mono r">112</td><td class="mono r">169</td><td class="r"><span class="chip g-hi">+57</span></td></tr><tr><td class="nm"><span class="pos">WR</span> KC Concepcion<span class="tags"><span class="tg t-fav">Favorite</span><span class="tg t-up">Sleeper</span></span></td><td class="mono r">110</td><td class="mono r">145</td><td class="r"><span class="chip g-md">+35</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Makai Lemon<span class="tags"><span class="tg t-fav">Favorite</span></span></td><td class="mono r">108</td><td class="mono r">138</td><td class="r"><span class="chip g-md">+30</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Quentin Johnston</td><td class="mono r">106</td><td class="mono r">135</td><td class="r"><span class="chip g-md">+29</span></td></tr><tr><td class="nm"><span class="pos">RB</span> Jordan Mason<span class="tags"><span class="tg t-fav">Favorite</span></span></td><td class="mono r">111</td><td class="mono r">139</td><td class="r"><span class="chip g-md">+28</span></td></tr><tr><td class="nm"><span class="pos">TE</span> Juwan Johnson<span class="tags"><span class="tg t-up">Value</span></span></td><td class="mono r">138</td><td class="mono r">162</td><td class="r"><span class="chip g-md">+24</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Chris Godwin Jr.</td><td class="mono r">122</td><td class="mono r">136</td><td class="r"><span class="chip g-lo">+14</span></td></tr></tbody></table></div></div>
+</article>
+<article class="round">
+  <div class="rhead">
+    <div><div class="rnum">Round 16</div><div class="rpick">#159</div></div>
+    <div class="rtake"><span class="lbl">Our guys still here</span><span class="who">10 players</span></div>
+  </div>
+  <div class="rbody"><div class="tw"><table>
+    <thead><tr><th>Player</th><th class="r">Our rank</th><th class="r">ADP</th><th class="r">We're higher by</th></tr></thead>
+    <tbody><tr><td class="nm"><span class="pos">QB</span> Michael Penix Jr.<span class="tags"><span class="tg t-inj">Injured</span></span></td><td class="mono r">144</td><td class="mono r">279</td><td class="r"><span class="chip g-hi">+135</span></td></tr><tr><td class="nm"><span class="pos">RB</span> Sean Tucker</td><td class="mono r">188</td><td class="mono r">288</td><td class="r"><span class="chip g-hi">+100</span></td></tr><tr><td class="nm"><span class="pos">RB</span> Isaiah Davis</td><td class="mono r">189</td><td class="mono r">288</td><td class="r"><span class="chip g-hi">+99</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Aaron Rodgers</td><td class="mono r">94</td><td class="mono r">169</td><td class="r"><span class="chip g-hi">+75</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Jordyn Tyson<span class="tags"><span class="tg t-inj">Injured</span></span></td><td class="mono r">115</td><td class="mono r">167</td><td class="r"><span class="chip g-hi">+52</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Jacoby Brissett</td><td class="mono r">126</td><td class="mono r">170</td><td class="r"><span class="chip g-hi">+44</span></td></tr><tr><td class="nm"><span class="pos">QB</span> Geno Smith</td><td class="mono r">128</td><td class="mono r">170</td><td class="r"><span class="chip g-hi">+42</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Adonai Mitchell<span class="tags"><span class="tg t-up">Sleeper</span></span></td><td class="mono r">136</td><td class="mono r">170</td><td class="r"><span class="chip g-md">+34</span></td></tr><tr><td class="nm"><span class="pos">RB</span> Mike Washington Jr.</td><td class="mono r">132</td><td class="mono r">163</td><td class="r"><span class="chip g-md">+31</span></td></tr><tr><td class="nm"><span class="pos">WR</span> Denzel Boston<span class="tags"><span class="tg t-up">Sleeper</span></span></td><td class="mono r">137</td><td class="mono r">167</td><td class="r"><span class="chip g-md">+30</span></td></tr></tbody></table></div></div>
+</article>
+<footer>
+  <p><strong>One caveat.</strong> Quarterbacks tend to go a little faster in our league than their national ADP suggests, because we start two. If you're choosing between taking a quarterback now or waiting one more turn, take him now.</p>
+</footer>
+</div>
