@@ -18,3 +18,8 @@ node_modules/
 # Tagged sim comparison runs (regenerable: BOARD=<csv> MODE=<mode> SEED=<n>)
 .espn-automation/sim_results_*_v*.json
 .espn-automation/sim_full_*.json
+
+# Raw 2026 draft/player API dumps (regenerable via fetch_draft_2026.js /
+# fetch_players_2026.js with a live CDP session); the derived board is committed
+.espn-automation/draft2026_raw.json
+.espn-automation/players2026_raw.json

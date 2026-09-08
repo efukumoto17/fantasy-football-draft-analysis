@@ -1,0 +1,161 @@
+overall,round,roundPick,manager,teamName,name,pos,nfl,rankSF,rankPPR,adp,proj26,act25,auction,valSF,valADP,injStatus,auto,keeper,id
+1,1,1,Jeffrey Chan,Kick or die,Jahmyr Gibbs,RB,DET,7,1,1.32,369.07,366.9,57,-6,-0.32,ACTIVE,false,false,4429795
+2,1,2,Evan Fukumoto,GIBBY,Bijan Robinson,RB,ATL,8,2,2.41,352.38,370.8,56,-6,-0.41,ACTIVE,false,false,4430807
+3,1,3,Ikaika Stone,Vietokwuegbunam Flashback,Josh Allen,QB,BUF,1,26,18.99,370.03,364.62,30,2,-15.99,ACTIVE,false,false,3918298
+4,1,4,Justin Ho,The Big Beautiful Bill,Ja'Marr Chase,WR,CIN,9,3,4.23,336.95,316.1,56,-5,-0.23,QUESTIONABLE,false,false,4362628
+5,1,5,Chase Mizoguchi,They Hit the Second Bower,Christian McCaffrey,RB,SF,12,7,7.74,341.52,418.6,52,-7,-2.74,QUESTIONABLE,false,false,3117251
+6,1,6,Christopher Pascual,Brown Ladd Squad,Jaxon Smith-Njigba,WR,SEA,11,6,6.37,326.66,361.4,53,-5,-0.37,ACTIVE,false,false,4430878
+7,1,7,Prashanth Balaraman,"WYD, Step Burrow",Puka Nacua,WR,LAR,10,4,5.34,353.57,375,55,-3,1.66,QUESTIONABLE,false,false,4426515
+8,1,8,Rollin Odama-Wong,2020+2022+2025 Champion,Amon-Ra St. Brown,WR,DET,18,8,8.47,323.98,326.5,52,-10,-0.47,ACTIVE,false,false,4374302
+9,1,9,Harvey Wang,Crazy Rich Achanes,Jonathan Taylor,RB,IND,17,5,6.18,315.89,362.8,54,-8,2.82,ACTIVE,false,false,4242335
+10,1,10,Darwin Hu,OFFENSIVE GLAZER OF THE YEAR,James Cook III,RB,BUF,25,9,10.1,279.99,302.2,51,-15,-0.1,ACTIVE,false,false,4379399
+11,2,1,Darwin Hu,OFFENSIVE GLAZER OF THE YEAR,Lamar Jackson,QB,BAL,5,44,33.35,322.51,215.86,18,6,-22.35,ACTIVE,false,false,3916387
+12,2,2,Harvey Wang,Crazy Rich Achanes,De'Von Achane,RB,MIA,20,12,13.18,293.22,324.3,46,-8,-1.18,ACTIVE,false,false,4429160
+13,2,3,Rollin Odama-Wong,2020+2022+2025 Champion,CeeDee Lamb,WR,DAL,19,10,11.58,293.63,201.4,50,-6,1.42,ACTIVE,false,false,4241389
+14,2,4,Prashanth Balaraman,"WYD, Step Burrow",Joe Burrow,QB,CIN,21,70,52.91,304.33,134.46,7,-7,-38.91,ACTIVE,false,false,3915511
+15,2,5,Christopher Pascual,Brown Ladd Squad,Jayden Daniels,QB,WSH,3,56,52.56,317.01,114.78,10,12,-37.56,ACTIVE,false,false,4426348
+16,2,6,Chase Mizoguchi,They Hit the Second Bower,Justin Jefferson,WR,MIN,26,11,12.35,293.86,202.5,48,-10,3.65,ACTIVE,false,false,4262921
+17,2,7,Justin Ho,The Big Beautiful Bill,Drake Maye,QB,NE,13,58,46.56,319.76,351.96,10,4,-29.56,ACTIVE,false,false,4431452
+18,2,8,Ikaika Stone,Vietokwuegbunam Flashback,Chase Brown,RB,CIN,54,14,17.79,271.61,284.1,43,-36,0.21,ACTIVE,false,false,4362238
+19,2,9,Evan Fukumoto,GIBBY,Kenneth Walker III,RB,KC,41,28,24.36,273.08,192.9,29,-22,-5.36,ACTIVE,false,false,4567048
+20,2,10,Jeffrey Chan,Kick or die,Jalen Hurts,QB,PHI,15,73,54.09,319.84,301.06,7,5,-34.09,ACTIVE,false,false,4040715
+21,3,1,Jeffrey Chan,Kick or die,Jaxson Dart,QB,NYG,23,91,82.12,299.53,241.58,4,-2,-61.12,ACTIVE,false,false,4689114
+22,3,2,Evan Fukumoto,GIBBY,Saquon Barkley,RB,PHI,38,15,14.09,273.3,232.8,42,-16,7.91,ACTIVE,false,false,3929630
+23,3,3,Ikaika Stone,Vietokwuegbunam Flashback,Omarion Hampton,RB,LAC,55,13,17.75,261.71,136.2,45,-32,5.25,ACTIVE,false,false,4685382
+24,3,4,Justin Ho,The Big Beautiful Bill,Ashton Jeanty,RB,LV,40,17,21.6,278.89,245.6,38,-16,2.4,QUESTIONABLE,false,false,4890973
+25,3,5,Chase Mizoguchi,They Hit the Second Bower,Trey McBride,TE,ARI,28,21,23.45,241.64,315.9,34,-3,1.55,ACTIVE,false,false,4361307
+26,3,6,Christopher Pascual,Brown Ladd Squad,Jeremiyah Love,RB,ARI,29,19,25.28,276.52,,36,-3,0.72,QUESTIONABLE,false,false,4870808
+27,3,7,Prashanth Balaraman,"WYD, Step Burrow",Rashee Rice,WR,KC,30,25,29.24,259.26,150.1,31,-3,-2.24,ACTIVE,false,false,4428331
+28,3,8,Rollin Odama-Wong,2020+2022+2025 Champion,Derrick Henry,RB,BAL,39,16,16.48,277.81,280,40,-11,11.52,ACTIVE,false,false,3043078
+29,3,9,Harvey Wang,Crazy Rich Achanes,A.J. Brown,WR,NE,47,20,21.4,249.44,220.3,35,-18,7.6,ACTIVE,false,false,4047646
+30,3,10,Darwin Hu,OFFENSIVE GLAZER OF THE YEAR,Nico Collins,WR,HOU,31,23,25.88,248.22,226.2,32,-1,4.12,ACTIVE,false,false,4258173
+31,4,1,Darwin Hu,OFFENSIVE GLAZER OF THE YEAR,Brock Bowers,TE,LV,42,22,23.93,240.88,177.2,33,-11,7.07,ACTIVE,false,false,4432665
+32,4,2,Harvey Wang,Crazy Rich Achanes,Trevor Lawrence,QB,JAX,32,114,103.76,289.55,338.18,3,0,-71.76,ACTIVE,false,false,4360310
+33,4,3,Rollin Odama-Wong,2020+2022+2025 Champion,Javonte Williams,RB,DAL,57,31,32.43,259.49,243.3,26,-24,0.57,ACTIVE,false,false,4361579
+34,4,4,Prashanth Balaraman,"WYD, Step Burrow",Travis Etienne Jr.,RB,NO,60,35,39.27,246.39,254.4,22,-26,-5.27,ACTIVE,false,false,4239996
+35,4,5,Christopher Pascual,Brown Ladd Squad,Dak Prescott,QB,DAL,34,85,71.95,286.11,314.78,5,1,-36.95,ACTIVE,false,false,2577417
+36,4,6,Chase Mizoguchi,They Hit the Second Bower,Breece Hall,RB,NYJ,56,30,35.75,274.14,207.66,27,-20,0.25,QUESTIONABLE,false,false,4427366
+37,4,7,Justin Ho,The Big Beautiful Bill,Drake London,WR,ATL,27,18,20.73,269.46,202.9,37,10,16.27,ACTIVE,false,false,4426502
+38,4,8,Ikaika Stone,Vietokwuegbunam Flashback,Chris Olave,WR,NO,48,24,29.71,249.6,268.5,32,-10,8.29,ACTIVE,false,false,4361370
+39,4,9,Evan Fukumoto,GIBBY,DeVonta Smith,WR,PHI,66,34,36.17,239.08,201.8,23,-27,2.83,ACTIVE,false,false,4241478
+40,4,10,Jeffrey Chan,Kick or die,Garrett Wilson,WR,NYJ,62,29,37.06,250.06,100,28,-22,2.94,ACTIVE,false,false,4569618
+41,5,1,Jeffrey Chan,Kick or die,Kyren Williams,RB,LAR,61,32,34.59,232.01,263.3,25,-20,6.41,ACTIVE,false,false,4430737
+42,5,2,Evan Fukumoto,GIBBY,Malik Nabers,WR,NYG,49,33,35.75,243.89,58.1,24,-7,6.25,QUESTIONABLE,false,false,4595348
+43,5,3,Ikaika Stone,Vietokwuegbunam Flashback,George Pickens,WR,DAL,63,27,28.29,239.25,292.9,30,-20,14.71,ACTIVE,false,false,4426354
+44,5,4,Justin Ho,The Big Beautiful Bill,Ladd McConkey,WR,LAC,69,41,46.29,221,181.4,20,-25,-2.29,ACTIVE,false,false,4612826
+45,5,5,Chase Mizoguchi,They Hit the Second Bower,Brock Purdy,QB,SF,43,119,109.17,291.59,177.38,2,2,-64.17,ACTIVE,false,false,4361741
+46,5,6,Christopher Pascual,Brown Ladd Squad,Emeka Egbuka,WR,TB,67,39,45.37,228.77,195.7,21,-21,0.63,QUESTIONABLE,false,false,4567750
+47,5,7,Prashanth Balaraman,"WYD, Step Burrow",Bo Nix,QB,DEN,36,138,104.21,295.73,304.84,2,11,-57.21,ACTIVE,false,false,4426338
+48,5,8,Rollin Odama-Wong,2020+2022+2025 Champion,Caleb Williams,QB,CHI,50,104,85.18,281.04,318.68,3,-2,-37.18,ACTIVE,false,false,4431611
+49,5,9,Harvey Wang,Crazy Rich Achanes,Justin Herbert,QB,LAC,52,97,85.55,283.58,287.88,4,-3,-36.55,ACTIVE,false,false,4038941
+50,5,10,Darwin Hu,OFFENSIVE GLAZER OF THE YEAR,Jaylen Waddle,WR,DEN,84,49,53.31,213.04,196.62,14,-34,-3.31,ACTIVE,false,false,4372016
+51,6,1,Darwin Hu,OFFENSIVE GLAZER OF THE YEAR,Patrick Mahomes,QB,KC,58,133,109.43,290.98,286.18,2,-7,-58.43,QUESTIONABLE,false,false,3139477
+52,6,2,Harvey Wang,Crazy Rich Achanes,Davante Adams,WR,LAR,68,45,46.04,232.21,223.4,17,-16,5.96,ACTIVE,false,false,16800
+53,6,3,Rollin Odama-Wong,2020+2022+2025 Champion,Colston Loveland,TE,CHI,80,43,42.23,206.62,165.6,19,-27,10.77,ACTIVE,false,false,4723086
+54,6,4,Prashanth Balaraman,"WYD, Step Burrow",Bhayshul Tuten,RB,JAX,89,48,62.08,206.02,89.1,15,-35,-8.08,QUESTIONABLE,false,false,4882093
+55,6,5,Christopher Pascual,Brown Ladd Squad,Terry McLaurin,WR,WSH,70,51,60.96,218.04,114.7,13,-15,-5.96,ACTIVE,false,false,3121422
+56,6,6,Chase Mizoguchi,They Hit the Second Bower,Matthew Stafford,QB,LAR,45,139,93.32,292.84,350.88,2,11,-37.32,ACTIVE,false,false,12483
+57,6,7,Justin Ho,The Big Beautiful Bill,Jadarian Price,RB,SEA,91,62,65.95,194.06,,9,-34,-8.95,ACTIVE,false,false,4685512
+58,6,8,Ikaika Stone,Vietokwuegbunam Flashback,Tyler Warren,TE,IND,81,53,51.49,210.48,189,11,-23,6.51,QUESTIONABLE,false,false,4431459
+59,6,9,Evan Fukumoto,GIBBY,Jared Goff,QB,DET,100,162,137.64,268.27,297.06,1,-41,-78.64,ACTIVE,false,false,3046779
+60,6,10,Jeffrey Chan,Kick or die,Zay Flowers,WR,BAL,64,38,43.81,238.47,244.3,22,-4,16.19,QUESTIONABLE,false,false,4429615
+61,7,1,Jeffrey Chan,Kick or die,Tetairoa McMillan,WR,CAR,65,36,43.01,235.93,212.9,22,-4,17.99,ACTIVE,false,false,4685472
+62,7,2,Evan Fukumoto,GIBBY,Luther Burden III,WR,CHI,88,64,74.72,206.47,127.9,9,-26,-12.72,QUESTIONABLE,false,false,4685278
+63,7,3,Ikaika Stone,Vietokwuegbunam Flashback,Kyler Murray,QB,MIN,75,151,136.93,283.12,77.78,1,-12,-73.93,ACTIVE,false,false,3917315
+64,7,4,Justin Ho,The Big Beautiful Bill,Quinshon Judkins,RB,CLE,71,40,47.72,226.75,169.8,21,-7,16.28,ACTIVE,false,false,4685702
+65,7,5,Chase Mizoguchi,They Hit the Second Bower,Tee Higgins,WR,CIN,82,42,52.84,218.92,211.6,19,-17,12.16,QUESTIONABLE,false,false,4239993
+66,7,6,Christopher Pascual,Brown Ladd Squad,D'Andre Swift,RB,CHI,74,47,52.84,209.94,228.6,15,-8,13.16,QUESTIONABLE,false,false,4259545
+67,7,7,Prashanth Balaraman,"WYD, Step Burrow",Cam Skattebo,RB,NYG,72,46,45.16,227.39,127.7,17,-5,21.84,ACTIVE,false,false,4696981
+68,7,8,Rollin Odama-Wong,2020+2022+2025 Champion,DJ Moore,WR,BUF,87,52,58.39,209.57,170.68,12,-19,9.61,ACTIVE,false,false,3915416
+69,7,9,Harvey Wang,Crazy Rich Achanes,David Montgomery,RB,HOU,90,60,61.89,199.68,166.92,10,-21,7.11,ACTIVE,false,false,4035538
+70,7,10,Darwin Hu,OFFENSIVE GLAZER OF THE YEAR,Bucky Irving,RB,TB,73,50,56.39,206.86,138.5,13,-3,13.61,ACTIVE,false,false,4596448
+71,8,1,Darwin Hu,OFFENSIVE GLAZER OF THE YEAR,Rhamondre Stevenson,RB,NE,92,72,76.81,206.7,178.8,7,-21,-5.81,ACTIVE,false,false,4569173
+72,8,2,Harvey Wang,Crazy Rich Achanes,Jameson Williams,WR,DET,86,54,64.43,208.32,220.4,11,-14,7.57,ACTIVE,false,false,4426388
+73,8,3,Rollin Odama-Wong,2020+2022+2025 Champion,Jordan Love,QB,GB,135,208,155.41,262.63,235.64,0,-62,-82.41,ACTIVE,false,false,4036378
+74,8,4,Prashanth Balaraman,"WYD, Step Burrow",Sam LaPorta,TE,DET,97,89,75.1,188.65,107.4,4,-23,-1.1,QUESTIONABLE,false,false,4430027
+75,8,5,Christopher Pascual,Brown Ladd Squad,Harold Fannin Jr.,TE,CLE,96,76,70.66,188.87,186.9,6,-21,4.34,ACTIVE,false,false,5083076
+76,8,6,Chase Mizoguchi,They Hit the Second Bower,Jonathon Brooks,RB,CAR,114,95,104.76,179.63,0,4,-38,-28.76,QUESTIONABLE,false,false,4678008
+77,8,7,Justin Ho,The Big Beautiful Bill,Rome Odunze,WR,CHI,85,55,67.68,213.19,146.1,10,-8,9.32,QUESTIONABLE,false,false,4431299
+78,8,8,Ikaika Stone,Vietokwuegbunam Flashback,Parker Washington,WR,JAX,111,87,90.35,187.23,185.7,5,-33,-12.35,ACTIVE,false,false,4432620
+79,8,9,Evan Fukumoto,GIBBY,Tucker Kraft,TE,GB,130,110,91.08,172.03,117.2,3,-51,-12.08,QUESTIONABLE,false,false,4572680
+80,8,10,Jeffrey Chan,Kick or die,Courtland Sutton,WR,DEN,106,80,82.06,204.11,220.7,6,-26,-2.06,ACTIVE,false,false,3128429
+81,9,1,Jeffrey Chan,Kick or die,Kyle Pitts Sr.,TE,ATL,93,77,68.81,184.96,211.8,6,-12,12.19,ACTIVE,false,false,4360248
+82,9,2,Evan Fukumoto,GIBBY,Tyler Shough,QB,NO,78,158,152.73,265.06,158.46,1,4,-70.73,ACTIVE,false,false,4360689
+83,9,3,Ikaika Stone,Vietokwuegbunam Flashback,Jaylen Warren,RB,PIT,98,88,85.31,193.96,217.1,5,-15,-2.31,ACTIVE,false,false,4569987
+84,9,4,Justin Ho,The Big Beautiful Bill,Baker Mayfield,QB,TB,104,179,147.72,264.29,271.92,0,-20,-63.72,ACTIVE,false,false,3052587
+85,9,5,Chase Mizoguchi,They Hit the Second Bower,Marvin Harrison Jr.,WR,ARI,108,69,79.47,193.6,127.8,8,-23,5.53,ACTIVE,false,false,4432708
+86,9,6,Christopher Pascual,Brown Ladd Squad,Rico Dowdle,RB,PIT,113,106,97,188.32,217.8,3,-27,-11,ACTIVE,false,false,4038815
+87,9,7,Prashanth Balaraman,"WYD, Step Burrow",Carnell Tate,WR,TEN,99,67,80.8,202.24,,8,-12,6.2,QUESTIONABLE,false,false,4871023
+88,9,8,Rollin Odama-Wong,2020+2022+2025 Champion,Malik Willis,QB,MIA,132,223,167.42,239.29,51.18,0,-44,-79.42,ACTIVE,false,false,4242512
+89,9,9,Harvey Wang,Crazy Rich Achanes,Alec Pierce,WR,IND,112,108,105.11,185.29,184.8,3,-23,-16.11,ACTIVE,false,false,4360078
+90,9,10,Darwin Hu,OFFENSIVE GLAZER OF THE YEAR,Brian Thomas Jr.,WR,JAX,120,118,113.45,176.66,139.3,2,-30,-23.45,ACTIVE,false,false,4432773
+91,10,1,Darwin Hu,OFFENSIVE GLAZER OF THE YEAR,Christian Watson,WR,GB,117,81,88.72,188.47,132.9,5,-26,2.28,ACTIVE,false,false,4248528
+92,10,2,Harvey Wang,Crazy Rich Achanes,C.J. Stroud,QB,HOU,138,285,165.35,246.05,208.54,0,-46,-73.35,ACTIVE,false,false,4432577
+93,10,3,Rollin Odama-Wong,2020+2022+2025 Champion,MarShawn Lloyd,RB,GB,166,102,103.07,134.39,0,4,-73,-10.07,ACTIVE,false,false,4429023
+94,10,4,Prashanth Balaraman,"WYD, Step Burrow",Daniel Jones,QB,IND,102,185,161.04,266.13,226.94,0,-8,-67.04,ACTIVE,false,false,3917792
+95,10,5,Christopher Pascual,Brown Ladd Squad,TreVeyon Henderson,RB,NE,116,66,77.51,187.5,206.2,9,-21,17.49,QUESTIONABLE,false,false,4432710
+96,10,6,Chase Mizoguchi,They Hit the Second Bower,Josh Jacobs,RB,GB,165,92,100.73,164.04,237.1,4,-69,-4.73,DAY_TO_DAY,false,false,4047365
+97,10,7,Justin Ho,The Big Beautiful Bill,Matthew Golden,WR,GB,119,125,115.13,188.59,70.5,2,-22,-18.13,ACTIVE,false,false,4701936
+98,10,8,Ikaika Stone,Vietokwuegbunam Flashback,Mike Evans,WR,SF,118,68,83.75,179.96,85.8,8,-20,14.25,QUESTIONABLE,false,false,16737
+99,10,9,Evan Fukumoto,GIBBY,Sam Darnold,QB,SEA,140,287,162.65,242.54,237.42,0,-41,-63.65,ACTIVE,false,false,3912547
+100,10,10,Jeffrey Chan,Kick or die,Tony Pollard,RB,TEN,122,75,86.03,185.54,185.8,6,-22,13.97,ACTIVE,false,false,3916148
+101,11,1,Jeffrey Chan,Kick or die,Michael Pittman Jr.,WR,PIT,107,74,90.47,197.17,202.9,7,-6,10.53,QUESTIONABLE,false,false,4035687
+102,11,2,Evan Fukumoto,GIBBY,Michael Wilson,WR,ARI,126,100,105.2,176.36,221.6,4,-24,-3.2,ACTIVE,false,false,4360761
+103,11,3,Ikaika Stone,Vietokwuegbunam Flashback,J.K. Dobbins,RB,DEN,125,121,111.53,174.78,115.9,2,-22,-8.53,ACTIVE,false,false,4241985
+104,11,4,Justin Ho,The Big Beautiful Bill,George Kittle,TE,SF,129,79,69.19,193.29,162,6,-25,34.81,QUESTIONABLE,false,false,3040151
+105,11,5,Chase Mizoguchi,They Hit the Second Bower,Cam Ward,QB,TEN,157,320,169.16,219.56,186.66,0,-52,-64.16,ACTIVE,false,false,4688380
+106,11,6,Christopher Pascual,Brown Ladd Squad,Jordan Addison,WR,MIN,142,129,124.43,170.66,135.6,2,-36,-18.43,ACTIVE,false,false,4429205
+107,11,7,Prashanth Balaraman,"WYD, Step Burrow",Blake Corum,RB,LAR,178,137,127.3,159.29,123.2,2,-71,-20.3,ACTIVE,false,false,4429096
+108,11,8,Rollin Odama-Wong,2020+2022+2025 Champion,Chris Godwin Jr.,WR,TB,185,126,124.84,157.19,83,2,-77,-16.84,ACTIVE,false,false,3116165
+109,11,9,Harvey Wang,Crazy Rich Achanes,Kenny Gainwell,RB,TB,123,90,99.98,177.66,224.3,4,-14,9.02,ACTIVE,false,false,4371733
+110,11,10,Darwin Hu,OFFENSIVE GLAZER OF THE YEAR,Chuba Hubbard,RB,CAR,124,111,111.8,180.01,125.9,3,-14,-1.8,QUESTIONABLE,false,false,4241416
+111,12,1,Darwin Hu,OFFENSIVE GLAZER OF THE YEAR,Bryce Young,QB,CAR,155,319,168.73,237.68,218.04,0,-44,-57.73,ACTIVE,false,false,4685720
+112,12,2,Harvey Wang,Crazy Rich Achanes,Isaiah Likely,TE,NYG,154,144,122.55,155.09,61.7,2,-42,-10.55,ACTIVE,false,false,4361050
+113,12,3,Rollin Odama-Wong,2020+2022+2025 Champion,Brandon Aubrey,K,DAL,251,202,80.88,170.53,181.1,1,-138,32.12,ACTIVE,false,false,3953687
+114,12,4,Prashanth Balaraman,"WYD, Step Burrow",De'Zhaun Stribling,WR,SF,143,150,137.94,160.07,,1,-29,-23.94,QUESTIONABLE,false,false,4710714
+115,12,5,Christopher Pascual,Brown Ladd Squad,Jacoby Brissett,QB,ARI,159,321,169.79,198.53,227.44,0,-44,-54.79,ACTIVE,false,false,2578570
+116,12,6,Chase Mizoguchi,They Hit the Second Bower,Rams D/ST,DST,LAR,240,243,97.73,130.31,131,1,-124,18.27,,false,false,-16014
+117,12,7,Justin Ho,The Big Beautiful Bill,Jordan Mason,RB,MIN,177,159,140.45,152.35,129.4,1,-60,-23.45,ACTIVE,false,false,4360569
+118,12,8,Ikaika Stone,Vietokwuegbunam Flashback,Zach Charbonnet,RB,SEA,197,174,155.8,133.99,181.9,1,-79,-37.8,OUT,false,false,4426385
+119,12,9,Evan Fukumoto,GIBBY,Jacory Croskey-Merritt,RB,WSH,169,146,137.47,158.8,140.3,2,-50,-18.47,QUESTIONABLE,false,false,4575131
+120,12,10,Jeffrey Chan,Kick or die,Broncos D/ST,DST,DEN,236,176,98.21,137,148,1,-116,21.79,,false,false,-16007
+121,13,1,Jeffrey Chan,Kick or die,Dallas Goedert,TE,PHI,148,131,101.33,176.95,186.1,2,-27,19.67,ACTIVE,false,false,3121023
+122,13,2,Evan Fukumoto,GIBBY,Makai Lemon,WR,PHI,184,143,135.49,155.16,,2,-62,-13.49,ACTIVE,false,false,4870795
+123,13,3,Ikaika Stone,Vietokwuegbunam Flashback,Aaron Rodgers,QB,PIT,228,387,169.1,218.83,227.08,0,-105,-46.1,ACTIVE,false,false,8439
+124,13,4,Justin Ho,The Big Beautiful Bill,DK Metcalf,WR,PIT,109,78,85.98,195.79,189.2,6,15,38.02,QUESTIONABLE,false,false,4047650
+125,13,5,Chase Mizoguchi,They Hit the Second Bower,Jordyn Tyson,WR,NO,213,226,168.03,99.8,,0,-88,-43.03,INJURY_RESERVE,false,false,4880281
+126,13,6,Christopher Pascual,Brown Ladd Squad,Texans D/ST,DST,HOU,234,173,92.49,135.14,183,1,-108,33.51,,false,false,-16034
+127,13,7,Prashanth Balaraman,"WYD, Step Burrow",Ka'imi Fairbairn,K,HOU,257,205,122.62,157.13,190.5,1,-130,4.38,ACTIVE,false,false,2971573
+128,13,8,Rollin Odama-Wong,2020+2022+2025 Champion,Stefon Diggs,WR,WSH,164,107,104.18,172.93,211.3,3,-36,23.82,ACTIVE,false,false,2976212
+129,13,9,Harvey Wang,Crazy Rich Achanes,Wan'Dale Robinson,WR,TEN,131,93,111.44,174.85,218.4,4,-2,17.56,QUESTIONABLE,false,false,4569587
+130,13,10,Darwin Hu,OFFENSIVE GLAZER OF THE YEAR,Quentin Johnston,WR,LAC,163,145,135.11,165.4,171.7,2,-33,-5.11,ACTIVE,false,false,4429025
+131,14,1,Darwin Hu,OFFENSIVE GLAZER OF THE YEAR,Fernando Mendoza,QB,LV,226,385,168.76,187.51,,0,-95,-37.76,ACTIVE,false,false,4837248
+132,14,2,Harvey Wang,Crazy Rich Achanes,Kyle Monangai,RB,CHI,168,123,125.18,174.74,146.7,2,-36,6.82,QUESTIONABLE,false,false,4608686
+133,14,3,Rollin Odama-Wong,2020+2022+2025 Champion,Woody Marks,RB,HOU,196,163,152.37,131.79,151.1,1,-63,-19.37,ACTIVE,false,false,4429059
+134,14,4,Prashanth Balaraman,"WYD, Step Burrow",Jake Ferguson,TE,DAL,150,140,114.83,166.58,189.1,2,-16,19.17,ACTIVE,false,false,4242355
+135,14,5,Christopher Pascual,Brown Ladd Squad,Cameron Dicker,K,LAC,252,203,109.29,161.04,168,1,-117,25.71,QUESTIONABLE,false,false,4362081
+136,14,6,Chase Mizoguchi,They Hit the Second Bower,Jason Myers,K,SEA,253,204,112.53,157.65,196,1,-117,23.47,ACTIVE,false,false,2473037
+137,14,7,Justin Ho,The Big Beautiful Bill,Steelers D/ST,DST,PIT,238,241,121.6,130.7,118,1,-101,15.4,,false,false,-16023
+138,14,8,Ikaika Stone,Vietokwuegbunam Flashback,Harrison Mevis,K,LAR,254,206,129.24,158.13,81,1,-116,8.76,ACTIVE,false,false,4574716
+139,14,9,Evan Fukumoto,GIBBY,Seahawks D/ST,DST,SEA,239,242,113.02,128.23,191,1,-100,25.98,,false,false,-16026
+140,14,10,Jeffrey Chan,Kick or die,Eddy Pineiro,K,SF,259,207,142.79,154.28,135,1,-119,-2.79,ACTIVE,false,false,4034949
+141,15,1,Jeffrey Chan,Kick or die,Rachaad White,RB,WSH,176,120,129.25,164.08,143,2,-35,11.75,QUESTIONABLE,false,false,4697815
+142,15,2,Evan Fukumoto,GIBBY,Dalton Kincaid,TE,BUF,171,156,131.95,155.45,126.1,1,-29,10.05,ACTIVE,false,false,4385690
+143,15,3,Ikaika Stone,Vietokwuegbunam Flashback,RJ Harvey,RB,DEN,181,132,128.64,149.37,206.6,2,-38,14.36,ACTIVE,false,false,4568490
+144,15,4,Justin Ho,The Big Beautiful Bill,Jonah Coleman,RB,DEN,221,178,162.82,74.39,,0,-77,-18.82,ACTIVE,false,false,4702555
+145,15,5,Chase Mizoguchi,They Hit the Second Bower,Jakobi Meyers,WR,JAX,127,112,121.38,181.94,176.3,3,18,23.62,QUESTIONABLE,false,false,3916433
+146,15,6,Christopher Pascual,Brown Ladd Squad,Travis Kelce,TE,KC,149,124,93.98,177.18,194.7,2,-3,52.02,ACTIVE,false,false,15847
+147,15,7,Prashanth Balaraman,"WYD, Step Burrow",Ravens D/ST,DST,BAL,241,246,133.9,124.56,81,1,-94,13.1,,false,false,-16033
+148,15,8,Rollin Odama-Wong,2020+2022+2025 Champion,Chargers D/ST,DST,LAC,250,256,165.12,99.67,127,0,-102,-17.12,,false,false,-16024
+149,15,9,Harvey Wang,Crazy Rich Achanes,Eagles D/ST,DST,PHI,243,248,137.63,112.87,131,1,-94,11.37,,true,false,-16021
+150,15,10,Darwin Hu,OFFENSIVE GLAZER OF THE YEAR,Cam Little,K,JAX,261,260,140.61,146.11,159.5,1,-111,9.39,ACTIVE,false,false,4686361
+151,16,1,Darwin Hu,OFFENSIVE GLAZER OF THE YEAR,Jaguars D/ST,DST,JAX,384,361,167.3,81.72,146,0,-233,-16.3,,false,false,-16030
+152,16,2,Harvey Wang,Crazy Rich Achanes,Jake Bates,K,DET,263,263,156.39,144.15,145,1,-111,-4.39,ACTIVE,true,false,4689936
+153,16,3,Rollin Odama-Wong,2020+2022+2025 Champion,Kaelon Black,RB,SF,294,281,169.97,60.3,,0,-141,-16.97,ACTIVE,false,false,4696044
+154,16,4,Prashanth Balaraman,"WYD, Step Burrow",Jalen Coker,WR,CAR,190,155,154.67,146.87,90.4,1,-36,-0.67,ACTIVE,false,false,4695883
+155,16,5,Christopher Pascual,Brown Ladd Squad,Xavier Worthy,WR,KC,162,152,133.03,172.95,110.4,1,-7,21.97,ACTIVE,false,false,4683062
+156,16,6,Chase Mizoguchi,They Hit the Second Bower,Mike Washington Jr.,RB,LV,204,193,162.87,67.07,,0,-48,-6.87,ACTIVE,false,false,4686658
+157,16,7,Justin Ho,The Big Beautiful Bill,Harrison Butker,K,KC,260,259,143.92,147.57,141,1,-103,13.08,ACTIVE,false,false,3055899
+158,16,8,Ikaika Stone,Vietokwuegbunam Flashback,Titans D/ST,DST,TEN,510,510,169.94,72.93,69,0,-352,-11.94,,false,false,-16010
+159,16,9,Evan Fukumoto,GIBBY,Chris Boswell,K,PIT,344,340,164.83,142.11,146,0,-185,-5.83,ACTIVE,false,false,17372
+160,16,10,Jeffrey Chan,Kick or die,Andre Szmyt,K,CLE,503,503,169.89,120.8,109,0,-343,-9.89,ACTIVE,false,false,4258620
