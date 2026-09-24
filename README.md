@@ -97,7 +97,15 @@ node .espn-automation/analyze_luck.js
 node .espn-automation/analyze_rivalry.js
 ```
 
-### Running the scripts
+### 2026 in-season pulls
+Post-draft pulls reuse the same CDP Chrome session (`launch.js`), but are separate
+scripts since they target the live season rather than the 2022–2025 history:
+```bash
+node .espn-automation/launch.js               # if Chrome isn't already up; log into ESPN in the window
+node .espn-automation/fetch_2026_rosters.js   # writes data/rosters-2026.csv (current rosters, all 10 teams)
+```
+
+### Running the scripts (2022–2025 history)
 They talk to a Chrome instance over CDP (port 9222) so they reuse your ESPN login:
 ```bash
 # Playwright is resolved from the npx cache; adjust NODE_PATH if needed
